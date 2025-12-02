@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+{% block title %}Waiter Dashboard{% endblock %}
+{% block content %}
+<div style="margin-bottom:2rem;">
+  <h1 style="display:inline-block;margin-right:1rem;">🚶 Waiter / Transit Dashboard</h1>
+</div>
+
+<!-- Ready for Delivery/Serving -->
+<div class="card" style="margin-bottom:2rem;">
+  <h2 style="background:linear-gradient(135deg, #4caf50 0%, #388e3c 100%);color:white;padding:1rem;border-radius:8px;margin:-16px -16px 1rem -16px;">
+    ✅ Ready for Pickup ({{ dining_ready|length|add:delivery_ready|length }})
+  </h2>
+  
+  <!-- Dining Orders Ready -->
+  {% if dining_ready %}
+    <h3 style="color:#2e7d32;border-bottom:2px solid #4caf50;padding-bottom:0.5rem;margin-top:1.5rem;">🍽️ Dining Orders</h3>
+    {% for order in dining_ready %}
+    <div style="border:2px solid #4caf50;border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;background:#f1f8f4;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+        <div>
+          <h4 style="margin:0;color:#2e7d32;">Order #{{ order.id }}</h4>
+          <p style="margin:0.5rem 0 0 0;font-size:1.1rem;">
+            <strong style="background:#ffeb3b;padding:4px 12px;border-radius:6px;">Table {{ order.table_no }}</strong>
+          </p>
+          <p style="margin:0.5rem 0 0 0;color:#666;font-size:0.9rem;">
+            Customer: {{ order.customer.name }}
+          </p>
+        </div>
+        <div style="text-align:right;">
+          <p style="margin:0;font-size:1.1rem;font-weight:700;color:#2e7d32;">₹{{ order.total_amount }}</p>
+          <p style="margin:0.3rem 0 0 0;font-size:0.8rem;color:#666;">
+            Ready: {{ order.ready_at|timesince }} ago
+          </p>
+        </div>
+      </div>
+      
+      <!-- Order Items -->
+      <div style="background:white;border-radius:8px;padding:1rem;margin-bottom:1rem;">
+        <ul style="margin:0;padding-left:1.5rem;">
+          {% for item in order.items.all %}
+            <li><strong>{{ item.item.name }}</strong> × {{ item.quantity }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      
+      <!-- Pickup Button -->
+      <form method="post" action="{% url 'waiter_pickup_order' order.id %}" style="margin:0;">
+        {% csrf_token %}
+        <button type="submit" class="btn" style="width:100%;background:#2196f3;font-size:1rem;padding:14px;">
+          📤 Pick Up & Serve
+        </button>
+      </form>
+    </div>
+    {% endfor %}
+  {% endif %}
+  
+  <!-- Delivery Orders Ready -->
+  {% if delivery_ready %}
+    <h3 style="color:#ff6f00;border-bottom:2px solid #ff9800;padding-bottom:0.5rem;margin-top:1.5rem;">🛵 Delivery Orders</h3>
+    {% for order in delivery_ready %}
+    <div style="border:2px solid #ff9800;border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;background:#fff8e1;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+        <div style="flex:1;">
+          <h4 style="margin:0;color:#e65100;">Order #{{ order.id }}</h4>
+          <p style="margin:0.5rem 0 0 0;font-size:0.95rem;">
+            <strong>{{ order.customer.name }}</strong> | {{ order.customer.phone }}
+          </p>
+          {% if order.delivery_address %}
+          <p style="margin:0.5rem 0 0 0;color:#666;font-size:0.9rem;line-height:1.4;">
+            📍 {{ order.delivery_address.line1 }}, {{ order.delivery_address.city }}
+            {% if order.delivery_address.postal_code %}- {{ order.delivery_address.postal_code }}{% endif %}
+          </p>
+          {% endif %}
+        </div>
+        <div style="text-align:right;">
+          <p style="margin:0;font-size:1.1rem;font-weight:700;color:#e65100;">₹{{ order.total_amount }}</p>
+        </div>
+      </div>
+      
+      <!-- Order Items -->
+      <div style="background:white;border-radius:8px;padding:1rem;margin-bottom:1rem;">
+        <ul style="margin:0;padding-left:1.5rem;">
+          {% for item in order.items.all %}
+            <li><strong>{{ item.item.name }}</strong> × {{ item.quantity }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      
+      <!-- Pickup Button -->
+      <form method="post" action="{% url 'waiter_pickup_order' order.id %}" style="margin:0;">
+        {% csrf_token %}
+        <button type="submit" class="btn" style="width:100%;background:#2196f3;font-size:1rem;padding:14px;">
+          📤 Pick Up & Deliver
+        </button>
+      </form>
+    </div>
+    {% endfor %}
+  {% endif %}
+  
+  {% if not dining_ready and not delivery_ready %}
+    <p style="text-align:center;color:#999;padding:2rem;"><em>No orders ready for pickup</em></p>
+  {% endif %}
+</div>
+
+<!-- Out for Delivery -->
+<div class="card">
+  <h2 style="background:linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%);color:white;padding:1rem;border-radius:8px;margin:-16px -16px 1rem -16px;">
+    🚀 Out for Delivery ({{ dining_out|length|add:delivery_out|length }})
+  </h2>
+  
+  <!-- Dining Orders Out -->
+  {% if dining_out %}
+    <h3 style="color:#6a1b9a;border-bottom:2px solid #9c27b0;padding-bottom:0.5rem;">🍽️ Dining - Being Served</h3>
+    {% for order in dining_out %}
+    <div style="border:2px solid #9c27b0;border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;background:#f3e5f5;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+        <div>
+          <h4 style="margin:0;color:#6a1b9a;">Order #{{ order.id }} - Table {{ order.table_no }}</h4>
+        </div>
+        <div>
+          <p style="margin:0;font-size:1.1rem;font-weight:700;color:#6a1b9a;">₹{{ order.total_amount }}</p>
+        </div>
+      </div>
+      
+      <!-- Complete Button -->
+      <form method="post" action="{% url 'waiter_complete_order' order.id %}" style="margin:0;">
+        {% csrf_token %}
+        <button type="submit" class="btn" style="width:100%;background:#4caf50;font-size:1rem;padding:14px;">
+          ✔️ Mark as Delivered
+        </button>
+      </form>
+    </div>
+    {% endfor %}
+  {% endif %}
+  
+  <!-- Delivery Orders Out -->
+  {% if delivery_out %}
+    <h3 style="color:#6a1b9a;border-bottom:2px solid #9c27b0;padding-bottom:0.5rem;margin-top:1.5rem;">🛵 Delivery - On the Way</h3>
+    {% for order in delivery_out %}
+    <div style="border:2px solid #9c27b0;border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;background:#f3e5f5;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+        <div style="flex:1;">
+          <h4 style="margin:0;color:#6a1b9a;">Order #{{ order.id }}</h4>
+          <p style="margin:0.5rem 0 0 0;font-size:0.9rem;color:#666;">
+            {{ order.customer.name }} | {{ order.customer.phone }}
+          </p>
+        </div>
+        <div>
+          <p style="margin:0;font-size:1.1rem;font-weight:700;color:#6a1b9a;">₹{{ order.total_amount }}</p>
+        </div>
+      </div>
+      
+      <!-- Complete Button -->
+      <form method="post" action="{% url 'waiter_complete_order' order.id %}" style="margin:0;">
+        {% csrf_token %}
+        <button type="submit" class="btn" style="width:100%;background:#4caf50;font-size:1rem;padding:14px;">
+          ✔️ Mark as Delivered
+        </button>
+      </form>
+    </div>
+    {% endfor %}
+  {% endif %}
+  
+  {% if not dining_out and not delivery_out %}
+    <p style="text-align:center;color:#999;padding:2rem;"><em>No orders out for delivery</em></p>
+  {% endif %}
+</div>
+
+<script>
+  // Auto-refresh every 20 seconds
+  setTimeout(() => location.reload(), 20000);
+</script>
+{% endblock %}

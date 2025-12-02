@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}Dining Details{% endblock %}
+{% block content %}
+  <h1>Dining details</h1>
+  
+  {% if existing_customer and not edit_mode %}
+    <!-- Show confirmation card for logged-in users -->
+    <div class="card" style="max-width:640px;">
+      <h3 style="margin-bottom:1rem;">✓ Your Details</h3>
+      <div style="background:#f8f9fa;padding:1rem;border-radius:8px;margin-bottom:1rem;">
+        <p style="margin:0.5rem 0;"><strong>Name:</strong> {{ existing_customer.name }}</p>
+        <p style="margin:0.5rem 0;"><strong>Phone:</strong> {{ existing_customer.phone }}</p>
+      </div>
+      
+      <form method="post">
+        {% csrf_token %}
+        <!-- Hidden fields with pre-filled values -->
+        <input type="hidden" name="name" value="{{ existing_customer.name }}">
+        <input type="hidden" name="phone" value="{{ existing_customer.phone }}">
+        
+        <!-- Table number input -->
+        <div style="margin-bottom:1rem;">
+          <label for="id_table_no" style="display:block;margin-bottom:0.5rem;font-weight:600;">Table Number:</label>
+          <input type="text" name="table_no" id="id_table_no" required style="width:100%;padding:0.5rem;border:1px solid #ddd;border-radius:4px;">
+        </div>
+        
+        <div style="display:flex;gap:1rem;margin-top:1.5rem;">
+          <button class="btn" type="submit" style="flex:1;">Continue to payment</button>
+          <a href="?edit=1" class="btn" style="flex:1;background:#6c757d;text-align:center;text-decoration:none;">Edit Details</a>
+        </div>
+      </form>
+    </div>
+  {% else %}
+    <!-- Show regular form for guests or edit mode -->
+    <form method="post" class="card" style="max-width:640px;">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button class="btn" type="submit">Continue to payment</button>
+    </form>
+  {% endif %}
+{% endblock %}

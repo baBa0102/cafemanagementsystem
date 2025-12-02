@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% block title %}Sales Analytics{% endblock %}
+{% block content %}
+<style>
+.analytics-nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+.analytics-nav a {
+  padding: 8px 16px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+}
+.analytics-nav a:hover, .analytics-nav a.active {
+  background: #2e7d32;
+  color: white;
+}
+.metric-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.metric-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+.metric-card .value {
+  font-size: 32px;
+  font-weight: bold;
+}
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.filter-bar a {
+  padding: 6px 12px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+.filter-bar a.active {
+  background: #2e7d32;
+  color: white;
+}
+</style>
+
+<h1>Sales Analytics</h1>
+
+<nav class="analytics-nav">
+  <a href="{% url 'manager_dashboard' %}">Overview</a>
+  <a href="{% url 'manager_sales' %}" class="active">Sales Analytics</a>
+  <a href="{% url 'manager_items' %}">Items Performance</a>
+  <a href="{% url 'manager_customers' %}">Customer Insights</a>
+  <a href="{% url 'items_list' %}">Manage Items</a>
+</nav>
+
+<div class="filter-bar">
+  <span>Time Period:</span>
+  <a href="?days=7" {% if days == 7 %}class="active"{% endif %}>Last 7 Days</a>
+  <a href="?days=30" {% if days == 30 %}class="active"{% endif %}>Last 30 Days</a>
+  <a href="?days=90" {% if days == 90 %}class="active"{% endif %}>Last 90 Days</a>
+</div>
+
+<div class="grid">
+  <div class="metric-card">
+    <h3>Total Revenue</h3>
+    <div class="value">₹{{ total_revenue|floatformat:2 }}</div>
+  </div>
+  <div class="metric-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+    <h3>Total Orders</h3>
+    <div class="value">{{ total_orders }}</div>
+  </div>
+  <div class="metric-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+    <h3>Average Order Value</h3>
+    <div class="value">₹{{ avg_order_value|floatformat:2 }}</div>
+  </div>
+  
+  <div class="card" style="grid-column: 1 / -1;">
+    <h3>Daily Revenue Trend</h3>
+    {% if daily_revenue %}
+      <table style="width:100%;border-collapse:collapse;">
+        <thead>
+          <tr>
+            <th style="text-align:left;">Date</th>
+            <th style="text-align:center;">Orders</th>
+            <th style="text-align:right;">Revenue</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for day in daily_revenue %}
+            <tr>
+              <td>{{ day.date|date:"Y-m-d" }}</td>
+              <td style="text-align:center;">{{ day.orders }}</td>
+              <td style="text-align:right;">₹{{ day.revenue|floatformat:2 }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>No sales data for this period</p>
+    {% endif %}
+  </div>
+  
+  <div class="card" style="grid-column: 1 / -1;">
+    <h3>Revenue by Order Type</h3>
+    {% for ot in order_type_revenue %}
+      <div style="margin-bottom:15px;">
+        <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+          <span><strong>{{ ot.order_type }}</strong></span>
+          <span>{{ ot.count }} orders • ₹{{ ot.revenue|floatformat:2 }}</span>
+        </div>
+        {% with percentage=ot.revenue|floatformat:0|add:"0"|default:0 %}
+          <div style="background:#eee;border-radius:4px;height:10px;overflow:hidden;">
+            <div style="background:#2e7d32;height:100%;width:{% widthratio ot.revenue total_revenue 100 %}%;"></div>
+          </div>
+        {% endwith %}
+      </div>
+    {% empty %}
+      <p>No data</p>
+    {% endfor %}
+  </div>
+</div>
+
+<p style="margin-top:20px;"><a href="{% url 'manager_dashboard' %}" style="color:#2e7d32;">← Back to Dashboard</a></p>
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% block title %}Order Status{% endblock %}
+{% block content %}
+<style>
+  .status-container {
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  .spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #2e7d32;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .status-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #fff3e0;
+    color: #f57c00;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+</style>
+
+<div class="status-container">
+  <h1>Payment Verification</h1>
+  <div class="spinner"></div>
+  <div class="card">
+    <p><strong>Order #{{ order.id }}</strong></p>
+    <div class="status-badge" id="status-text">{{ order.get_status_display }}</div>
+    <p style="margin-top:15px;color:#666;" id="message">We are verifying your payment with our team. This usually takes 1-2 minutes.</p>
+    <p style="font-size:14px;color:#999;margin-top:20px;">This page will automatically update when verified.</p>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+  let checkCount = 0;
+  const maxChecks = 300; // 10 minutes (300 * 2 seconds)
+  
+  // Enhanced auto-refresh with better UX (checks every 2 seconds)
+  const checkInterval = setInterval(async function(){
+    checkCount++;
+    try {
+      const res = await fetch("{% url 'order_status_json' order.id %}");
+      if (!res.ok) return;
+      const data = await res.json();
+      
+      // Update status text
+      document.getElementById('status-text').textContent = data.status;
+      
+      if (data.status === 'PAID') {
+        document.getElementById('message').textContent = 'Payment verified! Redirecting...';
+        document.getElementById('status-text').style.background = '#e8f5e9';
+        document.getElementById('status-text').style.color = '#2e7d32';
+        clearInterval(checkInterval);
+        setTimeout(() => {
+          window.location.href = "{% url 'order_confirm' order.id %}";
+        }, 1000);
+      } else if (data.status === 'CANCELED' || data.status === 'FAILED') {
+        document.getElementById('message').textContent = 'Payment verification failed. Please contact support.';
+        document.getElementById('status-text').style.background = '#ffebee';
+        document.getElementById('status-text').style.color = '#d32f2f';
+        clearInterval(checkInterval);
+      }
+      
+      // Stop checking after max attempts
+      if (checkCount >= maxChecks) {
+        clearInterval(checkInterval);
+        document.getElementById('message').textContent = 'Verification is taking longer than expected. Please contact support or refresh the page.';
+      }
+    } catch(e) {
+      console.error('Status check failed:', e);
+    }
+  }, 2000); // Check every 2 seconds for faster updates
+</script>
+{% endblock %}

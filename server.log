@@ -1,0 +1,1733 @@
+Watching for file changes with StatReloader
+[06/Nov/2025 10:40:35] "GET / HTTP/1.1" 200 6355
+[06/Nov/2025 10:40:35] code 400, message Bad request version ('\x08O\x00*ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:40:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:40:35] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 10:40:35] code 400, message Bad request version ('\x16\x91ì7B\x8c%gñ£«à¿D`\x814\x8boò1\x9c2|°\x90µ/wuºü\x00,ÚÚ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:40:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:40:35] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 10:40:35] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01Ø8\x89N2r»\x82\x94\x89,j\x04\x97\x11Céë\x04\x93#')
+[06/Nov/2025 10:40:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:40:35] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 10:40:35] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 10:40:42] "GET /account/ HTTP/1.1" 200 1392
+[06/Nov/2025 10:40:42] code 400, message Bad request version ('\\jò')
+[06/Nov/2025 10:40:42] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:40:42] code 400, message Bad request version ('\x96\x9aÕý')
+[06/Nov/2025 10:40:42] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:40:42] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x019Þ=6\x84\x86Á%ìô\x8aí\x13\xadDoEÖ\x13ÅHOOÃµL«q¼\x8au\x07\x00\x00\x14À')
+[06/Nov/2025 10:40:42] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:40:46] "GET /login/ HTTP/1.1" 200 1956
+[06/Nov/2025 10:40:46] code 400, message Bad request version ('çxã\x0eÒPB')
+[06/Nov/2025 10:40:46] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:40:46] code 400, message Bad request version ('Ít\x1bPí5øãà\x95&R·\x03\x9d³\x00,')
+[06/Nov/2025 10:40:46] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:40:46] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x05\x92¥h')
+[06/Nov/2025 10:40:46] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:40:56] "GET /items/ HTTP/1.1" 200 2538
+[06/Nov/2025 10:40:56] code 400, message Bad request version ('Ý]É!ê¹X30òR}\x87\x7fqÉÝfxú\x8fé\x17\x9cc\x19«¶\x12$\x90\x06\x00*ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:40:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:40:56] code 400, message Bad request version ('\x00,ÚÚ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:40:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:40:56] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01FsãØ\x94')
+[06/Nov/2025 10:40:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:40:58] "GET / HTTP/1.1" 200 6355
+[06/Nov/2025 10:40:58] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 10:40:58] code 400, message Bad request version ('¿¤,ØÜeÆ%\x90\x1bàæ\x82)\x0f\x01wå\x8al\x8d©úq.\x95W\x06Uh\x05u\x00*jj\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:40:58] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:40:58] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 10:40:58] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 10:40:58] code 400, message Bad request version ('"Ý')
+[06/Nov/2025 10:40:58] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:40:58] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 10:40:58] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01O\x89')
+[06/Nov/2025 10:40:58] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:07] "GET /items/ HTTP/1.1" 200 2538
+[06/Nov/2025 10:41:07] code 400, message Bad request version (')\x00***\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:41:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:07] code 400, message Bad request version ('/«\x06ç\x83JR\x98B£\x8b\x95nx}û\x9b\x01Õ\x04\x8d8Ög©m\xad\x8f\x05%Ó\x9b\x00,ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:41:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:07] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x012ã\x8cfwÉçº8ev')
+[06/Nov/2025 10:41:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:09] "GET /cart/add/1/ HTTP/1.1" 302 0
+[06/Nov/2025 10:41:09] "GET /items/?added=1 HTTP/1.1" 200 2727
+[06/Nov/2025 10:41:09] code 400, message Bad request version ('s\x8c¨úÚ)Ø§\x18¢ÂKè\x0e\x17s±ð&\x17Ø»Þ3åK¶\x7f\x87°t\x9c\x00*JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:41:09] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:09] code 400, message Bad request version ('°«')
+[06/Nov/2025 10:41:09] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:09] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01b_\x92\x81Â\x8b\x002\x0f\x16/:l+\x9c\x19\x9f¾D¬I«\x12ÒTª\x12RoXU\x83\x00\x00\x14À')
+[06/Nov/2025 10:41:09] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:12] "GET /checkout/dining/ HTTP/1.1" 200 1997
+[06/Nov/2025 10:41:13] code 400, message Bad request version ('\x1a»l\x11\x00*::\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:41:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:13] code 400, message Bad request version ('\x152\x16eÙ\x7f\x93\x8e¯k%³è©u\x15sf\x82[Ë,}PÉ\x90÷+\x01\x91\x00,ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:41:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:13] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01ÄÎvQ\x18V|.}©ÆzwÀY÷ÝØGÎ\x18§\x82\x95Ç´¤ÿ>¬d\x1a\x00\x00\x14À')
+[06/Nov/2025 10:41:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:28] "POST /checkout/dining/ HTTP/1.1" 302 0
+[06/Nov/2025 10:41:28] "GET /payment/ HTTP/1.1" 200 2607
+[06/Nov/2025 10:41:28] "GET /media/payments/WhatsApp_Image_2025-11-06_at_15.36.35.jpeg HTTP/1.1" 304 0
+[06/Nov/2025 10:41:28] code 400, message Bad request version ('ú\x94¯`BÂ"É³A8ÒnçÒO\\\x80tª\x97\x82ëþY\x06\x8c\x17ý\x02öî\x00*::\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:41:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:28] code 400, message Bad request version ('%ó\x8dÖbmgåÂëÙÈQ\x92õ¹\x8c#\x82')
+[06/Nov/2025 10:41:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:28] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01Cru\x11\x8d(\x07Ê\x97àgj]Æw\x10¢\x83þ5!HøMCZ¥ð¬S¯µ\x00\x00\x14À')
+[06/Nov/2025 10:41:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:51] "GET /cart/ HTTP/1.1" 200 1167
+[06/Nov/2025 10:41:51] code 400, message Bad request version ('\x04üz¸r\x87|\\1b£¾Ä}-P,¼¬íþðfú:ï\x90\x0e|\x00*ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:41:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:51] code 400, message Bad request version ('Ö-;\x00,ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:41:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:51] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01Ò')
+[06/Nov/2025 10:41:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:53] "GET /items/ HTTP/1.1" 200 2507
+[06/Nov/2025 10:41:53] code 400, message Bad request version ('\x99vaÁa5ÊÂßlGÏ\x87\x00*ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:41:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:53] code 400, message Bad request version ('AFÐ@fJR\x7f}ÉWk\x1a\x1a9×à$§\\·8©h>m%(¹\x90a_\x00,JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:41:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:53] code 400, message Bad request version ('µ1Û¯Rb£¨\x00\x00\x14À')
+[06/Nov/2025 10:41:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:54] "GET /cart/add/1/ HTTP/1.1" 302 0
+[06/Nov/2025 10:41:54] "GET /items/?added=1 HTTP/1.1" 200 2696
+[06/Nov/2025 10:41:54] code 400, message Bad request version ('\x7f\x92xê\x00ß\x0fz]ÈÉ\x05¶æß!í\x12XÞx\x83ke½:¸´Ì(\x99ï\x00*zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:41:54] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:54] code 400, message Bad request version ('WÍ\x91nï®ÒÖu\x00,\x8a\x8a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:41:54] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:54] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x07*÷b4w³cUJ.\x814ñ\x88æÎ×3G\x13C\x8c\x08\x87Æ¨{')
+[06/Nov/2025 10:41:54] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:56] "GET /checkout/dining/ HTTP/1.1" 200 1966
+[06/Nov/2025 10:41:56] code 400, message Bad request version ('odôd´çÐ¿pÌåWlM\x00\x9f¿\x00*êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:41:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:56] code 400, message Bad request version ('\x95Ü¬áî8[x\x14áÁÁ\x08\x8b2**õéH°\x0fq\x10wãÕ¶zÁ³;\x00,\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:41:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:41:56] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01*Ûän©ÌÇÌ@\x03rùÁáÆ°\x9dLÀ®')
+[06/Nov/2025 10:41:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:42:22] "POST /checkout/dining/ HTTP/1.1" 302 0
+[06/Nov/2025 10:42:22] "GET /payment/ HTTP/1.1" 200 2801
+[06/Nov/2025 10:42:22] code 400, message Bad request version ('\x92mJ[\x0f\x80\xad\x84Õ~<ÀºL:£¼yÓîBªZGºp\x984ÍC«ò\x00***\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:42:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:42:22] code 400, message Bad request version ('Û(_îG6±\x00,JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:42:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:42:22] code 400, message Bad request version ('\x00\x00\x14À')
+[06/Nov/2025 10:42:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:42:32] "POST /payment/ HTTP/1.1" 302 0
+[06/Nov/2025 10:42:32] "GET /order/3/status/ HTTP/1.1" 200 1703
+[06/Nov/2025 10:42:32] code 400, message Bad request version ("E'\x02õÎäÍ\x8bÓ\x00\x18ý\x86§öáìò+TIÍÇ\x15ÿïWÖº\x00*ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À")
+[06/Nov/2025 10:42:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:42:32] code 400, message Bad request version ('\x10\x14\x15\x96\x94Á\x00,zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:42:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:42:32] code 400, message Bad request version ('Z\x15\x00\x00\x14À')
+[06/Nov/2025 10:42:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:42:36] "GET /order/3/status/.json HTTP/1.1" 404 9744
+[06/Nov/2025 10:42:36] "GET /admin/cafe/cart/18/change/ HTTP/1.1" 302 0
+[06/Nov/2025 10:42:36] "GET /admin/login/?next=/admin/cafe/cart/18/change/ HTTP/1.1" 200 3995
+[06/Nov/2025 10:42:36] "GET /static/admin/css/login.css HTTP/1.1" 200 951
+[06/Nov/2025 10:42:36] code 400, message Bad request version ('ö\x84m0h¹®\x94<å·6BA0ÎD:S8\x00*êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:42:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:42:36] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03£Eß¦ÏÙo\x92bÔ\x88q\x9c\x84a*_ÁZSé¾\x83é\x8a,¦ßH\x98¡8')
+[06/Nov/2025 10:42:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:42:36] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01Æ\x8eÑwÛ÷p\x950%º\x02ë')
+[06/Nov/2025 10:42:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:42:36] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:42:44] "GET /order/3/status/.json HTTP/1.1" 404 9744
+[06/Nov/2025 10:42:45] "POST /admin/login/?next=/admin/cafe/cart/18/change/ HTTP/1.1" 302 0
+[06/Nov/2025 10:42:45] "GET /admin/cafe/cart/18/change/ HTTP/1.1" 200 19212
+[06/Nov/2025 10:42:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:42:45] code 400, message Bad request version ('\x1b\x95\x9avF\x98\x9fSÉ¾(B\x00***\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:42:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:42:45] code 400, message Bad request version ('YR')
+[06/Nov/2025 10:42:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:42:45] code 400, message Bad request version ('Z3v\x0eN\x10x\x8e¸A¥\x88cÕ\x07\x00\x00\x14À')
+[06/Nov/2025 10:42:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:42:47] "GET /admin/cafe/payment/ HTTP/1.1" 200 15302
+[06/Nov/2025 10:42:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:42:47] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[06/Nov/2025 10:42:47] code 400, message Bad request version ('´jæëþ\x00*')
+[06/Nov/2025 10:42:47] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:42:47] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ê]=ö?\x91¸_²;\x02"GBq>Ó¸}8\x91?\x12¨O¦)\x14îc\x17=')
+[06/Nov/2025 10:42:47] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:42:47] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01Ô\x99à·ü\x16ÿCuW(ÆîòwÍòm\x8f\x81\x10x²6_\x0fD$ú\x82\x01M\x00\x00\x14À')
+[06/Nov/2025 10:42:47] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:42:48] "GET /order/3/status/.json HTTP/1.1" 404 9744
+[06/Nov/2025 10:42:52] "GET /admin/cafe/payment/2/change/ HTTP/1.1" 200 16695
+[06/Nov/2025 10:42:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:42:52] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+[06/Nov/2025 10:42:52] "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+[06/Nov/2025 10:42:52] code 400, message Bad request version ('7ö@\x13U°ÝEË\x7fXíuG8ófp\x9bC#/O¸¡\x08')
+[06/Nov/2025 10:42:52] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:42:52] code 400, message Bad request version ('n¶Yd\x93s¾\x9c\\²hb\x9e\x11(}÷\x00,zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:42:52] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:42:52] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01é\x15Ò?BñaTÇµWCc[°÷®\x07ªc\x98S\x06}¿Cù\x98§.Ë')
+[06/Nov/2025 10:42:52] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:42:52] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[06/Nov/2025 10:42:52] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:42:52] "GET /order/3/status/.json HTTP/1.1" 404 9744
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:42:56] "GET /order/3/status/.json HTTP/1.1" 404 9744
+[06/Nov/2025 10:42:59] "POST /admin/cafe/payment/2/change/ HTTP/1.1" 302 0
+[06/Nov/2025 10:42:59] "GET /admin/cafe/payment/ HTTP/1.1" 200 15549
+[06/Nov/2025 10:42:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:42:59] code 400, message Bad request version ('K14¹@2Øb\x88ÀjÎ¶º\x12\x00*ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:42:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:43:00] code 400, message Bad request version ('B\x82\x00,::\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:43:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:43:00] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01w\x80\x9fá\x19¶\x8b\x96\x05\x019\x01Î2ùÆ\x80\x89Ìö\x87£x\x01ç÷»\x8f\x9dx#Ú\x00\x00\x14À')
+[06/Nov/2025 10:43:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:43:00] "GET /order/3/status/.json HTTP/1.1" 404 9744
+[06/Nov/2025 10:43:04] "GET /admin/cafe/payment/2/change/ HTTP/1.1" 200 16731
+[06/Nov/2025 10:43:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:43:04] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03?³¤P¥Æ$\xadÍ\x92K#Ö?\x12«e\x03\x9aQ\x00\x03½à0ûú\x8a\x7f¾^6')
+[06/Nov/2025 10:43:04] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:43:04] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03F§ýB\x93äqW1"l\x15ÜO\x86\x03\x9d¢')
+[06/Nov/2025 10:43:04] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:43:04] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x16@\x16\x17rÄº~K·ÙíëÍl\x80\x9dÅßª\x08iü.eÎ¹\x9d')
+[06/Nov/2025 10:43:04] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:43:04] "GET /order/3/status/.json HTTP/1.1" 404 9744
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:43:15] "GET /order/3/status/.json HTTP/1.1" 404 9744
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:43:19] "GET /order/3/status/.json HTTP/1.1" 404 9744
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:43:24] "GET /order/3/status/.json HTTP/1.1" 404 9744
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:43:29] "GET /order/3/status/.json HTTP/1.1" 404 9744
+[06/Nov/2025 10:43:34] "POST /admin/cafe/payment/2/change/ HTTP/1.1" 302 0
+[06/Nov/2025 10:43:35] "GET /admin/cafe/payment/ HTTP/1.1" 200 15547
+[06/Nov/2025 10:43:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:43:35] code 400, message Bad request version ('ÉF\x8b.Ö®\x84[\x197bG.zùÂ·\x8fsuÂHC\x00***\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:43:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:43:35] "GET /order/3/status/.json HTTP/1.1" 404 9744
+[06/Nov/2025 10:43:35] code 400, message Bad request version ('\x92TG\x9a%ÞrÇ\x00,JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:43:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:43:35] code 400, message Bad request version ('éNhüó\x9d\x83¹5\x06\x03Ä\\\x04\x9c\x00\x00\x14À')
+[06/Nov/2025 10:43:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:43:40] "GET /admin/cafe/payment/1/change/ HTTP/1.1" 200 16734
+[06/Nov/2025 10:43:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:43:40] "GET /order/3/status/.json HTTP/1.1" 404 9744
+[06/Nov/2025 10:43:40] code 400, message Bad request version ('\x82ð\x11\\"Ô.ôÝ7ð\x7f\x8b5,y3Y»a\x8dÿÇÊ\x00*jj\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:43:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:43:40] code 400, message Bad request version ('§l\x00,ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:43:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:43:40] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01L\x05\x8bJgÓ\xadeË§8Ñ?\x14VöûËîà¿')
+[06/Nov/2025 10:43:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:43:44] "GET /order/3/status/.json HTTP/1.1" 404 9744
+[06/Nov/2025 10:43:45] "GET /admin/cafe/payment/2/change/ HTTP/1.1" 200 16731
+[06/Nov/2025 10:43:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:43:45] code 400, message Bad request version ('\x195\x15²?j¶-\x05\x08r\x18_\x00*\x8a\x8a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:43:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:43:45] code 400, message Bad request version ('Æ\x05°åó[§e?,<>n{\x8f¿L\x05\x84¯\x08óq¢tx|\x80\x17\x00,ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:43:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:43:45] code 400, message Bad request version ('^~i\x9dïï\x00\x00\x14À')
+[06/Nov/2025 10:43:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:43:49] "GET /order/3/status/.json HTTP/1.1" 404 9744
+[06/Nov/2025 10:43:50] "POST /admin/cafe/payment/2/change/ HTTP/1.1" 302 0
+[06/Nov/2025 10:43:50] "GET /admin/cafe/payment/ HTTP/1.1" 200 15550
+[06/Nov/2025 10:43:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:43:50] code 400, message Bad request version (':D\x05µtF°]D1\x90\x08§ºc\x8d¡lEü¢\x18®$\x84\x81"4ç¬J\x88\x00*jj\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:43:50] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:43:50] code 400, message Bad request version ('\x81îÍÏWW*\x07:\x98\x80s\x13WÂ\\\x00,úú\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:43:50] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:43:50] code 400, message Bad request version ('S(\x07SC°Æb\x8aþ\x89B6;-·\x9fç\x15¹cà¡Wq®[-\x00\x00\x14À')
+[06/Nov/2025 10:43:50] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:43:53] "GET /order/3/status/.json HTTP/1.1" 404 9744
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:43:57] "GET /order/3/status/.json HTTP/1.1" 404 9744
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:44:01] "GET /order/3/status/.json HTTP/1.1" 404 9744
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:44:05] "GET /order/3/status/.json HTTP/1.1" 404 9744
+[06/Nov/2025 10:44:06] "GET /order/3/status/ HTTP/1.1" 200 1703
+[06/Nov/2025 10:44:06] code 400, message Bad request version ('(ËMÓ\x9b>ï\x04W\x07\x7f¬<¾Æ\x00***\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:44:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:44:06] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ç\x82\x07Á°I!{{\x9a½}\x15\x9aì\x14úè0ö~\x04áøeðªbá\xad²R')
+[06/Nov/2025 10:44:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:44:06] code 400, message Bad request version ('3+Ê\x19e\x7f\x00\x00\x14À')
+[06/Nov/2025 10:44:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:44:07] "GET /order/3/status/ HTTP/1.1" 200 1703
+[06/Nov/2025 10:44:07] code 400, message Bad request version ('b\x00*zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:44:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:44:07] code 400, message Bad request version ('\x00,úú\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:44:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:44:07] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01ë®BÝ\x90Ü¨\x06ÛÖ:D}\x06xñïj\x15f¢#÷ú<\x15ÜyN\x0f¨\x13\x00\x00\x14À')
+[06/Nov/2025 10:44:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:44:08] "GET /order/3/status/ HTTP/1.1" 200 1703
+[06/Nov/2025 10:44:08] code 400, message Bad request version ('×`r\x00*ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:44:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:44:08] code 400, message Bad request version ('%\x0f\x10¾\x00¾Xe\x00,\x9a\x9a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:44:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:44:08] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01ø\x8c+<NE¥øPÑ÷ÒA«û\x1b@±\x92\x08\x07\\«¬\x00lß')
+[06/Nov/2025 10:44:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:44:08] "GET /order/3/status/ HTTP/1.1" 200 1703
+[06/Nov/2025 10:44:09] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ÅÞ\x82eãºF\x02ó9jmÄ\x96å\x978é')
+[06/Nov/2025 10:44:09] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:44:09] code 400, message Bad request version ('ëÄä³')
+[06/Nov/2025 10:44:09] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:44:09] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01VÀÄ¼fÞÆ\x05')
+[06/Nov/2025 10:44:09] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:44:12] "GET /order/3/status/.json HTTP/1.1" 404 9744
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:44:16] "GET /order/3/status/.json HTTP/1.1" 404 9744
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:44:20] "GET /order/3/status/.json HTTP/1.1" 404 9744
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:44:24] "GET /order/3/status/.json HTTP/1.1" 404 9744
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:44:28] "GET /order/3/status/.json HTTP/1.1" 404 9744
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:44:32] "GET /order/3/status/.json HTTP/1.1" 404 9744
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:44:36] "GET /order/3/status/.json HTTP/1.1" 404 9744
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:44:40] "GET /order/3/status/.json HTTP/1.1" 404 9744
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:44:44] "GET /order/3/status/.json HTTP/1.1" 404 9744
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:44:48] "GET /order/3/status/.json HTTP/1.1" 404 9744
+Not Found: /order/3/status/.json
+[06/Nov/2025 10:44:52] "GET /order/3/status/.json HTTP/1.1" 404 9744
+/Users/basit/INTERNSHIP/Projects/cafemanagementsystem/cafe/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 06, 2025 - 10:40:05
+Django version 5.2.6, using settings 'cafemanagementsystem.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+Watching for file changes with StatReloader
+Forbidden (CSRF token from POST incorrect.): /payment/
+[06/Nov/2025 10:46:52] "POST /payment/ HTTP/1.1" 403 2503
+[06/Nov/2025 10:46:53] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03t\x8c\x02\\$\x1b\x86\x96í½ù,¹Y!=Û\x14\x07\x13\x1bíxS6µìaZ\x8fOù')
+[06/Nov/2025 10:46:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:46:53] code 400, message Bad request version ('{çÿêv{¨húÖcÙÝµ\x00,úú\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:46:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:46:53] code 400, message Bad request version ('\x13\x9a\x00\x00\x14À')
+[06/Nov/2025 10:46:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:04] "GET /payment/ HTTP/1.1" 200 2263
+[06/Nov/2025 10:47:04] "GET /static/css/styles.css HTTP/1.1" 304 0
+[06/Nov/2025 10:47:04] "GET /media/payments/WhatsApp_Image_2025-11-06_at_15.36.35.jpeg HTTP/1.1" 304 0
+[06/Nov/2025 10:47:04] code 400, message Bad request version ('ï\\eÎ\x00*úú\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:47:04] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:04] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03~.\x17i')
+[06/Nov/2025 10:47:04] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:04] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01ú+L2à\x02\x9f\x86&>Ñ4\x92¹ªL\x1aÑ¹(6\x9dýé\x97i')
+[06/Nov/2025 10:47:04] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:08] "GET /cart/ HTTP/1.1" 200 1167
+[06/Nov/2025 10:47:08] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03¨')
+[06/Nov/2025 10:47:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:08] code 400, message Bad request version ('\x00,\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:47:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:08] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01ñÁÙ\x9dq®ÿ\x9c\x05T°e¦xËÖ±Ù¸\x8a\x18\x8d\x89,\x05Ù\x06Bz')
+[06/Nov/2025 10:47:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:09] "GET /items/ HTTP/1.1" 200 2727
+[06/Nov/2025 10:47:09] "GET /media/items/Cold-Brew-Banana-Oatmeal-Smoothie-BourbonandHoney.com-Blog-Copy-1.jpeg HTTP/1.1" 304 0
+[06/Nov/2025 10:47:09] code 400, message Bad request version ('2~Ú¢¦\x97$cq;wÀÚð`ð')
+[06/Nov/2025 10:47:09] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:09] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03K')
+[06/Nov/2025 10:47:09] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:09] code 400, message Bad request syntax ("\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x94Ø'Ø»Cà:Yþ,1\x88of¥z\x1bÆV")
+[06/Nov/2025 10:47:09] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:11] "GET /cart/add/1/ HTTP/1.1" 302 0
+[06/Nov/2025 10:47:11] "GET /items/?added=1 HTTP/1.1" 200 2916
+[06/Nov/2025 10:47:11] code 400, message Bad request version ('K\x15¯6¹[\x92]ÍòÜ-µ\x8e\x00*ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:47:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:11] code 400, message Bad request version ('\x95{ÝÚ±\x00,**\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:47:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:11] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01©é4à¶×sÿ\x0f²£\x7f\x04=Ù\x19ÅèÁz')
+[06/Nov/2025 10:47:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:13] "GET /checkout/dining/ HTTP/1.1" 200 1966
+[06/Nov/2025 10:47:13] code 400, message Bad request version ('\x9c\x9aÌ\x8b\x88\\\x02ËÕ4°\x8aõ\x05û°²\x92>¼y1@Õ\x00*\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:47:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:13] code 400, message Bad request version ('ÃÝB\x9fQ]8m[êºA\x9b¿\x8b\x00,ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:47:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:13] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01§©ìE·\x88¨\x9f"(.vôy/\x8c\x83\x0e\x0f¨¼ÑïÜË\x89gµ\x94F+÷\x00\x00\x14À')
+[06/Nov/2025 10:47:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:22] "GET /logout/ HTTP/1.1" 302 0
+[06/Nov/2025 10:47:22] "GET / HTTP/1.1" 200 6355
+[06/Nov/2025 10:47:22] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x04\x1ap¥[¸\x95}"¨\x8d®\x8c³CAYhl\x16L8\x93ÚNÄÙ§îlNX')
+[06/Nov/2025 10:47:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:22] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 10:47:22] code 400, message Bad request version ('E|\x8dñ£àý±K´¦¥\x06\x05$ñ[ÙiÁoe\x8aÝ¨\x86\x02\x86\x9cò\x06ä\x00,ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:47:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:22] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 10:47:22] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01')
+[06/Nov/2025 10:47:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:22] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 10:47:22] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 10:47:25] "GET /items/ HTTP/1.1" 200 2538
+[06/Nov/2025 10:47:25] code 400, message Bad request version ('â\x00*ÚÚ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:47:25] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:25] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Âk\x00Ñ\x97dð\x15^:£D¡V×§V\x83l\x17')
+[06/Nov/2025 10:47:25] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:25] code 400, message Bad request version ('\x00\x00\x14À')
+[06/Nov/2025 10:47:25] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:26] "GET /cart/add/1/ HTTP/1.1" 302 0
+[06/Nov/2025 10:47:26] "GET /items/?added=1 HTTP/1.1" 200 2727
+[06/Nov/2025 10:47:27] code 400, message Bad request version ('¸¤8í\x00*êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:47:27] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:27] code 400, message Bad request version ('ûqéò_r[>ó\x8ez"\x9d*ëÄ1\x00XÐx')
+[06/Nov/2025 10:47:27] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:27] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x8aúðå')
+[06/Nov/2025 10:47:27] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:28] "GET /checkout/dining/ HTTP/1.1" 200 1997
+[06/Nov/2025 10:47:28] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Õ\x14¡åv')
+[06/Nov/2025 10:47:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:28] code 400, message Bad request version ('ýb\x03Ñu')
+[06/Nov/2025 10:47:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:28] code 400, message Bad request version ('4Y\x81Wawa\x00\x00\x14À')
+[06/Nov/2025 10:47:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:40] "POST /checkout/dining/ HTTP/1.1" 302 0
+[06/Nov/2025 10:47:40] "GET /payment/ HTTP/1.1" 200 2608
+[06/Nov/2025 10:47:40] code 400, message Bad request version ('\x93gRy&\x16PÍ\x11b\x839Ì\x15´h`\x00*\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:47:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:40] code 400, message Bad request version ('\x1a\x95j\x16nøl.\x01Äú»c*TÖ»Ê\x8a|t\x00,zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:47:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:40] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x81}¥\x074hÙ¸i\x07\x93\x95r\x17\x9dx@ý[0mk\x07Ü')
+[06/Nov/2025 10:47:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:51] "POST /payment/ HTTP/1.1" 302 0
+[06/Nov/2025 10:47:51] "GET /checkout/ HTTP/1.1" 200 1248
+[06/Nov/2025 10:47:51] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03|Ð\x9diÿÿ»õ\x9eBê3¢]àÁdîÔ\x9ds¢Qy\x19æ\x0f\x8bÂ¿\x9f\x88')
+[06/Nov/2025 10:47:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:51] code 400, message Bad request version ('½Ip&¸\x10¡\xadècUº;\x8fy\x9bjÁ\x0f\x95~\x90~\x11CÄ\x8d÷{&$Ñ\x00,**\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:47:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:51] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01e)\x12¸\x05Á\x14Gá\x99¯')
+[06/Nov/2025 10:47:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:55] "GET /checkout/dining/ HTTP/1.1" 200 1777
+[06/Nov/2025 10:47:55] code 400, message Bad request version ('x\x95[\x03\x07E%®ýJ\x00*\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:47:55] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:55] code 400, message Bad request version ('\x93%J\x07¢þ\x01')
+[06/Nov/2025 10:47:55] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:47:55] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01H\x07\x04Z')
+[06/Nov/2025 10:47:55] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:06] "POST /checkout/dining/ HTTP/1.1" 302 0
+[06/Nov/2025 10:48:06] "GET /payment/ HTTP/1.1" 200 2608
+[06/Nov/2025 10:48:06] code 400, message Bad request version ('6êÓS²\x9c[§xä\x90Hg?ç?.âsìÞ\x86÷kÓ\x93\x07ª²U\x8e¤\x00*ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:48:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:06] code 400, message Bad request version ('\x12|*òºTA&õéBbi©$p;LvÏG\x93\x86\x92.ÃEJ~\x80:R\x00,\x9a\x9a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:48:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:06] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01ñ1À6Dãêb¿}\x9d\x7fá¾t<ÙÊÛÑS\x19\x19\x08?ÖjÌ\x06fôó\x00\x00\x14À')
+[06/Nov/2025 10:48:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:22] "GET /items/ HTTP/1.1" 200 2507
+[06/Nov/2025 10:48:22] code 400, message Bad request version ('ÁòU\xadiíî©T\x90\x05ë\x10i\x14ã$°\x96`ê\x00ÝèE\x92#\x95¯¸\x00*\x8a\x8a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:48:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:22] code 400, message Bad request version ('mÌÙ¹¾ðAR\x00,::\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:48:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:22] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x94Uu\x98YZÝ\x9f\x9b;U¸³\x7fR}Ì·x\x81\x96WÈÉÝÜ=q\x16h}Ê\x00\x00\x14À')
+[06/Nov/2025 10:48:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:24] "GET /cart/add/1/ HTTP/1.1" 302 0
+[06/Nov/2025 10:48:24] "GET /items/?added=1 HTTP/1.1" 200 2696
+[06/Nov/2025 10:48:24] code 400, message Bad request version ('\x99GD\x00*ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:48:24] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:24] code 400, message Bad request version ("ö'\x81ÐYÈª«RH¦2\x0f\x06\x00,ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À")
+[06/Nov/2025 10:48:24] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:24] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x13®Ê!gu«¦m¬ð\x91Ý\x8f\x90²\x8f}|ü=\xad\x03V\x9e\x86É)t»\x03X\x00\x00\x14À')
+[06/Nov/2025 10:48:24] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:26] "GET /checkout/dining/ HTTP/1.1" 200 1966
+[06/Nov/2025 10:48:26] code 400, message Bad request version ('\x00\x9e\x91¨3pB\x8c\x1bË<eí\x01\x04\x16Ñe\x8d/±¥`ÍN\x10j\x88\x99\x0fSó\x00*zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:48:26] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:26] code 400, message Bad request version (".gs¬\x00}'RPñ\x00,\x9a\x9a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À")
+[06/Nov/2025 10:48:26] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:26] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01¹#GÅ\x97\x90ú,¸im¡\x8d<\x05\xad1¥\x08')
+[06/Nov/2025 10:48:26] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:39] "POST /checkout/dining/ HTTP/1.1" 302 0
+[06/Nov/2025 10:48:39] "GET /payment/ HTTP/1.1" 200 2606
+[06/Nov/2025 10:48:39] code 400, message Bad request version ('\x9d?w')
+[06/Nov/2025 10:48:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:39] code 400, message Bad request version ('|nÒ\x06Ý\x01>IuM\x99³\x92\x81·aàª³\x00,')
+[06/Nov/2025 10:48:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:39] code 400, message Bad request version ('ÑT¾\x00\x00\x14À')
+[06/Nov/2025 10:48:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:45] "GET /items/ HTTP/1.1" 200 2507
+[06/Nov/2025 10:48:45] code 400, message Bad request version ('ýlü:¨\x87!¤òÁù¢Æ\x95\x97·Þ\x9f;\x87¸-Å6$16á\x83]\x92ì\x00*ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:48:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:45] code 400, message Bad request version ('üH0Å¡:£\x9a#²ã\x88w>æaÜ\x94U?\x92\x00,jj\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:48:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:45] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x9bk_@\x13ß\x8bdt;ñlm\x00\x08Ø\x9fcÆoA¿\x18\x9fÇ<X7\x9bGõc\x00\x00\x14À')
+[06/Nov/2025 10:48:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:46] "GET /cart/add/1/ HTTP/1.1" 302 0
+[06/Nov/2025 10:48:46] "GET /items/?added=1 HTTP/1.1" 200 2696
+[06/Nov/2025 10:48:46] code 400, message Bad request version ('\x86\x11V\x00*ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:48:46] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:46] code 400, message Bad request version ('¥ö\x7f\x97©\x8bõ\x00,\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:48:46] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:46] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01¾>¶ùY¸')
+[06/Nov/2025 10:48:46] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:48] "GET /checkout/dining/ HTTP/1.1" 200 1966
+[06/Nov/2025 10:48:48] code 400, message Bad request version ('\x8aÈ©8]\x00*zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:48:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:48] code 400, message Bad request version ('Ç®°\x89cöú\x84Ø\x00,ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:48:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:48:48] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01±\x9d')
+[06/Nov/2025 10:48:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:00] "POST /checkout/dining/ HTTP/1.1" 302 0
+[06/Nov/2025 10:49:00] "GET /payment/ HTTP/1.1" 200 2608
+[06/Nov/2025 10:49:00] code 400, message Bad request version ('\x17ZÌ²{$ÛR')
+[06/Nov/2025 10:49:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:00] code 400, message Bad request version ('À]\x00,\x8a\x8a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:49:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:00] code 400, message Bad request version ('Qèt©²\x80H£Ââä\x8f©\x00\x00\x14À')
+[06/Nov/2025 10:49:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:11] "GET /items/ HTTP/1.1" 200 2507
+[06/Nov/2025 10:49:11] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x8d')
+[06/Nov/2025 10:49:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:11] code 400, message Bad request version ('c\x89\x00,**\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:49:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:11] code 400, message Bad request version ('\x00\x00\x14À')
+[06/Nov/2025 10:49:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:14] "GET /logout/ HTTP/1.1" 302 0
+[06/Nov/2025 10:49:14] "GET / HTTP/1.1" 200 6355
+[06/Nov/2025 10:49:14] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 10:49:14] code 400, message Bad request version ('Ù\x12\x00*ÚÚ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:49:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:14] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 10:49:14] code 400, message Bad request version ("¸fÛÎ\x17:'Z\x00,ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À")
+[06/Nov/2025 10:49:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:14] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 10:49:14] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 10:49:14] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x07')
+[06/Nov/2025 10:49:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:16] "GET /cart/ HTTP/1.1" 200 1198
+[06/Nov/2025 10:49:16] code 400, message Bad request version ('U')
+[06/Nov/2025 10:49:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:16] code 400, message Bad request version ('kü÷\x12ï,;\x98»²Ù\x12xÑ\x90\xad\x99Ò´Á¥H\x00hÂ\x10¯à4TI¥\x00,ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:49:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:16] code 400, message Bad request version ('O\x00\x00\x14À')
+[06/Nov/2025 10:49:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:18] "GET /items/ HTTP/1.1" 200 2538
+[06/Nov/2025 10:49:18] code 400, message Bad request version ('7n\x0f\x10')
+[06/Nov/2025 10:49:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:18] code 400, message Bad request version ('\x12>uÉ£\x80PD°v)_ÿ\x8df¦²lRzu\x86\x16\x89~¦TÍ½tÛï\x00,::\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:49:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:18] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01¤´8\x11|&\x9a®¾ðq\x10-<à')
+[06/Nov/2025 10:49:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:19] "GET /cart/add/1/ HTTP/1.1" 302 0
+[06/Nov/2025 10:49:19] "GET /items/?added=1 HTTP/1.1" 200 2727
+[06/Nov/2025 10:49:20] code 400, message Bad request version ('Ü\x95\x00*ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:49:20] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:20] code 400, message Bad request version ('*¦Y§\x86V\x14øï@¼\\ï\x00,JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:49:20] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:20] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01×®(GÁVÈeYÙ\x93')
+[06/Nov/2025 10:49:20] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:21] "GET /checkout/dining/ HTTP/1.1" 200 1997
+[06/Nov/2025 10:49:21] code 400, message Bad request version ('óÂfoþ¿\x07ÕØ4>w²\x92×\x80\x10\x91')
+[06/Nov/2025 10:49:21] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:21] code 400, message Bad request version ('\x00,jj\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:49:21] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:21] code 400, message Bad request version ('A.Óÿ§\x9d,H\x12TíE\x82H}·0\x81\x15\x87\x8a÷\x00\x00\x14À')
+[06/Nov/2025 10:49:21] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:40] "POST /checkout/dining/ HTTP/1.1" 302 0
+[06/Nov/2025 10:49:40] "GET /payment/ HTTP/1.1" 200 2608
+[06/Nov/2025 10:49:40] code 400, message Bad request version ('µ\x81\x00*\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:49:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:40] code 400, message Bad request version ('\x8c\x89a×5~ÔÍ\x99ÇøHÐ>0»f×ýZÈB$YnÅùÛ]Ê\x02õ\x00,JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:49:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:40] code 400, message Bad request version ('CX«©\x00\x00\x14À')
+[06/Nov/2025 10:49:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:51] "GET /cart/ HTTP/1.1" 200 1167
+[06/Nov/2025 10:49:51] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Þ¾\x98+Ü}!oÇSyûsX°Ï\x0f,:\x8e\x95q¨ÂgBÓYÒp»A')
+[06/Nov/2025 10:49:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:51] code 400, message Bad request version ('c\x19+ø+\x89Ø\x04òVn»Ù;Ö\x00,ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:49:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:51] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01ÓÁï\x9aía1Uøßú\x14R¤òdÀ@fú[\x87\x19Þ5³·nâû\x98í\x00\x00\x14À')
+[06/Nov/2025 10:49:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:52] "GET /items/ HTTP/1.1" 200 2507
+[06/Nov/2025 10:49:53] code 400, message Bad request version ('k\x07HqóC¯6öR\x00*ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:49:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:53] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x862*£Üfÿ')
+[06/Nov/2025 10:49:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:53] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01X\x91´!(k\xadA^é·\x0f')
+[06/Nov/2025 10:49:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:54] "GET /cart/add/1/ HTTP/1.1" 302 0
+[06/Nov/2025 10:49:54] "GET /items/?added=1 HTTP/1.1" 200 2696
+[06/Nov/2025 10:49:54] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03÷S)R\x12Cn$q\x1bó.')
+[06/Nov/2025 10:49:54] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:54] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03`}ê\x1a\x14W\x8b©Ü\x81\x0e\x98\x83©&a\x8aØ\x82£Ú\x08\x92\x87.¾\x8aÀG\x86\x90/')
+[06/Nov/2025 10:49:54] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:54] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01ÙÖÇ\x9eÄ\x9a;~ü\x07SÔOÔI°I\x13ÓN\x9f\x06°X\x13oÓüWéÃ\x87\x00\x00\x14À')
+[06/Nov/2025 10:49:54] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:56] "GET /checkout/dining/ HTTP/1.1" 200 1966
+[06/Nov/2025 10:49:56] code 400, message Bad request version ('´V\x00*JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:49:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:56] code 400, message Bad request version ('\x00,\x8a\x8a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:49:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:49:56] code 400, message Bad request version ('\x00\x00\x14À')
+[06/Nov/2025 10:49:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:50:07] "POST /checkout/dining/ HTTP/1.1" 302 0
+[06/Nov/2025 10:50:07] "GET /payment/ HTTP/1.1" 200 2606
+[06/Nov/2025 10:50:07] code 400, message Bad request version ('\x88\x00*ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:50:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:50:07] code 400, message Bad request version ('ù\x00,zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:50:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:50:07] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01Ë\x97Eße:º\x9e#û\x10ç\x17kPu\x08\x81\x8eÇþ{\x8e5/Ù8ºÜùWM\x00\x00\x14À')
+[06/Nov/2025 10:50:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+/Users/basit/INTERNSHIP/Projects/cafemanagementsystem/cafe/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 06, 2025 - 10:46:20
+Django version 5.2.6, using settings 'cafemanagementsystem.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+Watching for file changes with StatReloader
+/Users/basit/INTERNSHIP/Projects/cafemanagementsystem/cafe/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 06, 2025 - 10:51:59
+Django version 5.2.6, using settings 'cafemanagementsystem.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+Watching for file changes with StatReloader
+[06/Nov/2025 10:53:41] "GET /payment/ HTTP/1.1" 200 2263
+[06/Nov/2025 10:53:41] "GET /media/payments/WhatsApp_Image_2025-11-06_at_15.36.35.jpeg HTTP/1.1" 304 0
+[06/Nov/2025 10:53:41] code 400, message Bad request version ('!6\x93AÍ}c\x0e\x87\x9d¯[ÄÕ\x19sC~\x00*ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:53:41] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:53:41] code 400, message Bad request version ('\x00,ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:53:41] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:53:41] code 400, message Bad request syntax ("\x16\x03\x01\x00}\x01\x00\x00y\x03\x011!\x83þ#\x8b¾åÀ\x82\x16o`ÌÎi¡\x8c¡<ggØ\x14ð$['êÌÆ]\x00\x00\x14À")
+[06/Nov/2025 10:53:41] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:53:45] "GET /cart/ HTTP/1.1" 200 1167
+[06/Nov/2025 10:53:45] code 400, message Bad request version ('³YÌX0´(ÕPp\x99u`\x12·_\x05°bÑÒ¨Itê\x94~PfõûÕ\x00*úú\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:53:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:53:45] code 400, message Bad request version (')\x01%ÅÅ°\x9eA\x00,::\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:53:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:53:45] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01½£ü_ÃQ\x15)H\x83[Íñ\x87\x94Î\x97ÍP\x8aæ}~éf\x17Ç\x11r¡#2\x00\x00\x14À')
+[06/Nov/2025 10:53:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:53:47] "GET /items/ HTTP/1.1" 200 2507
+[06/Nov/2025 10:53:47] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x033')
+[06/Nov/2025 10:53:47] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:53:47] code 400, message Bad request version ('ãÖ\x8e¢\x91')
+[06/Nov/2025 10:53:47] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:53:47] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01Aí\x95a\x14uª\x9f\x11!\x96ÊØòrß3\x89h\x8c')
+[06/Nov/2025 10:53:47] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:53:48] "GET /cart/add/1/ HTTP/1.1" 302 0
+[06/Nov/2025 10:53:48] "GET /items/?added=1 HTTP/1.1" 200 2696
+[06/Nov/2025 10:53:49] code 400, message Bad request version ('3\x00***\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:53:49] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:53:49] code 400, message Bad request version ('\x01tcº}\x13]\x00,ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:53:49] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:53:49] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01RÂ\x8dV»\x8eàôüw\x8auMö\x95\x94')
+[06/Nov/2025 10:53:49] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:53:51] "GET /checkout/dining/ HTTP/1.1" 200 1966
+[06/Nov/2025 10:53:51] code 400, message Bad request version ('¦\x19Á\x9b\x9d\x86\x9b\x88èû\x10\x99\x10\x88_·\xady¤\x0fõÆT\x03!þ)UÊ5qn\x00*ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:53:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:53:51] code 400, message Bad request version ('F¯¦G\x95!"Ãï\x95\x06Cm\x8b\x89"gÆ^J°\x17\\*RÄ4&\x14¨\x82\x00,zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:53:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:53:51] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01Í\x8b\x04\x1b\x11\x96©B\x0f\x0eÐ`õ/æÌ·~Z÷SóÆÉ&\x9dÐ^\x81[1W\x00\x00\x14À')
+[06/Nov/2025 10:53:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:54:07] "POST /checkout/dining/ HTTP/1.1" 302 0
+[06/Nov/2025 10:54:07] "GET /payment/ HTTP/1.1" 200 2801
+[06/Nov/2025 10:54:07] code 400, message Bad request version ('\x00*\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:54:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:54:07] code 400, message Bad request version ('B^ÀtÜ>?¹_\x00,ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:54:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:54:07] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x00{¯"Em®ü\x88\x12\x9cÎ\x99i)`MMZT\x08|U\x11ÀA}')
+[06/Nov/2025 10:54:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:54:10] "POST /payment/ HTTP/1.1" 302 0
+[06/Nov/2025 10:54:10] "GET /order/4/status/ HTTP/1.1" 200 1615
+[06/Nov/2025 10:54:10] code 400, message Bad request version ('|ñ»(\x15ãn\x19¹gx&H}MUk¡õÏËáª°äÔ#HìÞT\x9c\x00*JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:54:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:54:10] code 400, message Bad request version ('ï\x00,::\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:54:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:54:10] code 400, message Bad request version ('Q\x14"\x89\x9bË»«¡\x00\x00\x14À')
+[06/Nov/2025 10:54:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:54:14] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:54:17] "GET /admin/cafe/payment/ HTTP/1.1" 302 0
+[06/Nov/2025 10:54:17] "GET /admin/login/?next=/admin/cafe/payment/ HTTP/1.1" 200 4464
+[06/Nov/2025 10:54:17] "GET /static/admin/css/login.css HTTP/1.1" 200 951
+[06/Nov/2025 10:54:17] code 400, message Bad request version ('»³H\x00*êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:54:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:54:17] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03éß¶7ùÏD')
+[06/Nov/2025 10:54:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:54:17] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x96\x07~ÁôÖ\x8b;T=ô')
+[06/Nov/2025 10:54:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:54:17] "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[06/Nov/2025 10:54:27] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:54:28] "POST /admin/login/?next=/admin/cafe/payment/ HTTP/1.1" 302 0
+[06/Nov/2025 10:54:28] "GET /admin/cafe/payment/ HTTP/1.1" 200 15858
+[06/Nov/2025 10:54:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:54:28] code 400, message Bad request version ('Ë¥¿WiÉ\x97=U\x8eG\x02\x00***\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:54:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:54:28] code 400, message Bad request version ('àåjæÎ6MßôÓ\x94Ô\x04ö®\x1aAãÜ¿·p')
+[06/Nov/2025 10:54:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:54:28] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01uÓ=#!ib³\x18VP\x92`')
+[06/Nov/2025 10:54:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:54:30] "GET /admin/cafe/payment/3/change/ HTTP/1.1" 200 16761
+[06/Nov/2025 10:54:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:54:30] code 400, message Bad request version ('^ù\x9d\x00*êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:54:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:54:30] code 400, message Bad request version ('ºeb¹\x11þ$®0ÎMm\x9e\x00,úú\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:54:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:54:30] code 400, message Bad request version ('\x9e\x010É\x99Ô\x08¦ã\x05¡#\x92\x00\x00\x14À')
+[06/Nov/2025 10:54:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:54:30] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[06/Nov/2025 10:54:30] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[06/Nov/2025 10:54:31] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:54:35] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:54:39] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:54:40] "POST /admin/cafe/payment/3/change/ HTTP/1.1" 302 0
+[06/Nov/2025 10:54:40] "GET /admin/cafe/payment/ HTTP/1.1" 200 16108
+[06/Nov/2025 10:54:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:54:40] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03=lHvñ¾mçDßP\x12\x9d²i^\x01XBÕe')
+[06/Nov/2025 10:54:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:54:40] code 400, message Bad request version ('TA\x00,úú\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:54:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:54:40] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01Ûú')
+[06/Nov/2025 10:54:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:54:43] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:54:47] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:54:51] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:54:55] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:54:59] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:55:03] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:55:04] "GET /order/4/status/ HTTP/1.1" 200 1615
+[06/Nov/2025 10:55:04] code 400, message Bad request version ('e±1äÑ\x90·\x9eÀ¿')
+[06/Nov/2025 10:55:04] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:04] code 400, message Bad request version ('â»\x80Yý6\x10c×g¿\x96Ö´ÒØÚ\x00,êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:55:04] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:04] code 400, message Bad request version ('}¨|\x00\x00\x14À')
+[06/Nov/2025 10:55:04] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:05] "GET /order/4/status/ HTTP/1.1" 200 1615
+[06/Nov/2025 10:55:05] code 400, message Bad request version ('G\x90)¾¢\x00*ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:55:05] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:05] code 400, message Bad request version ('èÃóÎ\x82\x96°\x00,ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:55:05] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:05] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x881\x8c\x14\x82UÃ\x96g\\ÁÐ«ú´Ë·X\x0f+To,}#ÁW´lA{À\x00\x00\x14À')
+[06/Nov/2025 10:55:05] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:06] "GET /order/4/status/ HTTP/1.1" 200 1615
+[06/Nov/2025 10:55:06] code 400, message Bad request version ('m\x98OÖ1½|G\x14&£Æ|\x17\x97Û¹]¤\x97\x97\x817ªciwº\x00*')
+[06/Nov/2025 10:55:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:06] code 400, message Bad request version ('\x93Jð\x00,ÚÚ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:55:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:06] code 400, message Bad request version ('ÏW}\xadëF!+Qº/¥\x97â/')
+[06/Nov/2025 10:55:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:07] "GET /order/4/status/ HTTP/1.1" 200 1615
+[06/Nov/2025 10:55:07] code 400, message Bad request version ('\x08í\x18\x96\x97>\x19_ñðó\x10Pbfq£h\x8c\x97\x91\x00*\x9a\x9a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:55:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:07] code 400, message Bad request version ('HøëÂ\x00,ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:55:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:07] code 400, message Bad request version ('It\x19\x9eV_+Ò\x033\x00\x00\x14À')
+[06/Nov/2025 10:55:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:08] "GET /order/4/status/ HTTP/1.1" 200 1615
+[06/Nov/2025 10:55:08] code 400, message Bad request version ('Gøú\x92×\x0fÝqÈ\x00*ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:55:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:08] code 400, message Bad request version ('/ÅËÆÎ<mû:N\x00,úú\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:55:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:08] code 400, message Bad request syntax ("\x16\x03\x01\x00}\x01\x00\x00y\x03\x01ø\x98xCk\x91´[·9\x95¾'[\x18v\x8e\x82ARO\x19òÄ«8\x860¾RM5\x00\x00\x14À")
+[06/Nov/2025 10:55:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:09] "GET /order/4/status/ HTTP/1.1" 200 1615
+[06/Nov/2025 10:55:09] code 400, message Bad request version ('Þ\x00W\x966b\x98GµkÁ\x00*úú\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:55:09] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:09] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03T¡í\x86$\x93\x83¿')
+[06/Nov/2025 10:55:09] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:09] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01·\x82AF\x8f¦-:Y:³0\x84\x80a\x99Þ:mÑÊþ;\x91')
+[06/Nov/2025 10:55:09] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:13] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:55:17] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:55:21] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:55:25] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:55:29] "GET /admin/cafe/payment/?status__exact=PENDING HTTP/1.1" 200 13162
+[06/Nov/2025 10:55:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:55:29] code 400, message Bad request version ('ú\x00*ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:55:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:29] code 400, message Bad request version ('¨SQ9Wb\x07\x13\x8c\x00,ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:55:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:29] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01Ã7ýSÜB')
+[06/Nov/2025 10:55:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:29] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:55:31] "GET /admin/cafe/payment/?status__exact=VERIFIED HTTP/1.1" 200 16335
+[06/Nov/2025 10:55:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:55:32] code 400, message Bad request version ('>kÉ·\x1a¯£gÈ[Ñ\x03·ú\x00*ÚÚ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:55:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:32] code 400, message Bad request version ('ÌK\x12\x91L2$Ä\x9b\x0fî\x11\x03\x84\x00,jj\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:55:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:32] code 400, message Bad request version ('\x11V\x00\x00\x14À')
+[06/Nov/2025 10:55:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:55:36] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:55:40] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:55:44] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:55:48] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:55:52] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:55:56] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:56:00] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:56:04] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:56:08] "GET /order/4/status.json HTTP/1.1" 200 29
+[06/Nov/2025 10:56:12] "GET / HTTP/1.1" 200 6352
+[06/Nov/2025 10:56:12] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 10:56:12] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 10:56:12] code 400, message Bad request version ("¤']Ó4\x00*êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À")
+[06/Nov/2025 10:56:12] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:12] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 10:56:12] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 10:56:12] code 400, message Bad request version ('+~\x0fª\x07\x8az·%Æ\x90êÝ\x82:bR×A\x8c¼£¹D¿ÃWì|¶©Ý\x00,\x9a\x9a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:56:12] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:12] code 400, message Bad request version ('ß1ÒöX¦\x10Þ\x00\x00\x14À')
+[06/Nov/2025 10:56:12] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:14] "GET /logout/ HTTP/1.1" 302 0
+[06/Nov/2025 10:56:14] "GET / HTTP/1.1" 200 6355
+[06/Nov/2025 10:56:14] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 10:56:14] code 400, message Bad request version ('Xb®\x7f4¸Ìß5v*´Tö{\x9bé|ÎUÀdv*-.\x0e¥ÙÛ\x94+\x00*\x9a\x9a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:56:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:14] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 10:56:14] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03{ûK§vW:IK\x1a|£tÛ_ô\x96*\x96D]i\x90')
+[06/Nov/2025 10:56:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:14] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01M\x02\x87\x84\\N\x8f\x94,\xad½ì\x9cS±$Í\x91\x9b$(ÈXù\\lûlPt\x9e.\x00\x00\x14À')
+[06/Nov/2025 10:56:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:14] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 10:56:14] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 10:56:16] "GET /login/ HTTP/1.1" 200 1956
+[06/Nov/2025 10:56:16] code 400, message Bad request version ('\x97`\x81T#(Å\x7f\x18ÝAÍï~\x87ô\x00*ÚÚ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:56:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:16] code 400, message Bad request version ('\x00,::\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:56:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:16] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x1aY1\x7f\x9c¤\x05\x19\x88Öè¬¢:ºç@.ZvÞ\x80Â°¿ø\x90ÚBh\x97ÿ\x00\x00\x14À')
+[06/Nov/2025 10:56:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:18] "GET /login/staff/ HTTP/1.1" 200 2070
+[06/Nov/2025 10:56:18] code 400, message Bad request version ('ô\x00å\x95\x00*JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:56:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:18] code 400, message Bad request version ('\x15î2ÕI\x00,êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:56:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:18] code 400, message Bad request version ('"W£4C>I{\x19´o½\x00\x00\x14À')
+[06/Nov/2025 10:56:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:32] "POST /login/staff/ HTTP/1.1" 200 2227
+[06/Nov/2025 10:56:32] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03$ü(HH«\x83½Nx\x9aÜDÂÓäÃÑÊ¬ì\x88x9$0û¶\x03¶\x87T')
+[06/Nov/2025 10:56:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:32] code 400, message Bad request version ('Ü\x02îT6pSp\x00,jj\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:56:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:32] code 400, message Bad request version ('¬"I\x90\x98þd($öe\x95HÓ¨$_(u~\x00\x00\x14À')
+[06/Nov/2025 10:56:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:38] "GET /admin/auth/group/ HTTP/1.1" 302 0
+[06/Nov/2025 10:56:39] "GET /admin/login/?next=/admin/auth/group/ HTTP/1.1" 200 4326
+[06/Nov/2025 10:56:39] code 400, message Bad request version ('bX;ªc+\x18ìn.Föå\x00***\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:56:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:39] code 400, message Bad request version ('\x99\x8f$%$H\x00,zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:56:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:39] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01W^E\x18UI\x06þ([k\x18÷\x96¼iP¦ý')
+[06/Nov/2025 10:56:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:47] "POST /admin/login/?next=/admin/auth/group/ HTTP/1.1" 302 0
+[06/Nov/2025 10:56:47] "GET /admin/auth/group/ HTTP/1.1" 200 13219
+[06/Nov/2025 10:56:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:56:47] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[06/Nov/2025 10:56:47] code 400, message Bad request version ('/\x00¿æ\x15lÕi\x9exµ\x9c\x93\x8c·\x98ÂçsÂÛ2Â\x16¨\x89;yà#×ÿ\x00*::\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:56:47] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:47] code 400, message Bad request version ('y/\x0eR\x86ù½\x17VP\x83\x07Â\x01D\x93Ðpf)ØD¬\x00,êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:56:47] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:47] code 400, message Bad request version ('+µt\x00\x00\x14À')
+[06/Nov/2025 10:56:47] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:51] "GET /admin/auth/group/ HTTP/1.1" 200 13219
+[06/Nov/2025 10:56:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:56:51] code 400, message Bad request version ('b0£l\x19ÿ×à\x8aUn\x92Å?\x97ßf\x8c4÷öâÆ\x08\x08\x00*zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:56:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:51] code 400, message Bad request version ('>\x9aÌÐelR\x00,JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:56:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:51] code 400, message Bad request version ('o\x00\x00\x14À')
+[06/Nov/2025 10:56:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:53] "GET /admin/auth/group/1/change/ HTTP/1.1" 200 18940
+[06/Nov/2025 10:56:53] "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+[06/Nov/2025 10:56:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:56:53] "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15845
+[06/Nov/2025 10:56:53] "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+[06/Nov/2025 10:56:53] code 400, message Bad request version ('l\x84¼\x83ÎB\x95:3ý&8ÊÄÇ¯ñ\x91ÀÍë«(Á²nÖªÊ\x06»û\x00*ÚÚ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:56:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:53] code 400, message Bad request version ('¤7Àì3ïÇÄï§ô"E~@ö5i`\x00,ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:56:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:56:53] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x81ÆO³An\x93\x18¨\x1b1È½3\x86ëÛ\x14gß\x83ý]Ü\x0e*âÒ£V(Û\x00\x00\x14À')
+[06/Nov/2025 10:56:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:57:00] "GET /admin/auth/user/ HTTP/1.1" 200 18946
+[06/Nov/2025 10:57:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:57:00] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[06/Nov/2025 10:57:00] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03¾ÀQ\x01\x84Bx;U\x8bO(&ùRð¼û²3ù¦ièÕô¿ÑWüaÞ')
+[06/Nov/2025 10:57:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:57:00] code 400, message Bad request version ('¼[þEú¹´Â,¾ã\x9eÛ`\x9b"Wb\x03\x00,**\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:57:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:57:00] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01C(')
+[06/Nov/2025 10:57:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:57:07] "GET /admin/auth/user/2/change/ HTTP/1.1" 200 28739
+[06/Nov/2025 10:57:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:57:08] code 400, message Bad request version ('1)Û\x00*::\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:57:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:57:08] code 400, message Bad request version ('®VòloÎ§\x06þ\x7f\x90{ÿEú\x12>d\x90°Å\x00,ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:57:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:57:08] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01³ìÎÖ*\x1bAÑ|Þ\x0eÔ¬')
+[06/Nov/2025 10:57:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:57:43] "GET /admin/auth/user/add/ HTTP/1.1" 200 16211
+[06/Nov/2025 10:57:43] "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 200 663
+[06/Nov/2025 10:57:43] "GET /static/admin/js/unusable_password_field.js HTTP/1.1" 200 1480
+[06/Nov/2025 10:57:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:57:43] code 400, message Bad request version ("\x11?@\xadç\x84'é6¦\x13ëØ\x07P\x17\x1a³ÔZ\x8e,²\x00*zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À")
+[06/Nov/2025 10:57:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:57:43] code 400, message Bad request version ("|\x86\x9fÞü\x84\x18´ñgl'åÁ?(\x00,\x9a\x9a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À")
+[06/Nov/2025 10:57:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:57:43] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x884\x04³¨')
+[06/Nov/2025 10:57:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:10] "POST /admin/auth/user/add/ HTTP/1.1" 200 16454
+[06/Nov/2025 10:59:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:59:10] code 400, message Bad request version ('\x00*\x8a\x8a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:59:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:10] code 400, message Bad request version ('£!~$(\x1a\x86ÀßK«t7\x93Ñ\x1bxý`\x8a¸ñ;\x89n=m"\x8c\x9f_\x9b\x00,JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:59:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:10] code 400, message Bad request version ('\x00\x00\x14À')
+[06/Nov/2025 10:59:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:19] "GET /admin/auth/user/ HTTP/1.1" 200 18946
+[06/Nov/2025 10:59:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:59:19] code 400, message Bad request version ('\x0fèD\x00*ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:59:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:19] code 400, message Bad request version (',¶\x82kì\x14È¸')
+[06/Nov/2025 10:59:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:19] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x03\x83qS»\x17tÉ6\x03§csÜìq')
+[06/Nov/2025 10:59:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:21] "GET /admin/auth/user/2/change/ HTTP/1.1" 200 28739
+[06/Nov/2025 10:59:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:59:21] code 400, message Bad request version ('°¼Ò\x93\x12¡ê2·\x00\x92ÿÚ\x8cÐhåªA9¾"ôB\x83\x15;À\x87ÝÊã\x00*ÚÚ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:59:21] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:21] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03')
+[06/Nov/2025 10:59:21] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:21] code 400, message Bad request version ('ÇÖÿ\x00\x00\x14À')
+[06/Nov/2025 10:59:21] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:26] "GET /admin/auth/user/2/delete/ HTTP/1.1" 200 11971
+[06/Nov/2025 10:59:26] "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+[06/Nov/2025 10:59:26] code 400, message Bad request version ('\x9b')
+[06/Nov/2025 10:59:26] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:26] code 400, message Bad request version ('(:âõÆ9x\x00,ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:59:26] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:26] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x12\x99\x9c¨66Tn-\x9b\x14,õIÐòù³4*úò}¿èLê')
+[06/Nov/2025 10:59:26] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:28] "POST /admin/auth/user/2/delete/ HTTP/1.1" 302 0
+[06/Nov/2025 10:59:28] "GET /admin/auth/user/ HTTP/1.1" 200 18658
+[06/Nov/2025 10:59:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:59:28] code 400, message Bad request version ('«\x92JcaØå/\x18©\x00*::\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:59:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:28] code 400, message Bad request version ('\x98>|=\x0eR°½³\x80\xad§¿o&\x7f¸µzI\x8e\x15yTU\x931+KXÚH\x00,êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:59:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:28] code 400, message Bad request version ('y\x00\x00\x14À')
+[06/Nov/2025 10:59:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:32] "GET /admin/auth/user/add/ HTTP/1.1" 200 16211
+[06/Nov/2025 10:59:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:59:32] code 400, message Bad request version ('y\x8cÖ°þø¼GS\x8b$û¡\x94{×ª*¤\x8dª(ì"vÌQ\x00*\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:59:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:32] code 400, message Bad request version ('\x03Jµ_\x06\x17âCà\x08öóo/Üé\x89`\x00,ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:59:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:32] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01')
+[06/Nov/2025 10:59:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:51] "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+[06/Nov/2025 10:59:51] "GET /admin/auth/user/9/change/ HTTP/1.1" 200 28878
+[06/Nov/2025 10:59:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 10:59:52] code 400, message Bad request version ('~g\x87\x1b2½¿wàrAÔßªõ')
+[06/Nov/2025 10:59:52] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:52] code 400, message Bad request version ('/U\x02\x16eý\x10ÁÎ\x90N\x00,::\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 10:59:52] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 10:59:52] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01[áÛ7Ë?Ì0é\x89`¼Æ\xadøí¦\x05)·Up\x01\x9cÀ\x81»Ç$üQ\x16\x00\x00\x14À')
+[06/Nov/2025 10:59:52] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:00:48] "POST /admin/auth/user/9/change/ HTTP/1.1" 200 28914
+[06/Nov/2025 11:00:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:00:48] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x93I\x01j1Dc\x1a\x03\x90è')
+[06/Nov/2025 11:00:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:00:48] code 400, message Bad request version ('D\x0eÈ1¶g)ÿqû;¦ß\x9eC\x1bÕ\x07_üû%|â¬FÞß:òxc\x00,ÚÚ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:00:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:00:48] code 400, message Bad request version ('\x00\x00\x14À')
+[06/Nov/2025 11:00:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:00:56] "POST /admin/auth/user/9/change/ HTTP/1.1" 302 0
+[06/Nov/2025 11:00:56] "GET /admin/auth/user/ HTTP/1.1" 200 19139
+[06/Nov/2025 11:00:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:00:56] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x11R\x9bG\x134ów"\x16')
+[06/Nov/2025 11:00:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:00:56] code 400, message Bad request version ('S¾Q¾T¦¾\x00,zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:00:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:00:56] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x97à\x93W%\\,í\x00ùvûvFê\x96\x1aeeµû¸\x0fEneµ\x07\x13\x19X±\x00\x00\x14À')
+[06/Nov/2025 11:00:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:01:16] "GET /login/staff/ HTTP/1.1" 200 2039
+[06/Nov/2025 11:01:16] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x031\x7f¬ÏW\x7f\x99\x82ÌÈ1\x8blaì3b\x120ü')
+[06/Nov/2025 11:01:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:01:16] code 400, message Bad request version ("É\x9bØ/\x05t'û\x11sÁÓ\x07")
+[06/Nov/2025 11:01:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:01:16] code 400, message Bad request version ('r9S®3|juû¥èAd\x81Ý\x7fWÙ¤\x00\x00\x14À')
+[06/Nov/2025 11:01:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:01:17] "GET /login/staff/ HTTP/1.1" 200 2039
+[06/Nov/2025 11:01:17] code 400, message Bad request version ('\x00*êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:01:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:01:17] code 400, message Bad request version ('§öÜôÓÌS\x00,\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:01:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:01:17] code 400, message Bad request version ('<¨4\x83O\x9ctº>¥>\x91p?\x83\x00\x00\x14À')
+[06/Nov/2025 11:01:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:01:34] "POST /login/staff/ HTTP/1.1" 302 0
+[06/Nov/2025 11:01:34] "GET /items/ HTTP/1.1" 200 2727
+[06/Nov/2025 11:01:34] code 400, message Bad request version ('E¥\x01\x00*JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:01:34] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:01:34] "GET /media/items/Cold-Brew-Banana-Oatmeal-Smoothie-BourbonandHoney.com-Blog-Copy-1.jpeg HTTP/1.1" 200 117057
+[06/Nov/2025 11:01:34] code 400, message Bad request version ('¢ªW<Ñ\x80{\\?poï\x00,')
+[06/Nov/2025 11:01:34] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:01:34] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01@)f&ë[Ü\x17r\x10¯\x16©\x0eÏ£')
+[06/Nov/2025 11:01:34] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:01:43] "GET /account/ HTTP/1.1" 200 1361
+[06/Nov/2025 11:01:43] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03á³Q\x17U')
+[06/Nov/2025 11:01:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:01:43] code 400, message Bad request version ('A~ao²8Þ\x8b¾\x8e\x00,\x9a\x9a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:01:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:01:43] code 400, message Bad request version ('\x00\x00\x14À')
+[06/Nov/2025 11:01:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:01:48] "GET / HTTP/1.1" 200 6352
+[06/Nov/2025 11:01:48] "GET /static/style.css HTTP/1.1" 200 11489
+[06/Nov/2025 11:01:48] code 400, message Bad request version (';\x81\x01ØÑ{äR\x10\x9dë\x8f;UiÁ\x93ºr·{#ËäÕ')
+[06/Nov/2025 11:01:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:01:48] code 400, message Bad request version ('ô\x00,\x9a\x9a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:01:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:01:48] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x042ü®*\x0e\x92ó\x862\x88\x02ùÄ\x00>ãúw÷yÑÚó´æFR')
+[06/Nov/2025 11:01:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:01:48] "GET /static/images/HomePage/meal_1.jpg HTTP/1.1" 200 452028
+[06/Nov/2025 11:01:48] "GET /static/images/HomePage/ingredients.jpg HTTP/1.1" 200 1328590
+[06/Nov/2025 11:01:48] "GET /static/images/HomePage/meal_2.jpg HTTP/1.1" 200 473839
+[06/Nov/2025 11:01:48] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 11:01:48] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 11:01:48] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 11:01:48] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 11:01:48] "GET /static/images/HomePage/meal_3.jpg HTTP/1.1" 200 605237
+[06/Nov/2025 11:01:48] "GET /static/images/HomePage/s3.jpg.webp HTTP/1.1" 200 755410
+[06/Nov/2025 11:01:48] "GET /static/images/HomePage/cafefrontbg.jpg HTTP/1.1" 200 1016003
+[06/Nov/2025 11:01:48] "GET /static/images/HomePage/contactbg.jpg HTTP/1.1" 200 516480
+[06/Nov/2025 11:01:55] "GET /account/ HTTP/1.1" 200 1361
+[06/Nov/2025 11:01:55] code 400, message Bad request version ('çlµÐ¾Ø\x16½Ä\x05wÔh\x0e6\x8b\x99¢Þ¦EÀ¨¼\x00*\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:01:55] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:01:55] code 400, message Bad request version ('ø½]\x00,êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:01:55] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:01:55] code 400, message Bad request version ('È\x06²ßå%éJ/.®4Æ,ò\x00\x00\x14À')
+[06/Nov/2025 11:01:55] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:01] "GET /admin/auth/user/9/change/ HTTP/1.1" 200 17853
+[06/Nov/2025 11:02:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:02:01] code 400, message Bad request version ('9\x00*')
+[06/Nov/2025 11:02:01] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:01] code 400, message Bad request version ('9QOÀ\x82Ì\x9c_\x96\x92\x02;\x87·Y"2%Ñäpe²òT>h®\x0fWl\x0f\x00,êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:02:01] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:01] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01ÙüF%ð\x94@Y')
+[06/Nov/2025 11:02:01] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:18] "GET /admin/cafe/item/ HTTP/1.1" 200 11640
+[06/Nov/2025 11:02:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:02:19] code 400, message Bad request version ('\x00*JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:02:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:19] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ä\x9d\x0fØ»|·3\x8f\x82Uúê\x80¡O0;PdÛZ\x93çÐß¾.')
+[06/Nov/2025 11:02:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:19] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01<Yô\x81¶\x84È¾\x8fW!\x14\x17±Î®#\x12à\x1a¼1ÝM\x98ÓgW\x1b\x04\xad=\x00\x00\x14À')
+[06/Nov/2025 11:02:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:30] "GET /admin/cafe/customer/ HTTP/1.1" 200 11771
+[06/Nov/2025 11:02:30] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x02å8¡´ýÄÞÙe\x03\x18\xad9³\x94>\x9fËï\xad4\x17\x9c¡gA9@?¼¿')
+[06/Nov/2025 11:02:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:30] code 400, message Bad request version ('\x00,ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:02:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:30] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01r§\x18ÃÈ³ëì\x1b¿Û¨óH\x14ïû¯(WC\x07Í¸þûÇ¼!Ã7')
+[06/Nov/2025 11:02:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:32] "GET /admin/cafe/cart/ HTTP/1.1" 200 17711
+[06/Nov/2025 11:02:32] code 400, message Bad request version ('z\x01Ö¥0(\x00*')
+[06/Nov/2025 11:02:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:32] code 400, message Bad request version ('M\x9f\x16í9.\x00')
+[06/Nov/2025 11:02:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:32] code 400, message Bad request version ('´\x13µgz\x8f¥\x07\x00\x00\x14À')
+[06/Nov/2025 11:02:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:40] "GET / HTTP/1.1" 200 6352
+[06/Nov/2025 11:02:40] "GET /static/style.css HTTP/1.1" 200 11489
+[06/Nov/2025 11:02:40] "GET /static/images/HomePage/meal_1.jpg HTTP/1.1" 200 452028
+[06/Nov/2025 11:02:40] "GET /static/images/HomePage/ingredients.jpg HTTP/1.1" 200 1328590
+[06/Nov/2025 11:02:40] "GET /static/images/HomePage/meal_2.jpg HTTP/1.1" 200 473839
+[06/Nov/2025 11:02:40] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 11:02:40] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 11:02:40] "GET /static/images/HomePage/meal_3.jpg HTTP/1.1" 200 605237
+[06/Nov/2025 11:02:40] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 11:02:40] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 11:02:40] "GET /static/images/HomePage/s3.jpg.webp HTTP/1.1" 200 755410
+[06/Nov/2025 11:02:40] "GET /static/images/HomePage/cafefrontbg.jpg HTTP/1.1" 200 1016003
+[06/Nov/2025 11:02:40] "GET /static/images/HomePage/contactbg.jpg HTTP/1.1" 200 516480
+[06/Nov/2025 11:02:40] code 400, message Bad request version ('þ\x1b\x02\x94Vgâx\x82Z%\x00*ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:02:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:40] code 400, message Bad request version ('\\9;*ö\x1a9ù\x8e¸ù\x86\x93ý\x00,jj\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:02:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:40] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01T\x88ß6.\x90\x05|=¦îÀOÄ\x80;\x839\x02\x00%\x03X\x17ê|îÒ\x90\x05ßï\x00\x00\x14À')
+[06/Nov/2025 11:02:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:48] "GET /account/ HTTP/1.1" 200 1361
+[06/Nov/2025 11:02:48] code 400, message Bad request version (':\x88d\x00***\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:02:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:48] code 400, message Bad request version ('A\x9cB¾\x84e)hEtp\x01è¦^½\x94Ub\x0fî*?ß\x15¨\x9d\x9dáÓ\x07\x8d\x00,zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:02:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:48] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01>Ù\x7fîÁ§zNèõ7\x95\x88Ë1=îªY\x195Führ)\xadp{ï\x8eZ\x00\x00\x14À')
+[06/Nov/2025 11:02:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:52] "GET /checkout/dining/ HTTP/1.1" 200 1777
+[06/Nov/2025 11:02:52] code 400, message Bad request version ('ÐªX\x97Q±ÿ+´\x16éàö&®5/ø\x11Nd!)\xad\x15\x15\x15"©ðS\x96\x00*\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:02:52] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:52] code 400, message Bad request version ("JFÁÎ\x14Û?\x988î\x08ô`ã=r*$\x87\x97V\x03\x08·÷a¶Tì'ÑO\x00,ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À")
+[06/Nov/2025 11:02:52] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:52] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01{¹<\x1a\x9b©ÐÕkÍzo²\x98ä"}Z|\\H\x122èáÂX\x8b6\x13j¶\x00\x00\x14À')
+[06/Nov/2025 11:02:52] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:56] "GET /cart/ HTTP/1.1" 200 1167
+[06/Nov/2025 11:02:56] code 400, message Bad request version ('§¹\x8füã')
+[06/Nov/2025 11:02:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:56] code 400, message Bad request version ("¥H¿º\xadç\x12i\x10C'8®@¹Â·û¾/\x00,\x8a\x8a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À")
+[06/Nov/2025 11:02:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:56] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01Ñ9\x06\x83\x96bH')
+[06/Nov/2025 11:02:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:57] "GET /items/ HTTP/1.1" 200 2727
+[06/Nov/2025 11:02:57] code 400, message Bad request version ('½Ü?¤#\x08hníú\x93HºìZ\x02Ï\x02±Ñö&ZÕnÏ\x14^Ç\x88\x91«\x00*ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:02:57] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:57] code 400, message Bad request version ('+ôÑp¯\x11òÃ\x00,zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:02:57] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:57] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x8dMYÕçã[»*¼6\x17±i\x92WñÔbÝ¯ÑNP05Eèé[}ù\x00\x00\x14À')
+[06/Nov/2025 11:02:57] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:59] "GET /cart/ HTTP/1.1" 200 1167
+[06/Nov/2025 11:02:59] code 400, message Bad request version ('¬âR\x00*jj\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:02:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:59] code 400, message Bad request version ('\x12`f÷bdZ\x15\x98g\x00,\x8a\x8a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:02:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:02:59] code 400, message Bad request version ("÷Å'¯\x00-÷©x\x00\x00\x14À")
+[06/Nov/2025 11:02:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:00] "GET /items/ HTTP/1.1" 200 2727
+[06/Nov/2025 11:03:00] code 400, message Bad request version ('«ùâõ\x00*JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:03:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:00] code 400, message Bad request version ('2\x84Á¦nfÒ\x8f×ö°_j¨\x8d{}ÿo\x07Ò\x9a§\x8b½Õ{\x88E$E0\x00,\x8a\x8a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:03:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:00] code 400, message Bad request version ('(ú@\x00\x00\x14À')
+[06/Nov/2025 11:03:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:08] "GET /items/1/edit/ HTTP/1.1" 200 2466
+[06/Nov/2025 11:03:08] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03')
+[06/Nov/2025 11:03:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:08] code 400, message Bad request version ('\x95¡¿\x89¤gð\x04\x93\x8bô_§\x16Ý\x89KöÐQ¨0éÑù²ÕØ®B\x00,jj\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:03:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:08] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01B}iß2§O"Fß±:\x03Ã%\x8b72\x13W4¦ØQ*1Gõt\x9b\x01å\x00\x00\x14À')
+[06/Nov/2025 11:03:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:15] "POST /items/1/edit/ HTTP/1.1" 302 0
+[06/Nov/2025 11:03:15] "GET /items/ HTTP/1.1" 200 2020
+[06/Nov/2025 11:03:15] code 400, message Bad request version ('\x1a\x14ìJ§\x98¦Î½ã2\x86O¬´9Þ\x14$\x1bñ9\x00*ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:03:15] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:15] code 400, message Bad request version ('¨(\x9a&¹Ë\x03\x00,')
+[06/Nov/2025 11:03:15] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:15] code 400, message Bad request version ('J\x97;b\x8e\x00\x00\x14À')
+[06/Nov/2025 11:03:15] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:19] "GET /items/add/ HTTP/1.1" 200 2128
+[06/Nov/2025 11:03:19] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03éàçß@a¥q«6')
+[06/Nov/2025 11:03:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:19] code 400, message Bad request version ('\x979f=\x8eøW¬U\x00,êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:03:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:19] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01×\x07\x8c1,jzòÂ\x9f\x82Ñ&\x88{\x11\x94DQ\x00\x90\x95Y\x1b2G8\x9d\x18.<ú\x00\x00\x14À')
+[06/Nov/2025 11:03:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:23] "GET /items/ HTTP/1.1" 200 2020
+[06/Nov/2025 11:03:23] code 400, message Bad request version ('KV\x94y¸ú\x9f\x00*jj\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:03:23] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:23] code 400, message Bad request version ('ë\x94pa¡p\x00,ÚÚ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:03:23] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:23] code 400, message Bad request version ('Î\x8d')
+[06/Nov/2025 11:03:23] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:24] "GET /items/add/ HTTP/1.1" 200 2128
+[06/Nov/2025 11:03:24] code 400, message Bad request version ('¢¶\x8ek¯]ËF\x00*êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:03:24] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:24] code 400, message Bad request version ('·\x15V)¬\x14ä÷Ä|À\x9e\x08\x11õ´óVßÒv\x00,\x9a\x9a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:03:24] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:24] code 400, message Bad request version ('\x00\x00\x14À')
+[06/Nov/2025 11:03:24] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:36] "GET /admin/cafe/item/ HTTP/1.1" 200 11758
+[06/Nov/2025 11:03:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:03:36] code 400, message Bad request version ('a\x8cÓÒT²)í$\x9f-Q\x00*ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:03:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:36] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03þ$\x96þm\x86·{³xÅÝ\\ú;nÅdÎÂ\x0foS?\x14¡Qî\x82R-÷')
+[06/Nov/2025 11:03:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:36] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01p\x8cÊ·Õv¼{P]\x91ð\x87Â8{¿Ú§!\x16«cüè¢<½\x8b§ve\x00\x00\x14À')
+[06/Nov/2025 11:03:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:40] "GET /admin/cafe/item/1/change/ HTTP/1.1" 200 12497
+[06/Nov/2025 11:03:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:03:40] code 400, message Bad request version ('åê\x03&\x81YI`\x9cà",\x10¸\x12òPp´B\x8e\x00*\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:03:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:40] code 400, message Bad request version ('Gì¶¤\x83q°ûÇ¯r\x8e]X{\x81\x98Ã\x12\x12.x8\x8få)Â\x00,JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:03:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:40] code 400, message Bad request version ('\x97$kÑGüÃÛ\x19þî\x97\x00\x00\x14À')
+[06/Nov/2025 11:03:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:52] "POST /admin/cafe/item/1/change/ HTTP/1.1" 302 0
+[06/Nov/2025 11:03:52] "GET /admin/cafe/item/ HTTP/1.1" 200 11837
+[06/Nov/2025 11:03:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:03:52] code 400, message Bad request version ('\x99QäQ}>£Ó\x00*ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:03:52] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:52] code 400, message Bad request version ('û\x16\x00,ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:03:52] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:03:52] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x014ü\x9f\x15£½+It}°îæ½br\x8d~3\x80\x05e¦üÔ\x13\x15<Yó\x17ú\x00\x00\x14À')
+[06/Nov/2025 11:03:52] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:11] "GET /admin/auth/user/ HTTP/1.1" 200 13838
+[06/Nov/2025 11:04:11] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Ú£+\x11Ý\x9b¡ÙäznÚËËÍëOy±\x90')
+[06/Nov/2025 11:04:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:11] code 400, message Bad request version ('\x06Z¯i\x00,ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:04:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:11] code 400, message Bad request version ('}Ô¤âËÞ±òùý\x00\x00\x14À')
+[06/Nov/2025 11:04:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:13] "GET /admin/auth/user/9/change/ HTTP/1.1" 200 17853
+[06/Nov/2025 11:04:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:04:13] code 400, message Bad request version ('\x97\x18S§T\x9beB@+°¥V\x88')
+[06/Nov/2025 11:04:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:13] code 400, message Bad request version ('r¸ÄhO§d¡\xad\x1aX¸´WdçÔ\x00,zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:04:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:13] code 400, message Bad request syntax ("\x16\x03\x01\x00}\x01\x00\x00y\x03\x01Ýý\x9b\x11\x14\x94\x06\x9bÂô'â¹\x1a6óvì\x9fX>\x98\x1b\x15\x97dÚÆú®4è\x00\x00\x14À")
+[06/Nov/2025 11:04:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:23] "GET /admin/auth/user/ HTTP/1.1" 200 13838
+[06/Nov/2025 11:04:23] code 400, message Bad request version ('\x03Þ&ç=\x12\x00E\x9ev\x01G`$ô¿uo.E¹}s\x9e;\x9fBJ\x9f+ÃÅ\x00***\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:04:23] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:23] code 400, message Bad request version ('°%¢(É\x05u\x93\x00,')
+[06/Nov/2025 11:04:23] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:23] code 400, message Bad request version ('>b\x95·\x88tÿßgi.\x98\x88\x13Ð\x89é9ë\x00\x00\x14À')
+[06/Nov/2025 11:04:23] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:29] "GET /admin/auth/user/9/change/ HTTP/1.1" 200 17853
+[06/Nov/2025 11:04:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:04:29] code 400, message Bad request version ('Úãýj\x91\x00\x01ÒÊ+1\x9c\x12\x1a\x00*ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:04:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:29] code 400, message Bad request version ('Äxúq\x95\x00,ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:04:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:29] code 400, message Bad request version ('Éñú`\x7f\x87\x8fN\x00\x00\x14À')
+[06/Nov/2025 11:04:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:35] "GET /admin/auth/user/ HTTP/1.1" 200 13838
+[06/Nov/2025 11:04:35] code 400, message Bad request version ('{û¸,¸áÝ\x96;ÌÌ\x86\x0e£³ò\x015\x00%pä¹¬3\x03\x197\x00*ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:04:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:35] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x0e\x944»l.¡')
+[06/Nov/2025 11:04:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:35] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01Y{(O=T±')
+[06/Nov/2025 11:04:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:39] "GET /admin/auth/user/ HTTP/1.1" 200 13838
+[06/Nov/2025 11:04:39] code 400, message Bad request version ('fÆÔÑ¶%4í,J{ËÑöÄ\x00*ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:04:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:39] code 400, message Bad request version ('òox\x00,zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:04:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:39] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x97\x98Haðpþó\x04ÔË÷§Vg\x80ÑÈ¸¶Üu')
+[06/Nov/2025 11:04:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:45] "GET /admin/auth/user/ HTTP/1.1" 200 13838
+[06/Nov/2025 11:04:45] code 400, message Bad request version (';p\x18\x15DV\x00*zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:04:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:45] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x036tÊ.Jþä0\x17²òÖôÇÌÇºþ\x80´×UbëqY\x07K6J¢¨')
+[06/Nov/2025 11:04:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:45] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01ð»Õìökâ')
+[06/Nov/2025 11:04:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:56] "GET /admin/cafe/customer/ HTTP/1.1" 200 11771
+[06/Nov/2025 11:04:56] code 400, message Bad request version (',ï±~)\x86_°')
+[06/Nov/2025 11:04:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:56] code 400, message Bad request version ('¬\x80(\x00,jj\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:04:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:04:56] code 400, message Bad request version ('Ùb\x86¯\x89ïß\x00\x00\x14À')
+[06/Nov/2025 11:04:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:05] "GET /admin/cafe/item/ HTTP/1.1" 200 11640
+[06/Nov/2025 11:05:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:05:05] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ïx<ò°')
+[06/Nov/2025 11:05:05] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:05] code 400, message Bad request version ('á\x06K\x0f¡\x8f,aÌ\x00,zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:05:05] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:05] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01°&ôê\x8a\x04pH~\x01"º~¤7bÄZìë§ÅË')
+[06/Nov/2025 11:05:05] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:06] "GET /admin/cafe/item/ HTTP/1.1" 200 11640
+[06/Nov/2025 11:05:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:05:07] code 400, message Bad request version ('%\x7f\x8fjOÊ`¡!06Â½\x9bqÄï\x90f¯Ð\x86E!¯6Ì\x04åÄ?\x08\x00*::\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:05:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:07] code 400, message Bad request version ('¦ù\x92:;+ÑýI{#\x93è&ÿ\x05\x84\x9d\x1b§\x8b²\x96<ÿ¥\x00,::\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:05:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:07] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01~I#ÄuÑü\x06¬Üè')
+[06/Nov/2025 11:05:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:10] "GET /admin/cafe/customer/ HTTP/1.1" 200 11771
+[06/Nov/2025 11:05:11] code 400, message Bad request version ('\x8c\x03µ\x8cTQ\x07Þô\x16ÓH\x00*zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:05:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:11] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Ò')
+[06/Nov/2025 11:05:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:11] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00}\x01\x00\x00y\x03\x01¶ßF\x87\x9aÀ'\x92ÌHÿ\x80oÖ\xad\x8a\x9f¢é¨\x87\x14Õ*uÿ´¬Q")
+[06/Nov/2025 11:05:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:13] "GET /admin/cafe/cart/ HTTP/1.1" 200 17711
+[06/Nov/2025 11:05:13] code 400, message Bad request version ("ÃJK\x9bÆO\x7fL¨uþô\x8e×á'\x92pKj47\x94\x8cøú\x18\x19¬£¢o\x00*ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À")
+[06/Nov/2025 11:05:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:13] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ý.VTKCP>4cª#B.åíi¿A')
+[06/Nov/2025 11:05:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:13] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01cYÐ{¥>3ZJ¨¢ÎÏ5~§')
+[06/Nov/2025 11:05:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:15] "GET /admin/auth/user/ HTTP/1.1" 200 13838
+[06/Nov/2025 11:05:15] code 400, message Bad request version ('°Ë\x0eqû2rA\x00*jj\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:05:15] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:15] code 400, message Bad request version ('\x82\x1b\x9fÉ6µyî¾\x00,\x8a\x8a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:05:15] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:15] code 400, message Bad request version ('(\x00\x00\x14À')
+[06/Nov/2025 11:05:15] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:21] "GET /admin/auth/user/9/change/ HTTP/1.1" 200 17853
+[06/Nov/2025 11:05:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:05:21] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x04\x91\x82Ú^\x10q\x1b²\\¸uÜ\x01Ðt\x13\x9d°Í©S5ðû!q|\x9bºx')
+[06/Nov/2025 11:05:21] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:21] code 400, message Bad request version ('Ü\x07,dp|ÅªæXØ\x00,ÚÚ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:05:21] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:21] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x1bÎÝû\x03W\x1bIKqby*y\x1b\x9css"²\x89\x9b\x92-¡\x9by\x7fUÑýý\x00\x00\x14À')
+[06/Nov/2025 11:05:21] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:28] "GET /admin/auth/user/ HTTP/1.1" 200 13838
+[06/Nov/2025 11:05:28] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x08:\x11·\x9dQ\x13>Î\x0eéC\x16¤\x12\x18\x92\x8c)È×µ?\x12\x8f»,æ\x80k4\x9d')
+[06/Nov/2025 11:05:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:28] code 400, message Bad request version ('×\x03\x01L¶\x82\x11Ø\x00,ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:05:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:28] code 400, message Bad request version ('Æ®ëK\x97û\x11H$\x96ûjê\x91HMs×\x88ïÒ\x00\x00\x14À')
+[06/Nov/2025 11:05:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:32] "GET /admin/ HTTP/1.1" 200 8214
+[06/Nov/2025 11:05:32] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[06/Nov/2025 11:05:32] code 400, message Bad request version ('gï\x8bõ\x98±}\x92m;\x00*ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:05:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:32] code 400, message Bad request version ('h÷\x0f¢Æoé¿\x8a<zªÌ¼Þðó\x81x\x96Iå\x90Ùqoôø\x87z\x00,ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:05:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:32] code 400, message Bad request version ('½C;M\xad\x01Ë\x0eC\x00\x00\x14À')
+[06/Nov/2025 11:05:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:41] "GET /admin/ HTTP/1.1" 200 8214
+[06/Nov/2025 11:05:42] code 400, message Bad request version ('z\x00*\x9a\x9a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:05:42] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:42] code 400, message Bad request version ('ÅöÓ\x1bóßD;\x00,ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:05:42] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:42] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01¯\x05\x17\x00`¢\x0fDp')
+[06/Nov/2025 11:05:42] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:44] "GET /admin/auth/user/ HTTP/1.1" 200 13838
+[06/Nov/2025 11:05:45] code 400, message Bad request version ('5rùz')
+[06/Nov/2025 11:05:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:45] code 400, message Bad request version ('-?~>\x10«ügÜäJä\x18µö\\\x00,**\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:05:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:45] code 400, message Bad request version ('ý1¯Æ\x9euàub_¬ñãU\x00\x00\x14À')
+[06/Nov/2025 11:05:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:51] "POST /admin/logout/ HTTP/1.1" 200 3568
+[06/Nov/2025 11:05:51] code 400, message Bad request version ('Þñ\x17\x08.}\x89õN\x18pêq¸´ô`å-\x05z\x00***\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:05:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:51] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x01ÄK[}áël6\x04Ðò·±')
+[06/Nov/2025 11:05:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:51] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01à\x88qº\x8e\x148°Ù')
+[06/Nov/2025 11:05:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:53] "GET /admin/ HTTP/1.1" 302 0
+[06/Nov/2025 11:05:53] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+[06/Nov/2025 11:05:53] code 400, message Bad request version ('ÿB«úK^ËWÉ\x00*JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:05:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:53] code 400, message Bad request version ('2¡w\x8f\x0fïc[Á\x91¸Q\x88\x06ÉP\x17Ë\x00,ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:05:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:05:53] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01ë\x82¶=²\x8f)')
+[06/Nov/2025 11:05:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:06:00] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4341
+[06/Nov/2025 11:06:00] code 400, message Bad request version ('\x028%xt\x9b3\x00*\x8a\x8a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:06:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:06:00] code 400, message Bad request version ('·')
+[06/Nov/2025 11:06:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:06:00] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01i!k\x13Í\x07´\x8b\x9aÐ[\x16â\x10]Êæ\x86fgJ$*\x87?¬1±,ª^\x8c\x00\x00\x14À')
+[06/Nov/2025 11:06:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:06:10] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[06/Nov/2025 11:06:10] "GET /admin/ HTTP/1.1" 200 15411
+[06/Nov/2025 11:06:10] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[06/Nov/2025 11:06:10] code 400, message Bad request version ('¾{Å´_ÕU©2T\x81N#»<hgÊ\x1b³\x96T\x19Ø\x8fÕ<\x97.ç\x9f\x7f\x00*úú\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:06:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:06:10] code 400, message Bad request version ('\x95Å\x8e@?Ø')
+[06/Nov/2025 11:06:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:06:10] code 400, message Bad request version ('ý\x00\x00\x14À')
+[06/Nov/2025 11:06:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:06:19] "GET /admin/auth/group/ HTTP/1.1" 200 13219
+[06/Nov/2025 11:06:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:06:19] code 400, message Bad request version ('\x144Ey(9w;a\x96\x95©g&P>\x7fªÈ\x05âr¥N\x00\x02ì½w)\x16]\x00*êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:06:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:06:19] code 400, message Bad request version ('¹\x9eò_\x9e\x8f4çìö\x00,JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:06:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:06:19] code 400, message Bad request version ('+Øz\x88ÒêV\x9a>\x8d\x00\x00\x14À')
+[06/Nov/2025 11:06:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:06:21] "GET /admin/auth/group/1/change/ HTTP/1.1" 200 18940
+[06/Nov/2025 11:06:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:06:21] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03û4\x7f¹BCh¥èL9v\x96-1;\x0e')
+[06/Nov/2025 11:06:21] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:06:21] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03äæ,8br\x8dÆ®Nµ=ÈÃ¸\x89³¾/GÛ}AÏ\x04dyÇ\x16¦>Í')
+[06/Nov/2025 11:06:21] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:06:21] code 400, message Bad request version ('\x87ì\x00\x00\x14À')
+[06/Nov/2025 11:06:21] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:07:32] "POST /admin/auth/group/1/change/ HTTP/1.1" 302 0
+[06/Nov/2025 11:07:32] "GET /admin/auth/group/ HTTP/1.1" 200 13416
+[06/Nov/2025 11:07:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:07:32] code 400, message Bad request version ('Ó+Ò\x13\x84\x19®\x9b\x88ê¬\x87\x83µø%Yü°\x9d¡¥®p\xad·ß\x19Dnsâ\x00*')
+[06/Nov/2025 11:07:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:07:32] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ÛqZ\x10\\·üèÌ·Ü\\qD3ôj\x07®\x88j¸\x8d\x9f×\x8dW¯v\x15¨U')
+[06/Nov/2025 11:07:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:07:32] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x12\x10<UBùKÚðHïO\x81´]±À\x91q`°t}\x14W°¡\x17\x9d}é\x9c\x00\x00\x14À')
+[06/Nov/2025 11:07:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:07:35] "GET /admin/auth/user/ HTTP/1.1" 200 18946
+[06/Nov/2025 11:07:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:07:35] code 400, message Bad request version ('@uòL]\x87"i}:\x04\x91\x89\x00*ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:07:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:07:35] code 400, message Bad request version ('M»*Ú\x134úç[+\x00,jj\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:07:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:07:35] code 400, message Bad request version ('R[Ñ\x92ûj\x00\x00\x14À')
+[06/Nov/2025 11:07:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:07:38] "GET /admin/auth/user/8/change/ HTTP/1.1" 200 28477
+[06/Nov/2025 11:07:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:07:38] code 400, message Bad request version ('ù\x12Ð8ëÃªucv\x13è¦\x00*')
+[06/Nov/2025 11:07:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:07:38] code 400, message Bad request version ('\x10W\x86\x12\x8fw+¼|4C-¥X\x7f\x91tÃ<äô\x9fÛô³º@Ôýqn¢\x00,\x9a\x9a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:07:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:07:38] code 400, message Bad request version ('\xadx\x07h\x97³o\x19®tË\x8dD*\x9e\x0448<\x00\x00\x14À')
+[06/Nov/2025 11:07:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:07:46] "GET /admin/auth/user/9/change/ HTTP/1.1" 200 28711
+[06/Nov/2025 11:07:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:07:46] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x031þa<\x0e$r'éÏ\x0f\x8b\x96îrf\x92íBÝ!ÈEQÑHN\x00XëF7")
+[06/Nov/2025 11:07:46] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:07:46] code 400, message Bad request version ('\x00,ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:07:46] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:07:46] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01È\x15\x91\x94Í¤\x8b~6$\x14\x9c\x8fòÐÌ\x994.ö½')
+[06/Nov/2025 11:07:46] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:17] "GET /admin/ HTTP/1.1" 200 15411
+[06/Nov/2025 11:08:17] code 400, message Bad request version ('5eÐ¬£ÉÕ3D\x0e\x00*ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:08:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:17] code 400, message Bad request version ('Ü\x03ßÄ}oC\x00,ÚÚ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:08:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:17] code 400, message Bad request version ('7×\x1aë\x10,v¡Äç*Y¤?\x98ËMx\x96\\|\x00\x00\x14À')
+[06/Nov/2025 11:08:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:23] "GET /logout/ HTTP/1.1" 302 0
+[06/Nov/2025 11:08:23] "GET / HTTP/1.1" 200 6355
+[06/Nov/2025 11:08:23] "GET /static/style.css HTTP/1.1" 200 11489
+[06/Nov/2025 11:08:23] code 400, message Bad request version ('\x89ÚÅ3\x15\x7fÓ´ê¢T\x05R:÷F\x19wÎ\x8e\x08\x00*ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:08:23] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:23] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03^Æv\x8eÏÙ£ÄXr')
+[06/Nov/2025 11:08:23] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:23] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01¥´f\x16º\x16ã\x13ºQ')
+[06/Nov/2025 11:08:23] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:23] "GET /static/images/HomePage/meal_1.jpg HTTP/1.1" 200 452028
+[06/Nov/2025 11:08:23] "GET /static/images/HomePage/ingredients.jpg HTTP/1.1" 200 1328590
+[06/Nov/2025 11:08:23] "GET /static/images/HomePage/meal_2.jpg HTTP/1.1" 200 473839
+[06/Nov/2025 11:08:23] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 11:08:23] "GET /static/images/HomePage/meal_3.jpg HTTP/1.1" 200 605237
+[06/Nov/2025 11:08:23] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 11:08:23] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 11:08:23] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 11:08:23] "GET /static/images/HomePage/s3.jpg.webp HTTP/1.1" 200 755410
+[06/Nov/2025 11:08:23] "GET /static/images/HomePage/cafefrontbg.jpg HTTP/1.1" 200 1016003
+[06/Nov/2025 11:08:23] "GET /static/images/HomePage/contactbg.jpg HTTP/1.1" 200 516480
+[06/Nov/2025 11:08:25] "GET /login/ HTTP/1.1" 200 1956
+[06/Nov/2025 11:08:25] "GET /static/css/styles.css HTTP/1.1" 304 0
+[06/Nov/2025 11:08:25] code 400, message Bad request version ("øÛ£d\x8dº«À<'ÿ¡òOþ:n«þÄ/´3m8ä\x81ºà\x9al=\x00*\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À")
+[06/Nov/2025 11:08:25] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:25] code 400, message Bad request version ('Ú9Y\x19;lªÅ\x99¤+\xad\x89N]1E$H\x1bèo\x11è¥Ùñ©/^\x84¹\x00,\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:08:25] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:25] code 400, message Bad request version ('Ìx\x08¥')
+[06/Nov/2025 11:08:25] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:46] "POST /login/ HTTP/1.1" 302 0
+[06/Nov/2025 11:08:46] "GET /items/ HTTP/1.1" 200 2727
+[06/Nov/2025 11:08:46] code 400, message Bad request version ('\x00*ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:08:46] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:46] "GET /media/items/Cold-Brew-Banana-Oatmeal-Smoothie-BourbonandHoney.com-Blog-Copy-1.jpeg HTTP/1.1" 200 117057
+[06/Nov/2025 11:08:46] code 400, message Bad request version ('Ê\x00,\x9a\x9a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:08:46] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:46] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x10å')
+[06/Nov/2025 11:08:46] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:51] "GET /wishlist/add/1/ HTTP/1.1" 302 0
+[06/Nov/2025 11:08:51] "GET /items/ HTTP/1.1" 200 2727
+[06/Nov/2025 11:08:52] code 400, message Bad request version ('\x96hq«n\x8e¶ñÞ×\x00¨D\x00*êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:08:52] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:52] code 400, message Bad request version ('µâÝE\x00,\x9a\x9a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:08:52] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:52] code 400, message Bad request version ('öâç\x98@X#h©uî¡Ê\x00\x00\x14À')
+[06/Nov/2025 11:08:52] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:53] "GET /wishlist/add/1/ HTTP/1.1" 302 0
+[06/Nov/2025 11:08:53] "GET /items/ HTTP/1.1" 200 2727
+[06/Nov/2025 11:08:53] code 400, message Bad request version ('\x04h\x16\x9fq5ß9\x02x(|¨@{\x00*úú\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:08:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:53] code 400, message Bad request version ('ìµ\x8cPm²Ó\x05\x95ù?á\x1a\x14<sü»úÍr³²U\x16|íWÐ\x15')
+[06/Nov/2025 11:08:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:53] code 400, message Bad request version ('!þ_')
+[06/Nov/2025 11:08:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:56] "GET /items/ HTTP/1.1" 200 2727
+[06/Nov/2025 11:08:56] code 400, message Bad request version ("þÿÀ\x92Ê'í\x8f÷0KGR¦/E\x80çý\x1bZ\x00}ùPÔªSn\x00*ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À")
+[06/Nov/2025 11:08:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:56] code 400, message Bad request version ('\x19\x00,zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:08:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:56] code 400, message Bad request version ('CÈÃß')
+[06/Nov/2025 11:08:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:57] "GET /items/ HTTP/1.1" 200 2727
+[06/Nov/2025 11:08:57] code 400, message Bad request version ('W\x98æoïõ\x9e¬]\x11£')
+[06/Nov/2025 11:08:57] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:57] code 400, message Bad request version ('\x91\x8e¸\x84\x82\x8c#½\x9aä43®\x00,êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:08:57] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:57] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x81¨\x89\x9c')
+[06/Nov/2025 11:08:57] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:58] "GET /cart/ HTTP/1.1" 200 1167
+[06/Nov/2025 11:08:59] code 400, message Bad request version ('`Rð\x9e\x9c\x00***\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:08:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:59] code 400, message Bad request version ('V\x92èÇSÈ¾Ä^ª\xad?&\x12|\x0fxÔ×¡\x13-3[»Èµ¦\x00,ÚÚ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:08:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:08:59] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x9b\x8f²ñ@')
+[06/Nov/2025 11:08:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:09:01] "GET /account/ HTTP/1.1" 200 1361
+[06/Nov/2025 11:09:01] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03@82)\x952\x1bu¼ej\x8aïrÃ\x0f\x92&+OÉ\x18ZW\x14äH\x8d\x89Ó')
+[06/Nov/2025 11:09:01] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:09:01] code 400, message Bad request version ('©_GÏ®jï\x9a\x80\x12@\x00,ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:09:01] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:09:01] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01B\x0eE\x13\x83êÇ9m+')
+[06/Nov/2025 11:09:01] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:09:08] "GET / HTTP/1.1" 200 6352
+[06/Nov/2025 11:09:08] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 11:09:08] code 400, message Bad request version ('\x9fló\x8e\x00*úú\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:09:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:09:08] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 11:09:08] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 11:09:08] code 400, message Bad request version ('møYÞw3\xad')
+[06/Nov/2025 11:09:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:09:08] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 11:09:08] code 400, message Bad request version ('äï\x00\x00\x14À')
+[06/Nov/2025 11:09:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:00] "GET /items/ HTTP/1.1" 200 2727
+[06/Nov/2025 11:10:00] code 400, message Bad request version ("õ\x81÷4NS'È+p¶2]È5S\x00*zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À")
+[06/Nov/2025 11:10:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:00] code 400, message Bad request version ('\x1a<\x11\x9eÙ\x00\x8bC\x07¾î\x9f\x9b\x00,zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:10:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:00] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01dQåÄ')
+[06/Nov/2025 11:10:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:03] "GET /cart/ HTTP/1.1" 200 1167
+[06/Nov/2025 11:10:03] code 400, message Bad request version ('Ø@\x9bm\x00W"Ç-\x05@ù\x91\x95\x00*\x9a\x9a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:10:03] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:03] code 400, message Bad request version ('\x00,ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:10:03] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:03] code 400, message Bad request version ('^Ë8fÌ4§.«Ü¯r~\x87\x0ft\x06l\x00\x00\x14À')
+[06/Nov/2025 11:10:03] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:05] "GET /account/ HTTP/1.1" 200 1361
+[06/Nov/2025 11:10:06] code 400, message Bad request version ('yËÿ»6©\x87©/\x19`')
+[06/Nov/2025 11:10:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:06] code 400, message Bad request version ('íb¥&\x01å×¼\x8bÈ\x8akYRÊèÄ\x00,\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:10:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:06] code 400, message Bad request version ('ªx\x00\x00\x14À')
+[06/Nov/2025 11:10:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:10] "GET /logout/ HTTP/1.1" 302 0
+[06/Nov/2025 11:10:10] "GET / HTTP/1.1" 200 6355
+[06/Nov/2025 11:10:10] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 11:10:10] code 400, message Bad request version ('Ë\x8e\x0e\x00*JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:10:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:10] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 11:10:10] code 400, message Bad request version ('.\x92É\x9b¾~\x13\x14\x00,ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:10:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:10] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 11:10:10] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 11:10:10] code 400, message Bad request version ('ËöÌZ\x00\x00\x14À')
+[06/Nov/2025 11:10:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+Forbidden (CSRF token from POST incorrect.): /admin/logout/
+[06/Nov/2025 11:10:22] "POST /admin/logout/ HTTP/1.1" 403 2503
+[06/Nov/2025 11:10:22] code 400, message Bad request version ('n"Q\x03\\\x95\x132¸c©²Æs\x88HüødzpÞg¦"Ãy·7Re¾\x00*::\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:10:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:22] code 400, message Bad request version ('NYÏð-\x97¢\x9e\x98\x80£FÅq®iÔu\x02\x00,ÚÚ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:10:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:22] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01,x5Ý&|\x16jò\x95÷°K\x8b¥\xadÊ¢¯Ò3\x18\x03Én¡3\x95)ª\x9b-\x00\x00\x14À')
+[06/Nov/2025 11:10:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+Forbidden (CSRF token from POST incorrect.): /admin/logout/
+[06/Nov/2025 11:10:27] "POST /admin/logout/ HTTP/1.1" 403 2503
+[06/Nov/2025 11:10:27] code 400, message Bad request version ('\x95Ð>ôÿÕÏÂu6\x90à¦$\x07~\x83)\x9b¯<¢¶\x9fÇqq½\x84\x19çÖ\x00*ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:10:27] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:27] code 400, message Bad request version ('H{í\x8fZÆK\x90\x0f|9}5\x00,ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:10:27] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:27] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01!\x80\x98\x0f$')
+[06/Nov/2025 11:10:27] You're accessing the development server over HTTPS, but it only supports HTTP.
+Forbidden (CSRF token from POST incorrect.): /admin/logout/
+[06/Nov/2025 11:10:29] "POST /admin/logout/ HTTP/1.1" 403 2503
+[06/Nov/2025 11:10:29] code 400, message Bad request version ("\x15GÔ\x08í#í\x13gõ¥ß¦'¥1ã\x05\x01Ñô\x19\x14ªe\x01\x00*\x9a\x9a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À")
+[06/Nov/2025 11:10:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:29] code 400, message Bad request version ('\x96çÌ\x046\x89\\%,0\x00,\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:10:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:29] code 400, message Bad request version ('\x97h\x00\x00\x14À')
+[06/Nov/2025 11:10:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+Forbidden (CSRF token from POST incorrect.): /admin/logout/
+[06/Nov/2025 11:10:30] "POST /admin/logout/ HTTP/1.1" 403 2503
+[06/Nov/2025 11:10:30] code 400, message Bad request version ('C\x1aZ»òÏF\x19mµalÜbþk¢\x95íI¦O\x00*::\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:10:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:30] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x08¡¶\x86GÅ\\\x8f\x17\x911Ï\x89\x90uÝÔ\x9eüÃû:\x9aóë\x10C-Y!c|')
+[06/Nov/2025 11:10:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:30] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01õ/ªÖ\x0fø\x9cøÖ\x95¼?|è7¾£\x95KAgü\x93Y}_\x82þ³BÇx\x00\x00\x14À')
+[06/Nov/2025 11:10:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+Forbidden (CSRF token from POST incorrect.): /admin/logout/
+[06/Nov/2025 11:10:33] "POST /admin/logout/ HTTP/1.1" 403 2503
+[06/Nov/2025 11:10:33] code 400, message Bad request version ('m\x00*ÚÚ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:10:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:33] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Æø\x10\x08°ü¼\x9a°³tÐ@9Z¬õ\x99ddC\x89Ö\x90\x13|ò\x14].¨\x90')
+[06/Nov/2025 11:10:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:33] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01ù1\x06¬\\«Däm^')
+[06/Nov/2025 11:10:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:38] "GET /admin/ HTTP/1.1" 302 0
+[06/Nov/2025 11:10:38] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4556
+[06/Nov/2025 11:10:38] code 400, message Bad request version ("'×`\x98¨\x15ÍirÑm*Âb\x14\x00*ÚÚ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À")
+[06/Nov/2025 11:10:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:38] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ÿ\x17Ö:°\x13\x82L)\x16ÉF\x93\x19\x9e¼\x8e\x7f\x01\x97!)\x80Ô¡S\x18\x00\x98qY¼')
+[06/Nov/2025 11:10:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:38] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01´\x0f\x8fZ¡L+Ym\x9cià¦Ò:Ï\x12²)]K#è¶ÕÍR"B{<ý\x00\x00\x14À')
+[06/Nov/2025 11:10:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:55] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[06/Nov/2025 11:10:55] "GET /admin/ HTTP/1.1" 200 8298
+[06/Nov/2025 11:10:56] code 400, message Bad request version ('+÷\x86«8£Â\x90\x84+ÐWé´\x9b\x19-W¶§2"F\x86R¹ÇdB=åÓ\x00*êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:10:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:56] code 400, message Bad request version ('\x97û\x14\x83*Öè\x9bîG.Í\x9f",/Ï&îË\x9eR@;}kíb}O+\x00,\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:10:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:10:56] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01ZmÆoQú¾\x83ñ$\x87o\x89LÝXÈÌ\x8eV´êl\x9fÃx%ë{')
+[06/Nov/2025 11:10:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:11:01] "GET /admin/auth/user/ HTTP/1.1" 200 13922
+[06/Nov/2025 11:11:02] code 400, message Bad request version ('øþ\x8e|~±i-\x7fnÎ\x1abí(ØÆ±c9©5:&íä\x00*ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:11:02] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:11:02] code 400, message Bad request version ('t\x12\x9b#Îr¹úF³jËÄ¯\x87^wÐ\x00,**\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:11:02] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:11:02] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01±|/Zà')
+[06/Nov/2025 11:11:02] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:11:16] "GET /admin/cafe/cart/ HTTP/1.1" 200 27242
+[06/Nov/2025 11:11:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:11:16] code 400, message Bad request version ('kb\x00*\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:11:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:11:16] code 400, message Bad request version ('ªGÞ4D=\x00,JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:11:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:11:16] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01r\x044|âþÐu}ê\x01\x92)ºZQ\x03')
+[06/Nov/2025 11:11:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:11:19] "GET /admin/cafe/customer/ HTTP/1.1" 200 11855
+[06/Nov/2025 11:11:19] code 400, message Bad request version ('\x00*')
+[06/Nov/2025 11:11:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:11:19] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Ôýfh'MSÚgÄOMz\x98\x9c\x16¤¹âìx\x821OXÆ\x17b\xadEÑÆ")
+[06/Nov/2025 11:11:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:11:19] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01;bÛI{£y\x9a\x86\x11ß\x15\x10©\x8b\x95.qju\x06\x15\x16H5ó\x00\x17xµíñ\x00\x00\x14À')
+[06/Nov/2025 11:11:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:11:22] "GET /admin/cafe/item/ HTTP/1.1" 200 11724
+[06/Nov/2025 11:11:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[06/Nov/2025 11:11:22] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x034åu\x8aÏîGà\x94°\x07\x07[~ÕÚFþHj&°Uj')
+[06/Nov/2025 11:11:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:11:22] code 400, message Bad request version ('ÅÒ\x9bÈ}c\x00#îÔc¨¸û\x97DQ\x0e5m)\x06@Z×²ïÛg»þñ\x00,JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:11:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:11:22] code 400, message Bad request version ('\x05Çbx\x00\x00\x14À')
+[06/Nov/2025 11:11:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:12:58] "GET /admin/ HTTP/1.1" 200 8298
+[06/Nov/2025 11:12:58] code 400, message Bad request version ('÷)\x9a\x98\x86±[\x13!\x16Al\x87çµP\x89Ï|t\x10J\x8c\x89\x0f&?·\x9ft¾¨\x00*\x9a\x9a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:12:58] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:12:58] code 400, message Bad request version ('ßßP\x1b\x04\x81m5&ÀàÌ\x07×³ªðK\x90nþ·¸pÄ\x93Zx÷·ç/\x00,ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:12:58] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:12:58] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01~\x88bÏþ\x83O\x92×Äã\x8dwyæðÀ\x0fè;A\x82â\x17\x177a3LPs\x0e\x00\x00\x14À')
+[06/Nov/2025 11:12:58] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:13:03] "GET /admin/cafe/customer/ HTTP/1.1" 200 11855
+[06/Nov/2025 11:13:03] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Cût\x84o]£\x06\x91=päû1\x89\x13Ó\x91\x7fu;\x97}')
+[06/Nov/2025 11:13:03] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:13:03] code 400, message Bad request version ('\x8a=\x91¡]\x8d@ðÓ\x98Ö»f¸\x88¹f\x00,úú\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:13:03] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:13:03] code 400, message Bad request version ('qüjf\x00\x00\x14À')
+[06/Nov/2025 11:13:03] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:13:13] "POST /admin/logout/ HTTP/1.1" 200 3568
+[06/Nov/2025 11:13:13] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x99\x8b\x06\x8cÏ`\x9dÉNXL')
+[06/Nov/2025 11:13:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:13:13] code 400, message Bad request version ('\x1bòÄ\x86ß+¾PU-\x16\x84ðZËÎ3[dð]y\x11bGp\x01Y*\x9e88\x00,ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:13:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:13:13] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01')
+[06/Nov/2025 11:13:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:13:30] "GET /cart/ HTTP/1.1" 200 1198
+[06/Nov/2025 11:13:30] "GET /static/css/styles.css HTTP/1.1" 200 1650
+[06/Nov/2025 11:13:30] code 400, message Bad request version ('\x07')
+[06/Nov/2025 11:13:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:13:30] code 400, message Bad request version ('ëM\x00,ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:13:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:13:30] code 400, message Bad request version ('%$¼¶\x91Ëlux1\x8fjT\x95È¤9p»&\x00\x00\x14À')
+[06/Nov/2025 11:13:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:27] "GET / HTTP/1.1" 200 6355
+[06/Nov/2025 11:14:27] code 400, message Bad request version ('ì\x00*ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:14:27] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:27] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 11:14:27] code 400, message Bad request version ('÷\x00,**\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:14:27] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:27] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 11:14:27] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01K\x01Â_\x03í\x8e®\x90n\x84þ¥r\x98\x9e²\x81\x9bBÓ\x02\x9b¦\x145ûÑ½øõ`\x00\x00\x14À')
+[06/Nov/2025 11:14:27] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:27] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 11:14:27] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 11:14:28] "GET / HTTP/1.1" 200 6355
+[06/Nov/2025 11:14:28] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 11:14:28] code 400, message Bad request version ('eÑû\x07"fW\x92\x07WìãQÕû¡xó\x81\x8dÿµD\x89\xadl8Òn¥s·\x00*jj\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:14:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:28] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 11:14:28] code 400, message Bad request version ('®ëò,LÎ')
+[06/Nov/2025 11:14:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:28] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 11:14:28] code 400, message Bad request version ('_¬wT\x8cúÐØô¶\x89\x81®[ßXÅf\x9e\x00ðbªç\x00\x00\x14À')
+[06/Nov/2025 11:14:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:28] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 11:14:28] "GET / HTTP/1.1" 200 6355
+[06/Nov/2025 11:14:28] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 11:14:28] code 400, message Bad request version ('\x80ïÃñ#nÏO\x9a(«\x00*\x1a\x1a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:14:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:28] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 11:14:28] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 11:14:28] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03¯ýºÈ"fDTu')
+[06/Nov/2025 11:14:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:28] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 11:14:28] code 400, message Bad request version ('ï\x18\x91¼\x013´,1#_\x00\x00\x14À')
+[06/Nov/2025 11:14:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:28] "GET / HTTP/1.1" 200 6355
+[06/Nov/2025 11:14:29] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 11:14:29] code 400, message Bad request version ('(!D\x18ÔDíñ\x92\xad/\x00*êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:14:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:29] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 11:14:29] code 400, message Bad request version ('\x9a*¿\x8d\x147#è¬åbp\x00,ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:14:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:29] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 11:14:29] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 11:14:29] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01Dñ){a\x13\x87ð=')
+[06/Nov/2025 11:14:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:29] "GET / HTTP/1.1" 200 6355
+[06/Nov/2025 11:14:29] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 11:14:29] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 11:14:29] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 11:14:29] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x8b\x12"´üJ\x14\x8dQô\x11')
+[06/Nov/2025 11:14:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:29] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 11:14:29] code 400, message Bad request version ('\x86£AÐGW¤ß\x91¯ò\x83\x88am!7\x11\x19Á3&ñ5\x06\x18À*\x04\x97\x00,úú\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:14:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:29] code 400, message Bad request version ('q\x05·f3ô2¾¸\x00\x00\x14À')
+[06/Nov/2025 11:14:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:29] "GET / HTTP/1.1" 200 6355
+[06/Nov/2025 11:14:29] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 11:14:29] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 11:14:29] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 11:14:29] code 400, message Bad request version ('\x99æÄÞ\x00*ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:14:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:29] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 11:14:29] code 400, message Bad request version ('çñ6o¡\x00,zz\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:14:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:29] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01pîãÉfÁ÷\x15E\\(\x86y\x98\x14k"äªy%{"\x8fú¦\x068\x9aG,+\x00\x00\x14À')
+[06/Nov/2025 11:14:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:29] "GET / HTTP/1.1" 200 6355
+[06/Nov/2025 11:14:30] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 11:14:30] code 400, message Bad request version ('üø¬\x9bÃ\x00\x83,~\x00*ºº\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:14:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:30] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 11:14:30] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03')
+[06/Nov/2025 11:14:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:30] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 11:14:30] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 11:14:30] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01~r¤ZZ"×\x1a«^5ù©¹¿þ¥ð\x8dÆ\x93\x89_¯Û×¤º9æ\x83%\x00\x00\x14À')
+[06/Nov/2025 11:14:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:30] "GET / HTTP/1.1" 200 6355
+[06/Nov/2025 11:14:30] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 11:14:30] code 400, message Bad request version ('²û\x00*')
+[06/Nov/2025 11:14:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:30] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 11:14:30] code 400, message Bad request version ('p¿\x00DDpu¿wn.Ý®0,ä&\x17Oy>/Â@3X\x8aðo\x955H\x00,JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:14:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:30] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 11:14:30] code 400, message Bad request version ('\x92\x08Í`ðNãä«in\\Â\x03\x00\x00\x14À')
+[06/Nov/2025 11:14:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:30] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 11:14:31] "GET / HTTP/1.1" 200 6355
+[06/Nov/2025 11:14:31] "GET /static/images/social/twitter.svg HTTP/1.1" 200 14109
+[06/Nov/2025 11:14:31] code 400, message Bad request version ('ë_êÊ\x18\x02Ì\x8e\x90MÍ\x97QîÖ\x9d\x92ÇYD+\x16\x00*::\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+[06/Nov/2025 11:14:31] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:31] "GET /static/images/social/facebook.svg HTTP/1.1" 200 39174
+[06/Nov/2025 11:14:31] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03U3«\x99Zûç\x13A©\x7f\\´\x08\x03ãU;Y¯¸\x98-\x0e.\x8f@Ár\x8bq×')
+[06/Nov/2025 11:14:31] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Nov/2025 11:14:31] "GET /static/images/social/linkedin.svg HTTP/1.1" 200 1852
+[06/Nov/2025 11:14:31] "GET /static/images/social/instagram.svg HTTP/1.1" 200 317722
+[06/Nov/2025 11:14:31] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01vFµV"\x06\x1bx\x8cY³\x00Ûá|\x81ðB%Úð\x93À¢Ò')
+[06/Nov/2025 11:14:31] You're accessing the development server over HTTPS, but it only supports HTTP.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 06, 2025 - 10:52:12
+Django version 5.2.6, using settings 'cafemanagementsystem.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Checkout{% endblock %}
+{% block content %}
+  <h1>How would you like to proceed?</h1>
+  <div style="display:flex; gap:12px;">
+    <a class="btn" href="{% url 'checkout_dining' %}">Dining</a>
+    <a class="btn secondary" href="{% url 'checkout_delivery' %}">Delivery</a>
+  </div>
+{% endblock %}

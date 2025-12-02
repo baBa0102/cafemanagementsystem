@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}Items{% endblock %}
+{% block content %}
+<h1>Items</h1>
+{% if perms.cafe.add_item %}
+  <p><a class="btn" href="{% url 'item_create' %}">Add Item</a></p>
+{% endif %}
+<div class="grid">
+  {% for it in items %}
+  <div class="card">
+    {% if it.image %}
+      <img src="{{ it.image.url }}" alt="{{ it.name }}" style="width:100%;height:160px;object-fit:cover;border-radius:8px;"/>
+    {% endif %}
+    <h3>{{ it.name }}</h3>
+    <p style="min-height:40px;">{{ it.description|default:' ' }}</p>
+    <strong>₹ {{ it.price }}</strong>
+    <div style="margin-top:8px;display:flex;gap:8px;">
+      <a class="btn" href="{% url 'add_to_cart' it.id %}"><i class="fa-solid fa-cart-plus"></i> Add to Cart</a>
+      <a class="btn secondary" href="{% url 'wishlist_add' it.id %}">♥ Wishlist</a>
+      {% if perms.cafe.change_item %}
+        <a class="btn secondary" href="{% url 'item_update' it.id %}">Edit</a>
+      {% endif %}
+      {% if perms.cafe.delete_item %}
+        <a class="btn" style="background:#c62828" href="{% url 'item_delete' it.id %}">Delete</a>
+      {% endif %}
+    </div>
+  </div>
+  {% empty %}
+  <p>No items yet.</p>
+  {% endfor %}
+</div>
+
+<div id="checkout-modal" style="position:fixed;inset:0;background:rgba(0,0,0,0.5);display:none;align-items:center;justify-content:center;z-index:2000;">
+  <div class="card" style="max-width:420px;text-align:center;background:#fff;">
+    <h3>Proceed to checkout</h3>
+    <p>Choose an option:</p>
+    <div style="display:flex;gap:8px;justify-content:center;">
+      <a class="btn" href="{% url 'checkout_dining' %}">Dining</a>
+      <a class="btn secondary" href="{% url 'checkout_delivery' %}">Delivery</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  (function(){
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('added') === '1') {
+      const modal = document.getElementById('checkout-modal');
+      if (modal) { modal.style.display = 'flex'; }
+      modal && modal.addEventListener('click', () => modal.style.display='none');
+    }
+  })();
+</script>
+{% endblock %}

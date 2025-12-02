@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollywood - Complete Landing Page</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body>
+    <header class="top-bar">
+   <nav class="top-nav" style="display:flex;align-items:center;gap:12px;">
+        <div style="display:flex;gap:12px;">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#howitworks" class="nav-link">How It Works</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div style="margin-left:auto;display:flex;gap:12px;">
+            <a href="{% url 'items_list' %}" class="nav-link">Items</a>
+<a href="{% url 'cart_detail' %}" class="nav-link">🛒 Cart{% if cart_count %} <span style="display:inline-block;background:#ff7043;color:#fff;border-radius:999px;padding:2px 6px;font-size:12px;line-height:1;margin-left:4px;min-width:18px;text-align:center;">{{ cart_count }}</span>{% endif %}</a>
+            <a href="{% url 'my_account' %}" class="nav-link">Account</a>
+            {% if user.is_authenticated %}
+              <a href="{% url 'logout' %}" class="nav-link">Logout</a>
+            {% else %}
+              <a href="{% url 'login' %}" class="nav-link">👤 Login</a>
+            {% endif %}
+        </div>
+    </nav>
+</header>
+
+    <section class="hero-section" id="home">
+        <div class="hero-overlay">
+            <p class="tagline">OUR KITCHEN COMFORTS</p>
+            <h1>The Hollywood Cafe</h1>
+            <p class="subtitle">Unleash your inner chef</p>
+            <div style="margin-top:16px;">
+              <a href="{% url 'items_list' %}" class="nav-link" style="padding:8px 14px;border:1px solid #fff;border-radius:8px;color:#fff;text-decoration:none;">Order Now</a>
+              <a href="{% url 'cart_detail' %}" class="nav-link" style="padding:8px 14px;border:1px solid #fff;border-radius:8px;color:#fff;text-decoration:none;margin-left:8px;">🛒 View Cart</a>
+              <a href="{% url 'ai_bot' %}" class="nav-link" style="padding:8px 14px;border:1px solid #fff;border-radius:8px;color:#fff;text-decoration:none;margin-left:8px;">🤖  Ask-AI</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="about-content-wrapper">
+            <div class="about-image-container">
+                <img src="{% static 'images/HomePage/ingredients.jpg' %}" alt="Fresh ingredients for meal kits">
+            </div>
+            <div class="about-text-container">
+                <h2>ABOUT</h2>
+                <p>At Kitchen Comforts, we know the value of a home-cooked meal. Every dish we create is made fresh on-site, with ingredients sourced or harvested on the same day. We believe in slow cooking and meal-savoring – because good things take time.</p>
+                <p>Now that times have changed, we must adapt. With our new **Cook-It-Yourself (CIY) Meal Kits**, we bring the Kitchen Comfort experience straight to your doorstep. Inside, you'll find everything you need to recreate our beloved home-style meals: Easy to follow illustrated recipes, prepared ingredients, and even a QR code for real-time cooking videos to help you unleash your inner chef.</p>
+                <p>Times have changed, but our philosophy has not. We believe in the life-changing comfort of a good meal - and now you can cook it yourself!!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works-section" id="howitworks">
+        <div class="works-overlay">
+            <h2>HOW IT WORKS</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <p>Visit cafethehollywood.com to browse our available cuisine.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <p>Select your chosen food, input your delivery address, and pay securely online.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <p>Congratulations you food will be at your doorstep at your chosen time soon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section" id="pricing">
+        <h2>PRICING</h2>
+        <div class="kits-container">
+            <div class="kit-card">
+                <div class="price-bubble">$20.00</div>
+                <img src="{% static 'images/HomePage/meal_1.jpg' %}" alt="Comfort Congee">
+                <div class="kit-details">
+                    <h3>Comfort Congee</h3>
+                    <p>An Asian favorite</p>
+                </div>
+            </div>
+
+            <div class="kit-card">
+                <div class="price-bubble">$21.50</div>
+                <img src="{% static 'images/HomePage/meal_2.jpg' %}" alt="Spicy Laksa">
+                <div class="kit-details">
+                    <h3>Spicy Laksa</h3>
+                    <p>Hearty with a zing</p>
+                </div>
+            </div>
+
+            <div class="kit-card">
+                <div class="price-bubble">$19.00</div>
+                <img src="{% static 'images/HomePage/meal_3.jpg' %}" alt="Vegan Feast">
+                <div class="kit-details">
+                    <h3>Vegan Feast</h3>
+                    <p>Healthy & wholesome</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="contact-section" id="contact">
+        <div class="contact-overlay">
+            <h1 class="contact-title">GET IN TOUCH</h1>
+
+            <div class="contact-info">
+                <div class="contact-column">
+    <h2>SOCIALS</h2>
+    <ul style="list-style: none; padding: 0;">
+        <li style="margin: 10px 0;"><a href="https://www.instagram.com/yourusername" target="_blank" style="color: #E4405F;"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+        <li style="margin: 10px 0;"><a href="https://www.twitter.com/yourusername" target="_blank" style="color: #1DA1F2;"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+        <li style="margin: 10px 0;"><a href="https://www.facebook.com/yourpage" target="_blank" style="color: #1877F2;"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+        <li style="margin: 10px 0;"><a href="https://www.linkedin.com/in/yourprofile" target="_blank" style="color: #0A66C2;"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+    </ul>
+</div>
+                <div class="contact-column">
+                    <h2>LOCATIONS</h2>
+                    <p>786 Shivjot Kharar 140301 </p>
+                    <p>9436 Sec 22B Chandigarh 87501</p>
+                </div>
+            </div>
+
+            <p class="contact-email">THEHOLLYWOODCAFE@GMAIL.COM</p>
+        </div>
+    </section>
+</body>
+</html>

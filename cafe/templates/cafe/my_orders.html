@@ -1,0 +1,203 @@
+{% extends 'base.html' %}
+{% block title %}My Orders{% endblock %}
+{% block content %}
+<style>
+.orders-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.order-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.order-id {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.order-status {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.status-PENDING_PAYMENT {
+  background: #fff3e0;
+  color: #f57c00;
+}
+.status-PAID {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+.status-PREPARING {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+.status-COMPLETED {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+.status-CANCELED {
+  background: #ffebee;
+  color: #d32f2f;
+}
+.order-items {
+  margin: 15px 0;
+}
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+.order-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 2px solid #f0f0f0;
+}
+.order-total {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+.track-btn {
+  background: #2e7d32;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.track-btn:hover {
+  background: #1b5e20;
+}
+.no-orders {
+  text-align: center;
+  padding: 60px 20px;
+}
+.create-account-banner {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.create-account-banner h2 {
+  margin: 0 0 15px 0;
+}
+.create-account-btn {
+  background: white;
+  color: #667eea;
+  padding: 12px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  transition: all 0.3s;
+}
+.create-account-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+</style>
+
+<div class="orders-container">
+  <h1>My Orders</h1>
+  
+  {% if not customer or not customer.user or not customer.user.has_usable_password %}
+    <div class="create-account-banner">
+      <h2>🎁 Create an Account & Get Exclusive Offers!</h2>
+      <p>Track all your orders, save addresses, and receive special discounts</p>
+      <a href="{% url 'set_password' %}" class="create-account-btn">Create Account Now</a>
+    </div>
+  {% endif %}
+  
+  {% if orders %}
+    <p style="margin-bottom: 20px; color: #666;">Showing {{ orders|length }} order(s)</p>
+    
+    {% for order in orders %}
+      <div class="order-card">
+        <div class="order-header">
+          <div>
+            <div class="order-id">Order #{{ order.id }}</div>
+            <small style="color: #666;">{{ order.created_at|date:"F d, Y - g:i A" }}</small>
+          </div>
+          <div class="order-status status-{{ order.status }}">
+            {{ order.get_status_display }}
+          </div>
+        </div>
+        
+        <div class="order-items">
+          <strong>Items:</strong>
+          {% for item in order.items.all %}
+            <div class="order-item">
+              <span>{{ item.item.name }} x {{ item.quantity }}</span>
+              <span>₹{{ item.subtotal|floatformat:2 }}</span>
+            </div>
+          {% endfor %}
+        </div>
+        
+        <div style="margin: 10px 0;">
+          <strong>Order Type:</strong> {{ order.get_order_type_display }}
+          {% if order.table_no %}
+            | <strong>Table:</strong> {{ order.table_no }}
+          {% endif %}
+          {% if order.delivery_address %}
+            | <strong>Address:</strong> {{ order.delivery_address.line1 }}, {{ order.delivery_address.city }}
+          {% endif %}
+        </div>
+        
+        {% if order.payment %}
+          <div style="margin: 10px 0; padding: 10px; background: #f9f9f9; border-radius: 4px;">
+            <strong>Payment Status:</strong> 
+            <span class="order-status status-{{ order.payment.status }}">
+              {{ order.payment.get_status_display }}
+            </span>
+            {% if order.payment.reference %}
+              | <strong>Reference:</strong> {{ order.payment.reference }}
+            {% endif %}
+          </div>
+        {% endif %}
+        
+        <div class="order-footer">
+          <div class="order-total">
+            Total: ₹{{ order.total_amount|floatformat:2 }}
+          </div>
+          <a href="{% url 'track_order_detail' order.id %}" class="track-btn">Track Order</a>
+        </div>
+      </div>
+    {% endfor %}
+    
+  {% else %}
+    <div class="no-orders">
+      <h2>No Orders Yet</h2>
+      <p style="color: #666; margin: 20px 0;">You haven't placed any orders yet.</p>
+      <a href="{% url 'items_list' %}" style="display: inline-block; background: #2e7d32; color: white; padding: 12px 30px; border-radius: 4px; text-decoration: none; font-weight: bold;">Browse Menu</a>
+    </div>
+  {% endif %}
+  
+  <div style="margin-top: 30px; text-align: center;">
+    <p><strong>Track a specific order?</strong></p>
+    <a href="{% url 'track_order' %}" style="color: #2e7d32;">Track Order by ID</a>
+  </div>
+</div>
+{% endblock %}

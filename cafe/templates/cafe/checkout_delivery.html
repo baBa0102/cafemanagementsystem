@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block title %}Delivery Details{% endblock %}
+{% block content %}
+  <h1>Delivery details</h1>
+  
+  {% if existing_customer and not edit_mode %}
+    <!-- Show confirmation card for logged-in users -->
+    <div class="card" style="max-width:640px;">
+      <h3 style="margin-bottom:1rem;">✓ Your Details</h3>
+      <div style="background:#f8f9fa;padding:1rem;border-radius:8px;margin-bottom:1rem;">
+        <p style="margin:0.5rem 0;"><strong>Name:</strong> {{ existing_customer.name }}</p>
+        <p style="margin:0.5rem 0;"><strong>Phone:</strong> {{ existing_customer.phone }}</p>
+        {% if existing_customer.email %}
+        <p style="margin:0.5rem 0;"><strong>Email:</strong> {{ existing_customer.email }}</p>
+        {% endif %}
+        
+        {% if default_address %}
+        <hr style="margin:1rem 0;border:none;border-top:1px solid #dee2e6;">
+        <p style="margin:0.5rem 0;"><strong>Delivery Address:</strong></p>
+        <p style="margin:0.5rem 0;line-height:1.6;">
+          {{ default_address.line1 }}<br>
+          {% if default_address.line2 %}{{ default_address.line2 }}<br>{% endif %}
+          {{ default_address.city }}{% if default_address.state %}, {{ default_address.state }}{% endif %}
+          {% if default_address.postal_code %} - {{ default_address.postal_code }}{% endif %}
+        </p>
+        {% else %}
+        <hr style="margin:1rem 0;border:none;border-top:1px solid #dee2e6;">
+        <p style="margin:0.5rem 0;color:#dc3545;"><strong>No saved address found</strong></p>
+        <p style="margin:0.5rem 0;font-size:0.9rem;color:#6c757d;">Please add a delivery address below.</p>
+        {% endif %}
+      </div>
+      
+      <form method="post">
+        {% csrf_token %}
+        <!-- Hidden fields with pre-filled values -->
+        <input type="hidden" name="name" value="{{ existing_customer.name }}">
+        <input type="hidden" name="phone" value="{{ existing_customer.phone }}">
+        <input type="hidden" name="email" value="{{ existing_customer.email }}">
+        
+        {% if default_address %}
+          <input type="hidden" name="line1" value="{{ default_address.line1 }}">
+          <input type="hidden" name="line2" value="{{ default_address.line2 }}">
+          <input type="hidden" name="city" value="{{ default_address.city }}">
+          <input type="hidden" name="state" value="{{ default_address.state }}">
+          <input type="hidden" name="postal_code" value="{{ default_address.postal_code }}">
+          
+          <div style="display:flex;gap:1rem;margin-top:1.5rem;">
+            <button class="btn" type="submit" style="flex:1;">Continue to payment</button>
+            <a href="?edit=1" class="btn" style="flex:1;background:#6c757d;text-align:center;text-decoration:none;">Edit Details</a>
+          </div>
+        {% else %}
+          <!-- No address, need to edit -->
+          <a href="?edit=1" class="btn" style="width:100%;display:block;text-align:center;text-decoration:none;">Add Delivery Address</a>
+        {% endif %}
+      </form>
+    </div>
+  {% else %}
+    <!-- Show regular form for guests or edit mode -->
+    <form method="post" class="card" style="max-width:640px;">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button class="btn" type="submit">Continue to payment</button>
+    </form>
+  {% endif %}
+{% endblock %}

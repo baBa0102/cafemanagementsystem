@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Ask AI • The Hollywood Cafe{% endblock %}
+
+{% block head %}
+<style>
+  :root {
+    --ai-bg: #f8f9fa;
+    --ai-border: #e5e7eb;
+  }
+  .ai-header {
+    display: flex; align-items: center; gap: 10px; margin-bottom: 16px;
+  }
+  .ai-header .icon {
+    width: 36px; height: 36px; display: grid; place-items: center; border-radius: 10px; background: var(--primary); color: #fff;
+  }
+  .chat-card {
+    background: #fff; border: 1px solid var(--ai-border); border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    display: grid; grid-template-rows: auto 1fr auto; height: min(70vh, 680px);
+  }
+  .chat-top {
+    padding: 12px 16px; border-bottom: 1px solid var(--ai-border); background: var(--ai-bg);
+    display: flex; flex-wrap: wrap; gap: 8px;
+  }
+  .chip { border: 1px solid var(--ai-border); border-radius: 999px; padding: 6px 10px; cursor: pointer; background:#fff; }
+  .chip:hover { background:#fafafa; }
+  .chat-body { padding: 16px; overflow-y: auto; background: linear-gradient(#fff, #fff), radial-gradient(60% 40% at 50% 0, rgba(46,125,50,0.03), transparent 70%);
+  }
+  .msg { max-width: 75%; padding: 10px 12px; border-radius: 12px; margin: 6px 0; line-height: 1.35; }
+  .msg.user { margin-left: auto; background: var(--primary); color: #fff; border-bottom-right-radius: 4px; }
+  .msg.bot { background:#f3f4f6; border: 1px solid var(--ai-border); border-bottom-left-radius: 4px; }
+  .chat-input {
+    display: flex; gap: 8px; padding: 12px; border-top: 1px solid var(--ai-border); background: #fff;
+  }
+  .chat-input input[type="text"] {
+    flex: 1; padding: 10px 12px; border: 1px solid var(--ai-border); border-radius: 10px; font-size: 14px;
+  }
+  .muted { color:#6b7280; font-size: 12px; }
+</style>
+{% endblock %}
+
+{% block content %}
+  <div class="ai-header">
+    <div class="icon"><i class="fa-solid fa-robot"></i></div>
+    <div>
+      <div style="font-weight:700;">Ask AI</div>
+      <div class="muted">Ask about menu, prices, and place or track orders.</div>
+    </div>
+  </div>
+
+  <div class="chat-card">
+    <div class="chat-top" id="quick-chips">
+      <button class="chip" data-q="Show me today’s popular items">Popular items</button>
+      <button class="chip" data-q="What are your coffee prices?">Coffee prices</button>
+      <button class="chip" data-q="Order 1 cappuccino and 1 croissant">Order cappuccino + croissant</button>
+      <button class="chip" data-q="Track order #1234">Track order</button>
+    </div>
+
+    <div id="chat-messages" class="chat-body">
+      <div class="msg bot">Hi there, I am the assistent of hollywood cafe, please tell me how can I help you.</div>
+      <div id="payment-panel" style="display:none; margin-top:8px;">
+        <div class="msg bot" id="payment-text">Payment details:</div>
+        <div class="msg bot" id="payment-upi"></div>
+        <div class="msg bot" id="payment-qr"></div>
+      </div>
+    </div>
+
+    <form id="chat-form" class="chat-input">
+      <input id="chat-input" type="text" placeholder="Type your question… e.g. ‘What’s the price of cappuccino?’" autocomplete="off" />
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+  const elMsgs = document.getElementById('chat-messages');
+  const elForm = document.getElementById('chat-form');
+  const elInput = document.getElementById('chat-input');
+  const chips = document.getElementById('quick-chips');
+
+  // CSRF helper
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  function addMsg(text, who) {
+    const div = document.createElement('div');
+    div.className = `msg ${who}`;
+    div.textContent = text;
+    elMsgs.appendChild(div);
+    elMsgs.scrollTop = elMsgs.scrollHeight;
+  }
+
+  chips?.addEventListener('click', (e) => {
+    const t = e.target;
+    if (t.matches('[data-q]')) {
+      elInput.value = t.getAttribute('data-q');
+      elInput.focus();
+    }
+  });
+
+  elForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const q = elInput.value.trim();
+    if (!q) return;
+    addMsg(q, 'user');
+    elInput.value = '';
+
+    try {
+      const res = await fetch("{% url 'ai_chat_api' %}", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRFToken': getCookie('csrftoken') || '',
+        },
+        body: JSON.stringify({ message: q })
+      });
+      let data = null;
+      const ct = res.headers.get('content-type') || '';
+      if (ct.includes('application/json')) {
+        data = await res.json();
+      } else {
+        const text = await res.text();
+        if (!res.ok) throw new Error(text || 'Request failed');
+        data = { reply: text };
+      }
+      if (!res.ok) throw new Error(data?.details || data?.error || 'Request failed');
+      addMsg(data.reply || 'No reply', 'bot');
+      if (data.payment) {
+        const panel = document.getElementById('payment-panel');
+        const upi = document.getElementById('payment-upi');
+        const qr = document.getElementById('payment-qr');
+        upi.textContent = data.payment.upi_id ? `UPI ID: ${data.payment.upi_id}` : '';
+        qr.innerHTML = data.payment.qr_url ? `<img src="${data.payment.qr_url}" alt="Payment QR" style="max-width:220px;border-radius:8px;border:1px solid #eee;"/>` : '';
+        panel.style.display = 'block';
+      }
+    } catch (err) {
+      const msg = (err && err.message) ? `AI error: ${err.message}` : 'Sorry, AI service is unavailable right now. Please try again.';
+      addMsg(msg, 'bot');
+      console.error(err);
+    }
+  });
+</script>
+{% endblock %}

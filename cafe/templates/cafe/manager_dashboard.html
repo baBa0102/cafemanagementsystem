@@ -1,0 +1,217 @@
+{% extends 'base.html' %}
+{% block title %}Manager Dashboard{% endblock %}
+{% block content %}
+<style>
+.analytics-nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+.analytics-nav a {
+  padding: 8px 16px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+}
+.analytics-nav a:hover, .analytics-nav a.active {
+  background: #2e7d32;
+  color: white;
+}
+.metric-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.metric-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+.metric-card .value {
+  font-size: 32px;
+  font-weight: bold;
+}
+.chart-container {
+  position: relative;
+  height: 200px;
+  margin: 20px 0;
+}
+</style>
+
+<h1>Manager Dashboard</h1>
+
+<nav class="analytics-nav">
+  <a href="{% url 'manager_dashboard' %}" class="active">Overview</a>
+  <a href="{% url 'manager_sales' %}">Sales Analytics</a>
+  <a href="{% url 'manager_items' %}">Items Performance</a>
+  <a href="{% url 'manager_customers' %}">Customer Insights</a>
+  <a href="{% url 'items_list' %}">Manage Items</a>
+</nav>
+
+<div class="grid">
+  <!-- Key Metrics -->
+  <div class="metric-card">
+    <h3>Total Orders</h3>
+    <div class="value">{{ total_orders }}</div>
+  </div>
+  <div class="metric-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+    <h3>Total Revenue</h3>
+    <div class="value">₹{{ total_revenue|floatformat:2 }}</div>
+  </div>
+  <div class="metric-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+    <h3>Average Order Value</h3>
+    <div class="value">₹{{ avg_order_value|floatformat:2 }}</div>
+  </div>
+  <div class="metric-card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+    <h3>Pending Payments</h3>
+    <div class="value">{{ payments_pending.count }}</div>
+  </div>
+  <div class="card">
+    <h3>Order Status Distribution</h3>
+    {% if status_percentages %}
+      {% for sp in status_percentages %}
+        <div style="margin-bottom:10px;">
+          <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+            <span>{{ sp.status }}</span>
+            <span><strong>{{ sp.count }}</strong> ({{ sp.percentage }}%)</span>
+          </div>
+          <div style="background:#eee;border-radius:4px;height:8px;overflow:hidden;">
+            <div style="background:#2e7d32;height:100%;width:{{ sp.percentage }}%;"></div>
+          </div>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p>No orders yet</p>
+    {% endif %}
+  </div>
+  
+  <div class="card">
+    <h3>Order Type Distribution</h3>
+    {% for ot in order_type_dist %}
+      <p>{{ ot.order_type }}: <strong>{{ ot.c }}</strong></p>
+    {% empty %}
+      <p>No data</p>
+    {% endfor %}
+  </div>
+  <div class="card">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+      <h3 style="margin: 0;">Payments Pending Verification</h3>
+      <a href="{% url 'manager_payments' %}" style="background: #2e7d32; color: white; padding: 6px 16px; border-radius: 4px; text-decoration: none; font-size: 14px; font-weight: bold;">View All Payments →</a>
+    </div>
+    {% if payments_pending %}
+      <table style="width:100%;border-collapse:collapse;">
+        <thead>
+          <tr>
+            <th style="text-align:left;">Order</th>
+            <th>Amount</th>
+            <th>Reference</th>
+            <th>Time</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for p in payments_pending %}
+            <tr>
+              <td>#{{ p.order.id }}</td>
+              <td>₹{{ p.amount }}</td>
+              <td>{{ p.reference|default:'—' }}</td>
+              <td>{{ p.created_at|date:"Y-m-d H:i" }}</td>
+              <td>
+                <form method="post" action="{% url 'verify_payment' p.id %}" style="display:inline;">
+                  {% csrf_token %}
+                  <input type="hidden" name="action" value="verify">
+                  <button type="submit" style="background:#2e7d32;color:white;border:none;padding:4px 12px;border-radius:4px;cursor:pointer;">✓ Verify</button>
+                </form>
+                <form method="post" action="{% url 'verify_payment' p.id %}" style="display:inline;">
+                  {% csrf_token %}
+                  <input type="hidden" name="action" value="reject">
+                  <button type="submit" style="background:#d32f2f;color:white;border:none;padding:4px 12px;border-radius:4px;cursor:pointer;margin-left:4px;">✗ Reject</button>
+                </form>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>No pending payments</p>
+    {% endif %}
+  </div>
+  <div class="card" style="grid-column: 1 / -1;">
+    <h3>Top Performing Items</h3>
+    <table style="width:100%;border-collapse:collapse;">
+      <thead>
+        <tr>
+          <th style="text-align:left;">Item</th>
+          <th style="text-align:center;">Quantity Sold</th>
+          <th style="text-align:right;">Revenue</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in top_items %}
+          <tr>
+            <td>{{ row.item__name }}</td>
+            <td style="text-align:center;">{{ row.total_qty }}</td>
+            <td style="text-align:right;">₹{{ row.total_revenue|floatformat:2 }}</td>
+          </tr>
+        {% empty %}
+          <tr><td colspan="3">No data</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="card" style="grid-column: 1 / -1;">
+    <h3>Orders by Hour</h3>
+    <table style="width:100%;border-collapse:collapse;">
+      <thead><tr><th>Hour</th><th>Orders</th></tr></thead>
+      <tbody>
+        {% for row in orders_by_hour %}
+          <tr><td style="text-align:center;">{{ row.hour|default:'—' }}</td><td style="text-align:center;">{{ row.c }}</td></tr>
+        {% empty %}
+          <tr><td colspan="2">No data</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="card">
+    <h3>Recent Customers</h3>
+    <table style="width:100%;border-collapse:collapse;font-size:14px;">
+      <thead>
+        <tr>
+          <th style="text-align:left;">Name</th>
+          <th style="text-align:center;">Orders</th>
+          <th style="text-align:right;">Spent</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for c in customers %}
+          <tr>
+            <td>{{ c.name }}<br><small style="color:#666;">{{ c.phone }}</small></td>
+            <td style="text-align:center;">{{ c.order_count }}</td>
+            <td style="text-align:right;">₹{{ c.total_spent|floatformat:2 }}</td>
+          </tr>
+        {% empty %}
+          <tr><td colspan="3">No customers yet</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="card">
+    <h3>Analysis</h3>
+    {% with paid=0 pending=0 %}
+      {% for s in status_counts %}
+        {% if s.status == 'PAID' %}{% with paid=s.c %}{% endwith %}{% endif %}
+        {% if s.status == 'PENDING_PAYMENT' %}{% with pending=s.c %}{% endwith %}{% endif %}
+      {% endfor %}
+    {% endwith %}
+    <p style="font-size:14px;color:#666;">Distribution of order statuses.</p>
+    <div style="--paid: 60; width:140px;height:140px;border-radius:50%;background:conic-gradient(#2e7d32 calc({{ total_orders|default:1 }}==0?0: (status_counts.0.c|default:0) * 1deg), #ff7043 0);border:6px solid #fff;box-shadow:0 0 0 1px #eee inset;"></div>
+    <small>Tip: Use admin to change statuses from Pending → Paid → Preparing → Completed.</small>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Get In Touch</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body>
+    <header class="top-bar">
+        <nav class="top-nav" style="display:flex;align-items:center;gap:12px;">
+            <div style="display:flex;gap:12px;">
+                <a href="{% url 'landing_page' %}#home">🏠</a>
+                <a href="{% url 'landing_page' %}#about">ℹ️</a>
+                <a href="{% url 'landing_page' %}#howitworks">🛠️</a>
+                <a href="{% url 'landing_page' %}#pricing">💰</a>
+                <a href="{% url 'contact_page' %}">📞</a>
+                <a href="{% url 'homepage_view' %}">🏡</a>
+            </div>
+            <div style="margin-left:auto;display:flex;gap:12px;">
+                <a href="{% url 'items_list' %}">Items</a>
+<a href="{% url 'cart_detail' %}">🛒 Cart{% if cart_count %} <span style="display:inline-block;background:#ff7043;color:#fff;border-radius:999px;padding:2px 6px;font-size:12px;line-height:1;margin-left:4px;min-width:18px;text-align:center;">{{ cart_count }}</span>{% endif %}</a>
+                <a href="{% url 'my_account' %}">Account</a>
+                {% if user.is_authenticated %}
+                  <a href="{% url 'logout' %}">Logout</a>
+                {% else %}
+                  <a href="{% url 'login' %}">👤 Login</a>
+                {% endif %}
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-column">
+                    <h2>SOCIALS</h2>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin: 10px 0;"><a href="https://www.instagram.com/" target="_blank" style="color: #E4405F; font-size: 18px;"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li style="margin: 10px 0;"><a href="https://www.twitter.com/" target="_blank" style="color: #1DA1F2; font-size: 18px;"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                        <li style="margin: 10px 0;"><a href="https://www.facebook.com/" target="_blank" style="color: #1877F2; font-size: 18px;"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                        <li style="margin: 10px 0;"><a href="https://www.linkedin.com/in/basit-shameem-0a8907188/" target="_blank" style="color: #0A66C2; font-size: 18px;"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="contact-column">
+                    <h2>LOCATIONS</h2>
+                    <p>786 Plane Street, Eastern Cape, Engcobo 5054</p>
+                    <p>9436 Feather Street, Santa Fe, New Mexico 87501</p>
+                    <p>2179 Clover Avenue, Coquitlam, British Columbia V3J 5S9</p>
+                </div>
+            </div>
+
+            <p class="contact-email">HELLO@REALLYGREATSITE.COM</p>
+        </div>
+    </section>
+</body>
+</html>

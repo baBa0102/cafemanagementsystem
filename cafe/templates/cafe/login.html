@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Login{% endblock %}
+{% block content %}
+  <h1>Login</h1>
+  <div class="card" style="max-width:520px;">
+    <div style="display:flex; gap:8px; margin-bottom:12px;">
+      <a href="{% url 'login' %}" class="btn{% if mode != 'staff' %} secondary{% endif %}">User Login</a>
+      <a href="{% url 'login_staff' %}" class="btn{% if mode == 'staff' %} secondary{% endif %}">Staff Login</a>
+    </div>
+    {% if mode == 'staff' %}
+      <p style="margin:4px 0 12px 0; color:#555;">Staff/Manager access only. Use your staff credentials.</p>
+    {% endif %}
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      {% if request.GET.next %}
+        <input type="hidden" name="next" value="{{ request.GET.next }}"/>
+      {% endif %}
+      <button class="btn" type="submit">Login</button>
+    </form>
+  </div>
+{% endblock %}

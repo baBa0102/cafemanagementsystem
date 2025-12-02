@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+{% block title %}Items Performance{% endblock %}
+{% block content %}
+<style>
+.analytics-nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+.analytics-nav a {
+  padding: 8px 16px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+}
+.analytics-nav a:hover, .analytics-nav a.active {
+  background: #2e7d32;
+  color: white;
+}
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.filter-bar a {
+  padding: 6px 12px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+.filter-bar a.active {
+  background: #2e7d32;
+  color: white;
+}
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+.item-row:hover {
+  background: #f9f9f9;
+}
+</style>
+
+<h1>Items Performance Analytics</h1>
+
+<nav class="analytics-nav">
+  <a href="{% url 'manager_dashboard' %}">Overview</a>
+  <a href="{% url 'manager_sales' %}">Sales Analytics</a>
+  <a href="{% url 'manager_items' %}" class="active">Items Performance</a>
+  <a href="{% url 'manager_customers' %}">Customer Insights</a>
+  <a href="{% url 'items_list' %}">Manage Items</a>
+</nav>
+
+<div class="filter-bar">
+  <span>Time Period:</span>
+  <a href="?days=7" {% if days == 7 %}class="active"{% endif %}>Last 7 Days</a>
+  <a href="?days=30" {% if days == 30 %}class="active"{% endif %}>Last 30 Days</a>
+  <a href="?days=90" {% if days == 90 %}class="active"{% endif %}>Last 90 Days</a>
+</div>
+
+<div class="grid">
+  <div class="card" style="grid-column: 1 / -1;">
+    <h3>🔥 Most Popular Items (Most Repeated Orders)</h3>
+    <p style="color:#666;font-size:14px;margin-bottom:15px;">Items customers order most frequently</p>
+    {% if top_items %}
+      <table style="width:100%;border-collapse:collapse;">
+        <thead>
+          <tr>
+            <th style="text-align:left;">Rank</th>
+            <th style="text-align:left;">Item Name</th>
+            <th style="text-align:center;">Qty Sold</th>
+            <th style="text-align:center;">Times Ordered</th>
+            <th style="text-align:right;">Revenue</th>
+            <th style="text-align:right;">Avg/Order</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in top_items %}
+            <tr>
+              <td><strong>#{{ forloop.counter }}</strong></td>
+              <td>{{ item.item__name }}</td>
+              <td style="text-align:center;">{{ item.total_qty }}</td>
+              <td style="text-align:center;">{{ item.order_count }}</td>
+              <td style="text-align:right;">₹{{ item.total_revenue|floatformat:2 }}</td>
+              <td style="text-align:right;">{% widthratio item.total_qty item.order_count 1 %}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>No data available for this period</p>
+    {% endif %}
+  </div>
+  
+  <div class="card" style="grid-column: 1 / -1;">
+    <h3>📊 Performance Insights</h3>
+    {% if top_items %}
+      {% with best_seller=top_items.0 %}
+        <div style="background:#e8f5e9;padding:15px;border-radius:8px;margin-bottom:15px;">
+          <h4 style="margin:0 0 8px 0;color:#2e7d32;">🏆 Best Seller</h4>
+          <p style="margin:0;"><strong>{{ best_seller.item__name }}</strong> - Sold {{ best_seller.total_qty }} units across {{ best_seller.order_count }} orders</p>
+          <p style="margin:5px 0 0 0;color:#666;font-size:14px;">Revenue: ₹{{ best_seller.total_revenue|floatformat:2 }}</p>
+        </div>
+      {% endwith %}
+      
+      <div style="background:#fff3e0;padding:15px;border-radius:8px;">
+        <h4 style="margin:0 0 8px 0;color:#f57c00;">💡 Recommendation</h4>
+        <p style="margin:0;font-size:14px;">Focus on promoting your top 5 items. Consider creating combo offers with these popular items to increase average order value.</p>
+      </div>
+    {% endif %}
+  </div>
+  
+  <div class="card" style="grid-column: 1 / -1;">
+    <h3>⚠️ Low Performers</h3>
+    <p style="color:#666;font-size:14px;margin-bottom:15px;">Items with lowest sales - consider improving, promoting, or removing</p>
+    {% if low_performers %}
+      <table style="width:100%;border-collapse:collapse;">
+        <thead>
+          <tr>
+            <th style="text-align:left;">Item Name</th>
+            <th style="text-align:center;">Qty Sold</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in low_performers %}
+            <tr>
+              <td>{{ item.item__name }}</td>
+              <td style="text-align:center;">{{ item.total_qty }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>No low performing items</p>
+    {% endif %}
+  </div>
+</div>
+
+<p style="margin-top:20px;"><a href="{% url 'manager_dashboard' %}" style="color:#2e7d32;">← Back to Dashboard</a></p>
+{% endblock %}

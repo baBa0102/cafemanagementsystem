@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}Cafe{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <!-- Font Awesome for cart icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/J0vCNSC+v6VdO1J9Oa5r5rV+4H3E+9VWeItPxX2VINeodIZ6Tn6PvxI6Bfq5lHppZ8YdS9v3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {% block head %}{% endblock %}
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="brand"><a href="/" style="text-decoration:none;color:inherit;">The Hollywood Cafe</a></div>
+      <div class="nav-actions">
+        <a href="{% url 'items_list' %}">Items</a>
+        <a href="{% url 'my_orders' %}"><i class="fa-solid fa-receipt"></i> My Orders</a>
+<a href="{% url 'cart_detail' %}"><i class="fa-solid fa-cart-shopping"></i> Cart{% if cart_count %} <span style="display:inline-block;background:#ff7043;color:#fff;border-radius:999px;padding:2px 6px;font-size:12px;line-height:1;margin-left:4px;min-width:18px;text-align:center;">{{ cart_count }}</span>{% endif %}</a>
+        <a href="{% url 'my_account' %}">Account</a>
+        {% if user.is_authenticated %}
+          <a href="{% url 'logout' %}">Logout</a>
+        {% else %}
+          <a href="{% url 'login' %}"><i class="fa-solid fa-user"></i> Login</a>
+        {% endif %}
+      </div>
+    </nav>
+    <main class="container fade-in">
+      {% block content %}{% endblock %}
+    </main>
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

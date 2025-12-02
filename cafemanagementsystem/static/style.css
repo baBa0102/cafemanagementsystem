@@ -1,0 +1,494 @@
+/* ======================================= */
+/* GLOBAL STYLES & VARIABLES */
+/* ======================================= */
+:root {
+    /* Image 1 Green */
+    --dark-green: #2e7d32; 
+    /* Image 2 Green/Olive */
+    --pricing-green: #8bc34a; 
+    --light-text: #ffffff;
+    --dark-text: #333;
+    --hero-overlay: rgba(0, 0, 0, 0.4); 
+    --works-overlay: rgba(0, 0, 0, 0.5); 
+    --font-serif: 'Georgia', serif;
+    --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-sans);
+    color: var(--dark-text);
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Enables smooth scrolling for the #links */
+}
+
+/* Reused Image 1 Styles */
+
+/* 1. Top Bar (Navigation) */
+/* ======================================= */
+/* 1. PROFESSIONAL TOP BAR (HEADER) - REPLACED STYLES */
+/* ======================================= */
+
+.top-bar {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Dark semi-transparent background for a modern, professional look */
+    background: rgba(63, 66, 61, 0.95); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    z-index: 2000; /* Ensure it stays above everything */
+    padding: 10px 10px;
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: space-between; /* Pushes logo left, nav right */
+    align-items: center;
+    font-family: var(--font-sans);
+}
+
+/* Logo/Brand Styling */
+.logo a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-size: 1.5em; /* Larger, dominant text */
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    /* Use your defined dark-green as the primary accent color */
+    color: var(--dark-green); 
+}
+
+/* Navigation Links Styling */
+.top-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Spacing between links */
+}
+
+.nav-link {
+    color: var(--light-text);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent; /* Prepare for hover effect */
+    transition: border-bottom-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--light-text);
+    /* Use your defined dark-green for the underline highlight */
+    border-bottom-color: var(--dark-green); 
+}
+
+/* Distinct Button Styling (for 'Main Site') */
+.nav-btn {
+    background-color: var(--dark-green); 
+    color: var(--light-text);
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: 600;
+    border: 2px solid var(--dark-green);
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: var(--light-text); /* White background on hover */
+    color: var(--dark-text); /* Dark text on white hover */
+    border-bottom-color: transparent; /* Remove underline on button hover */
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .top-bar {
+        padding: 10px 20px;
+        flex-direction: column; /* Stack logo and nav vertically */
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .top-nav {
+        gap: 15px; /* Reduce spacing */
+        flex-wrap: wrap;
+    }
+
+    .logo a {
+        font-size: 1.3em;
+    }
+}
+
+.top-nav a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-size: 24px; 
+    margin-left: 15px;
+    text-shadow: 0 0 5px black; 
+}
+
+/* 2. Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('images/HomePage/s3.jpg.webp') center center / cover no-repeat; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+
+.hero-overlay {
+    /* ... (styles remain the same) ... */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--hero-overlay); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-text);
+}
+
+.hero-section h1 { /* CITY Meal Kits */
+    font-family: var(--font-serif);
+    font-size: 5em; 
+}
+
+/* 3. About Section */
+.about-section {
+    background-color: var(--dark-green);
+    padding: 50px 0;
+    color: var(--light-text);
+}
+
+.about-content-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    align-items: flex-start; 
+    gap: 40px; 
+}
+
+.about-image-container {
+    flex: 1; 
+}
+
+.about-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-text-container {
+    flex: 1.5; 
+}
+
+.about-text-container h2 {
+    font-family: var(--font-serif);
+    font-size: 3em;
+    margin-top: 0;
+}
+
+/* New Styles from Image 2 */
+
+/* 4. How It Works Section */
+.how-it-works-section {
+    position: relative;
+    padding: 100px 0;
+    background: url('images/HomePage/cafefrontbg.jpg') center center / cover no-repeat; 
+    /* Adjust image path if necessary */
+    text-align: center;
+    color: var(--light-text);
+}
+
+.works-overlay {
+    background: var(--works-overlay); /* Darkens the image */
+    padding: 60px 20px;
+}
+
+.how-it-works-section h2 {
+    font-family: var(--font-serif);
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.step {
+    flex: 1;
+    max-width: 300px;
+    position: relative;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: var(--dark-green); /* Dark green circles */
+    color: var(--light-text);
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0 auto 20px;
+}
+
+.step p {
+    font-size: 1.1em;
+}
+
+/* 5. Pricing Section */
+.pricing-section {
+    background-color: var(--pricing-green);
+    padding: 80px 20px;
+    text-align: center;
+    color: var(--dark-text);
+}
+
+.pricing-section h2 {
+    font-family: var(--font-serif);
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: var(--light-text); /* White text for contrast */
+}
+
+.kits-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.kit-card {
+    position: relative;
+    width: 300px;
+    background-color: var(--light-text);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.kit-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    /* Optional: Apply a filter to mimic the original image's look */
+    filter: brightness(0.9);
+}
+
+.price-bubble {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--light-text);
+    color: var(--dark-text);
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 50;
+}
+
+.kit-details {
+    position: absolute; /* Lifts the details box out of the flow */
+    bottom: 0;          /* Anchors it to the bottom of the image (since .kit-card is relative) */
+    left: 0;
+    width: 100%;
+    
+    /* Creates the transparent background pad */
+    background: rgba(0, 0, 0, 0.6); 
+    
+    padding: 10px 15px;
+    text-align: left;
+    
+    /* Set text color to white for visibility over the dark background */
+    color: var(--light-text); 
+    z-index: 30;
+}
+
+.kit-details h3 {
+    margin: 0;
+    font-size: 1.4em;
+    font-family: var(--font-serif);
+}
+
+.kit-details p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .hero-section h1,
+    .about-text-container h2,
+    .how-it-works-section h2,
+    .pricing-section h2 {
+        font-size: 2.5em;
+    }
+    
+    .about-content-wrapper,
+    .steps-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .kit-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+/* contack page */
+.contact-section {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background: url('images/HomePage/contactbg.jpg') center center / cover no-repeat; /* Use an appropriate background image, or the same as hero */
+    color: var(--light-text);
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    text-align: left;
+}
+
+.contact-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Slightly darker overlay for better text readability */
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the left */
+    max-width: 1200px; /* Constrain content width */
+    margin: 0 auto;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.contact-title {
+    font-family: var(--font-serif);
+    font-size: 4em;
+    margin-left: 20px; /* Indent title from the left */
+    margin-bottom: 50px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+.contact-info {
+    display: flex;
+    gap: 80px; /* Space between columns */
+    margin-bottom: 50px;
+    margin-left: 20px; /* Indent info columns */
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+}
+
+.contact-column h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    letter-spacing: 0.05em;
+    color: #cccccc; /* Slightly lighter heading */
+}
+
+.contact-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-column li,
+.contact-column p {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    line-height: 1.4;
+}
+
+.contact-email {
+    margin-top: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 20px; /* Indent email */
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 10px;
+    }
+
+    .contact-column h2 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+
+    .contact-column li,
+    .contact-column p,
+    .contact-email {
+        font-size: 1em;
+        margin-left: 10px;
+    }
+    
+    .contact-overlay {
+        padding: 30px 15px;
+        align-items: center; /* Center content on small screens */
+        text-align: center;
+    }
+}
+.contact-column ul li a {
+    color: var(--light-text); /* White text color inherited from parent */
+    text-decoration: none; /* Remove the default underline */
+    font-size: 1.1em;
+    display: flex; /* Use flexbox to align text and icon horizontally */
+    justify-content: space-between; /* Puts the icon to the far right */
+    align-items: center;
+    padding: 2px 0;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.contact-column ul li a:hover {
+    color: var(--pricing-green); /* Highlight text on hover */
+}
+
+/* Style the icon container */
+/* New Style for Actual Logo Image */
+.social-logo {
+    width: 20px; /* Set a specific, small size */
+    height: 20px; 
+    margin-left: 10px;
+    /* Optional: If using a white SVG logo, this ensures the image is visible */
+    /* filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.5)); */
+}
+
+/* Ensure flex alignment within the <a> tag remains clean */
+.contact-column ul li a {
+    /* Keep display: flex and justify-content: space-between */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    /* ... rest of the existing <a> styles ... */
+}

@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% block title %}Send to Chef{% endblock %}
+{% block content %}
+<div class="card" style="max-width:800px;margin:0 auto;">
+  <h1 style="color:#2e7d32;margin-bottom:1.5rem;">✅ Payment Verified</h1>
+  
+  <div style="background:#e8f5e9;padding:1.5rem;border-radius:8px;border-left:4px solid #4caf50;margin-bottom:2rem;">
+    <h2 style="margin:0 0 0.5rem 0;color:#2e7d32;">Order #{{ order.id }}</h2>
+    <p style="margin:0;font-size:1rem;color:#666;">
+      Payment verified successfully. Choose to send this order to the chef or abandon it.
+    </p>
+  </div>
+  
+  <!-- Order Details -->
+  <div style="margin-bottom:2rem;">
+    <h3 style="border-bottom:2px solid #ddd;padding-bottom:0.5rem;">Order Details</h3>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:1rem;">
+      <div>
+        <strong>Customer:</strong> {{ order.customer.name }}<br>
+        <strong>Phone:</strong> {{ order.customer.phone }}
+      </div>
+      <div>
+        <strong>Order Type:</strong> {{ order.order_type }}<br>
+        {% if order.order_type == 'DINING' %}
+          <strong>Table:</strong> {{ order.table_no }}
+        {% else %}
+          <strong>Delivery Address:</strong><br>
+          {{ order.delivery_address.line1 }}, {{ order.delivery_address.city }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  
+  <!-- Order Items -->
+  <div style="margin-bottom:2rem;">
+    <h3 style="border-bottom:2px solid #ddd;padding-bottom:0.5rem;">Items</h3>
+    <table style="width:100%;margin-top:1rem;border-collapse:collapse;">
+      <thead>
+        <tr style="background:#f5f5f5;">
+          <th style="padding:10px;text-align:left;border:1px solid #ddd;">Item</th>
+          <th style="padding:10px;text-align:center;border:1px solid #ddd;">Qty</th>
+          <th style="padding:10px;text-align:right;border:1px solid #ddd;">Price</th>
+          <th style="padding:10px;text-align:right;border:1px solid #ddd;">Subtotal</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in order_items %}
+        <tr>
+          <td style="padding:10px;border:1px solid #ddd;">{{ item.item.name }}</td>
+          <td style="padding:10px;text-align:center;border:1px solid #ddd;">{{ item.quantity }}</td>
+          <td style="padding:10px;text-align:right;border:1px solid #ddd;">₹{{ item.unit_price }}</td>
+          <td style="padding:10px;text-align:right;border:1px solid #ddd;">₹{{ item.subtotal }}</td>
+        </tr>
+        {% endfor %}
+        <tr style="background:#f5f5f5;font-weight:700;">
+          <td colspan="3" style="padding:10px;text-align:right;border:1px solid #ddd;">Total:</td>
+          <td style="padding:10px;text-align:right;border:1px solid #ddd;">₹{{ order.total_amount }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <!-- Action Buttons -->
+  <form method="post">
+    {% csrf_token %}
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+      <button type="submit" name="action" value="send_to_chef" class="btn" style="background:#4caf50;padding:16px;font-size:1.1rem;">
+        👨‍🍳 Send to Chef
+      </button>
+      <button type="submit" name="action" value="abandon" class="btn" style="background:#f44336;padding:16px;font-size:1.1rem;">
+        🗑️ Abandon Order
+      </button>
+    </div>
+  </form>
+  
+  <p style="margin-top:1rem;font-size:0.9rem;color:#666;text-align:center;">
+    <em>If abandoned, you can restore this order from order history</em>
+  </p>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafe Management Home</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>Welcome to the Cafe Management System</h1>
+    <p>This is the main home page content.</p>
+    
+    <p>Go to the <a href="{% url 'meal_kits' %}">CITY Meal Kits (Old) page</a>.</p>
+    
+    <p>Go to the **<a href="{% url 'landing_page' %}">CITY Meal Kits (Full Landing Page)</a>**.</p>
+    <p>Go to the **<a href="{% url 'contact_page' %}">Contact Us Page</a>**.</p>
+</body>
+</html>

@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% block title %}Customer Insights{% endblock %}
+{% block content %}
+<style>
+.analytics-nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+.analytics-nav a {
+  padding: 8px 16px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+}
+.analytics-nav a:hover, .analytics-nav a.active {
+  background: #2e7d32;
+  color: white;
+}
+.metric-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.metric-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+.metric-card .value {
+  font-size: 32px;
+  font-weight: bold;
+}
+</style>
+
+<h1>Customer Insights</h1>
+
+<nav class="analytics-nav">
+  <a href="{% url 'manager_dashboard' %}">Overview</a>
+  <a href="{% url 'manager_sales' %}">Sales Analytics</a>
+  <a href="{% url 'manager_items' %}">Items Performance</a>
+  <a href="{% url 'manager_customers' %}" class="active">Customer Insights</a>
+  <a href="{% url 'items_list' %}">Manage Items</a>
+</nav>
+
+<div class="grid">
+  <div class="metric-card">
+    <h3>Total Customers</h3>
+    <div class="value">{{ total_customers }}</div>
+  </div>
+  <div class="metric-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+    <h3>New Customers (Last {{ days }} Days)</h3>
+    <div class="value">{{ new_customers }}</div>
+  </div>
+  <div class="metric-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+    <h3>Avg Customer Value</h3>
+    <div class="value">₹{{ avg_customer_value|floatformat:2 }}</div>
+  </div>
+  
+  <div class="card" style="grid-column: 1 / -1;">
+    <h3>🏆 Top Customers (VIP List)</h3>
+    <p style="color:#666;font-size:14px;margin-bottom:15px;">Your most valuable customers - consider rewarding them with special offers</p>
+    {% if top_customers %}
+      <table style="width:100%;border-collapse:collapse;">
+        <thead>
+          <tr>
+            <th style="text-align:left;">Rank</th>
+            <th style="text-align:left;">Name</th>
+            <th style="text-align:left;">Contact</th>
+            <th style="text-align:center;">Total Orders</th>
+            <th style="text-align:right;">Total Spent</th>
+            <th style="text-align:right;">Avg Order</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for customer in top_customers %}
+            <tr>
+              <td><strong>#{{ forloop.counter }}</strong></td>
+              <td>{{ customer.name }}</td>
+              <td>{{ customer.phone }}</td>
+              <td style="text-align:center;">{{ customer.order_count }}</td>
+              <td style="text-align:right;">₹{{ customer.spent_amount|floatformat:2 }}</td>
+              <td style="text-align:right;">₹{% widthratio customer.spent_amount customer.order_count 1 %}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>No customer data available</p>
+    {% endif %}
+  </div>
+  
+  <div class="card" style="grid-column: 1 / -1;">
+    <h3>📈 Customer Growth & Insights</h3>
+    <div style="background:#e3f2fd;padding:15px;border-radius:8px;margin-bottom:15px;">
+      <h4 style="margin:0 0 8px 0;color:#1976d2;">Customer Acquisition</h4>
+      <p style="margin:0;">{{ new_customers }} new customers joined in the last {{ days }} days</p>
+      {% if total_customers > 0 %}
+        <p style="margin:5px 0 0 0;color:#666;font-size:14px;">Growth Rate: {% widthratio new_customers total_customers 100 %}%</p>
+      {% endif %}
+    </div>
+    
+    <div style="background:#fff3e0;padding:15px;border-radius:8px;margin-bottom:15px;">
+      <h4 style="margin:0 0 8px 0;color:#f57c00;">💡 Recommendations</h4>
+      <ul style="margin:10px 0;padding-left:20px;font-size:14px;">
+        <li>Create a loyalty program for customers with 5+ orders</li>
+        <li>Send personalized offers to top 10 customers to increase retention</li>
+        <li>Reach out to customers who haven't ordered in 30+ days with special discounts</li>
+      </ul>
+    </div>
+    
+    {% if top_customers %}
+      {% with best_customer=top_customers.0 %}
+        <div style="background:#e8f5e9;padding:15px;border-radius:8px;">
+          <h4 style="margin:0 0 8px 0;color:#2e7d32;">🌟 Best Customer</h4>
+          <p style="margin:0;"><strong>{{ best_customer.name }}</strong> ({{ best_customer.phone }})</p>
+          <p style="margin:5px 0 0 0;color:#666;font-size:14px;">Total Spent: ₹{{ best_customer.spent_amount|floatformat:2 }} across {{ best_customer.order_count }} orders</p>
+        </div>
+      {% endwith %}
+    {% endif %}
+  </div>
+</div>
+
+<p style="margin-top:20px;"><a href="{% url 'manager_dashboard' %}" style="color:#2e7d32;">← Back to Dashboard</a></p>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITY Meal Kits - Our Kitchen Comforts</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}"> 
+</head>
+<body>
+    <header class="top-bar">
+        <nav class="top-nav" style="display:flex;align-items:center;gap:12px;">
+            <div style="display:flex;gap:12px;">
+                <a href="#home">🏠</a> 
+                <a href="#about">ℹ️</a>
+                <a href="{% url 'homepage_view' %}">🏡</a>
+            </div>
+            <div style="margin-left:auto;display:flex;gap:12px;">
+                <a href="{% url 'items_list' %}">Items</a>
+<a href="{% url 'cart_detail' %}">🛒 Cart{% if cart_count %} <span style="display:inline-block;background:#ff7043;color:#fff;border-radius:999px;padding:2px 6px;font-size:12px;line-height:1;margin-left:4px;min-width:18px;text-align:center;">{{ cart_count }}</span>{% endif %}</a>
+                <a href="{% url 'my_account' %}">Account</a>
+                {% if user.is_authenticated %}
+                  <a href="{% url 'logout' %}">Logout</a>
+                {% else %}
+                  <a href="{% url 'login' %}">👤 Login</a>
+                {% endif %}
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section" id="home">
+        <div class="hero-overlay">
+            <p class="tagline">OUR KITCHEN COMFORTS</p>
+            <h1>CITY Meal Kits</h1>
+            <p class="subtitle">Unleash your inner chef</p>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="about-content-wrapper">
+            <div class="about-image-container">
+                <img src="{% static 'images/HomePage/ingredients.jpg' %}" alt="Fresh ingredients for meal kits">
+            </div>
+            <div class="about-text-container">
+                <h2>ABOUT</h2>
+                <p>At Kitchen Comforts, we know the value of a home-cooked meal. Every dish we create is made fresh on-site, with ingredients sourced or harvested on the same day. We believe in slow cooking and meal-savoring – because good things take time.</p>
+                <p>Now that times have changed, we must adapt. With our new **Cook-It-Yourself (CIY) Meal Kits**, we bring the Kitchen Comfort experience straight to your doorstep. Inside, you'll find everything you need to recreate our beloved home-style meals: Easy to follow illustrated recipes, prepared ingredients, and even a QR code for real-time cooking videos to help you unleash your inner chef.</p>
+                <p>Times have changed, but our philosophy has not. We believe in the life-changing comfort of a good meal - and now you can cook it yourself!!</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,247 @@
+{% extends 'base.html' %}
+{% block title %}Track Order{% endblock %}
+{% block content %}
+<style>
+.track-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.track-form {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.track-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+.track-btn {
+  background: #2e7d32;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.track-btn:hover {
+  background: #1b5e20;
+}
+.order-timeline {
+  margin: 30px 0;
+  position: relative;
+}
+.timeline-item {
+  padding: 20px;
+  border-left: 3px solid #ddd;
+  margin-left: 20px;
+  position: relative;
+}
+.timeline-item.active {
+  border-left-color: #2e7d32;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 20px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ddd;
+}
+.timeline-item.active::before {
+  background: #2e7d32;
+}
+.timeline-item.completed::before {
+  background: #2e7d32;
+  content: '✓';
+  color: white;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order-details-card {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+</style>
+
+<div class="track-container">
+  <h1>Track Your Order</h1>
+  
+  {% if not order %}
+    <div class="track-form">
+      <h2>Enter Your Order ID</h2>
+      <p style="color: #666; margin: 15px 0;">Enter the order ID you received after placing your order</p>
+      
+      <form method="GET">
+        <input type="number" name="order_id" class="track-input" placeholder="Enter Order ID (e.g., 123)" required>
+        <br>
+        <button type="submit" class="track-btn">Track Order</button>
+      </form>
+      
+      {% if not_found %}
+        <p style="color: #d32f2f; margin-top: 20px;">Order not found. Please check your order ID and try again.</p>
+      {% endif %}
+    </div>
+    
+    <div style="text-align: center; margin-top: 30px;">
+      <p>Have an account? <a href="{% url 'my_orders' %}" style="color: #2e7d32; font-weight: bold;">View All My Orders</a></p>
+    </div>
+  {% else %}
+    <!-- Order Found - Show Details -->
+    <div class="order-details-card">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <div>
+          <h2 style="margin: 0;">Order #{{ order.id }}</h2>
+          <small style="color: #666;">Placed on {{ order.created_at|date:"F d, Y - g:i A" }}</small>
+        </div>
+        <div>
+          <span style="padding: 8px 20px; border-radius: 20px; font-weight: bold; 
+            {% if order.status == 'PENDING_PAYMENT' %}background: #fff3e0; color: #f57c00;
+            {% elif order.status == 'PAID' %}background: #e8f5e9; color: #2e7d32;
+            {% elif order.status == 'PREPARING' %}background: #e3f2fd; color: #1976d2;
+            {% elif order.status == 'COMPLETED' %}background: #f3e5f5; color: #7b1fa2;
+            {% elif order.status == 'CANCELED' %}background: #ffebee; color: #d32f2f;
+            {% endif %}">
+            {{ order.get_status_display }}
+          </span>
+        </div>
+      </div>
+      
+      <div style="border-top: 2px solid #f0f0f0; padding-top: 20px;">
+        <h3>Order Items</h3>
+        {% for item in order_items %}
+          <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f5f5f5;">
+            <span>{{ item.item.name }} x {{ item.quantity }}</span>
+            <span><strong>₹{{ item.subtotal|floatformat:2 }}</strong></span>
+          </div>
+        {% endfor %}
+        
+        <div style="display: flex; justify-content: space-between; padding: 15px 0; font-size: 18px; font-weight: bold;">
+          <span>Total Amount:</span>
+          <span style="color: #2e7d32;">₹{{ order.total_amount|floatformat:2 }}</span>
+        </div>
+      </div>
+      
+      <div style="border-top: 2px solid #f0f0f0; padding-top: 20px; margin-top: 20px;">
+        <h3>Order Details</h3>
+        <p><strong>Order Type:</strong> {{ order.get_order_type_display }}</p>
+        {% if order.table_no %}
+          <p><strong>Table Number:</strong> {{ order.table_no }}</p>
+        {% endif %}
+        {% if order.delivery_address %}
+          <p><strong>Delivery Address:</strong><br>
+          {{ order.delivery_address.line1 }}{% if order.delivery_address.line2 %}, {{ order.delivery_address.line2 }}{% endif %}<br>
+          {{ order.delivery_address.city }}, {{ order.delivery_address.state }} {{ order.delivery_address.postal_code }}</p>
+        {% endif %}
+        
+        {% if payment %}
+          <div style="background: #f9f9f9; padding: 15px; border-radius: 4px; margin-top: 15px;">
+            <p><strong>Payment Status:</strong> 
+              <span style="padding: 4px 12px; border-radius: 15px; font-weight: bold;
+                {% if payment.status == 'PENDING' %}background: #fff3e0; color: #f57c00;
+                {% elif payment.status == 'VERIFIED' %}background: #e8f5e9; color: #2e7d32;
+                {% elif payment.status == 'FAILED' %}background: #ffebee; color: #d32f2f;
+                {% endif %}">
+                {{ payment.get_status_display }}
+              </span>
+            </p>
+            {% if payment.reference %}
+              <p><strong>Payment Reference:</strong> {{ payment.reference }}</p>
+            {% endif %}
+            {% if payment.verified_at %}
+              <p><strong>Verified At:</strong> {{ payment.verified_at|date:"F d, Y - g:i A" }}</p>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+    
+    <!-- Order Timeline -->
+    <div class="order-details-card">
+      <h3>Order Status Timeline</h3>
+      <div class="order-timeline">
+        <div class="timeline-item {% if order.status != 'CANCELED' %}completed{% endif %}">
+          <strong>Order Placed</strong>
+          <p style="color: #666; margin: 5px 0;">{{ order.created_at|date:"F d, Y - g:i A" }}</p>
+        </div>
+        
+        <div class="timeline-item {% if order.status in 'PAID,PREPARING,COMPLETED' %}completed{% elif order.status == 'PENDING_PAYMENT' %}active{% endif %}">
+          <strong>Payment Verification</strong>
+          <p style="color: #666; margin: 5px 0;">
+            {% if order.status == 'PENDING_PAYMENT' %}
+              Waiting for payment verification...
+            {% elif order.status in 'PAID,PREPARING,COMPLETED' %}
+              Payment verified
+            {% elif order.status == 'CANCELED' %}
+              Payment failed or canceled
+            {% endif %}
+          </p>
+        </div>
+        
+        <div class="timeline-item {% if order.status in 'PREPARING,COMPLETED' %}active{% endif %} {% if order.status == 'COMPLETED' %}completed{% endif %}">
+          <strong>Preparing Order</strong>
+          <p style="color: #666; margin: 5px 0;">
+            {% if order.status == 'PREPARING' %}
+              Your order is being prepared...
+            {% elif order.status == 'COMPLETED' %}
+              Order prepared successfully
+            {% else %}
+              Pending
+            {% endif %}
+          </p>
+        </div>
+        
+        <div class="timeline-item {% if order.status == 'COMPLETED' %}active completed{% endif %}">
+          <strong>{% if order.order_type == 'DELIVERY' %}Delivered{% else %}Ready for Pickup{% endif %}</strong>
+          <p style="color: #666; margin: 5px 0;">
+            {% if order.status == 'COMPLETED' %}
+              Order completed!
+            {% else %}
+              Pending
+            {% endif %}
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Auto-refresh for pending payment -->
+    {% if order.status == 'PENDING_PAYMENT' %}
+      <div style="text-align: center; padding: 20px; background: #fff3e0; border-radius: 8px;">
+        <p style="margin: 0;"><strong>⏱️ Waiting for payment verification...</strong></p>
+        <p style="margin: 5px 0 0 0; font-size: 14px; color: #666;">This page will automatically update every 2 seconds</p>
+      </div>
+      
+      <script>
+        // Auto-refresh every 2 seconds if payment is pending
+        setTimeout(function() {
+          location.reload();
+        }, 2000);
+      </script>
+    {% endif %}
+    
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="{% url 'track_order' %}" style="color: #2e7d32;">← Track Another Order</a>
+      {% if order.customer %}
+        | <a href="{% url 'my_orders' %}" style="color: #2e7d32;">View All My Orders</a>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
+{% endblock %}

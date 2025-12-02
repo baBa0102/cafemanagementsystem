@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}Payment{% endblock %}
+{% block content %}
+  <h1>Payment</h1>
+  <div class="card" style="max-width:720px;">
+    {% if account_created_username and user.is_authenticated and not user.has_usable_password %}
+      <div class="card" style="background:#f1f8e9;border-color:#e0f2f1;margin-bottom:12px;">
+        <p>Your account was created and you are logged in as <strong>{{ account_created_username }}</strong>.</p>
+        <p>You can set your password now to secure your account and get exclusive offers.</p>
+        <a class="btn" href="{% url 'set_password' %}">Set password</a>
+      </div>
+    {% endif %}
+    {% if paycfg %}
+      <p><strong>UPI ID:</strong> {{ paycfg.upi_id|default:'—' }}</p>
+      <p><strong>IFSC:</strong> {{ paycfg.ifsc_code|default:'—' }}</p>
+      <p><strong>Account No.:</strong> {{ paycfg.account_number|default:'—' }}</p>
+      {% if paycfg.qr_code %}
+        <div style="margin:8px 0;">
+          <img src="{{ paycfg.qr_code.url }}" alt="Payment QR" style="max-width:280px;width:100%;height:auto;border-radius:8px;border:1px solid #eee;"/>
+        </div>
+      {% endif %}
+    {% else %}
+      <p>Payment settings not configured. Please contact admin.</p>
+    {% endif %}
+
+    <hr/>
+    <p>Total payable: <strong>₹ {{ cart.total }}</strong></p>
+    <form method="post" class="card" style="border:none;box-shadow:none;padding:0;">
+      {% csrf_token %}
+      <label>Payment reference (e.g., UPI Ref ID / Transaction ID)</label>
+      <input type="text" name="reference" placeholder="Optional but helpful" style="width:100%;padding:8px;border:1px solid #ddd;border-radius:8px;margin:6px 0 12px 0;"/>
+      <button class="btn" type="submit">Submit payment for verification</button>
+    </form>
+    <p style="color:#666;margin-top:8px;">We will verify your payment shortly and confirm your order.</p>
+  </div>
+{% endblock %}

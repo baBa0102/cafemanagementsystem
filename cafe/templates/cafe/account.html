@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block title %}My Account{% endblock %}
+{% block content %}
+  <h1>My Account</h1>
+  {% if not customer %}
+    <div class="card">
+      <p>No customer profile yet. Start checkout to create your account.</p>
+      <div style="display:flex;gap:8px;">
+        <a class="btn" href="{% url 'checkout_dining' %}">Dining</a>
+        <a class="btn secondary" href="{% url 'checkout_delivery' %}">Delivery</a>
+      </div>
+    </div>
+  {% else %}
+    <div class="grid">
+      <div class="card">
+        <h3>Profile</h3>
+        <p><strong>{{ customer.name }}</strong></p>
+        <p>{{ customer.phone }}{% if customer.email %} • {{ customer.email }}{% endif %}</p>
+        <p>Total spent: ₹ {{ customer.total_spent }}</p>
+      </div>
+      <div class="card">
+        <h3>Addresses</h3>
+        {% for a in addresses %}
+          <p>{% if a.is_default %}<strong>Default</strong> • {% endif %}{{ a.line1 }}, {{ a.city }}</p>
+        {% empty %}
+          <p>No addresses yet.</p>
+        {% endfor %}
+      </div>
+      <div class="card" style="grid-column: 1 / -1;">
+        <h3>Orders</h3>
+        {% if orders %}
+          <ul>
+            {% for o in orders %}
+              <li>#{{ o.id }} • {{ o.order_type }} • ₹ {{ o.total_amount }} • {{ o.created_at|date:"Y-m-d H:i" }}</li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p>No orders yet.</p>
+        {% endif %}
+      </div>
+      <div class="card">
+        <h3>Wishlist</h3>
+        {% if wishlist_items %}
+          <ul>
+            {% for w in wishlist_items %}
+              <li>{{ w.item.name }} — ₹ {{ w.item.price }}
+                <a href="{% url 'wishlist_remove' w.item.id %}">Remove</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          {% if session_wishlist_ids %}
+            <p>Session wishlist (not saved):</p>
+            <ul>
+              {% for wid in session_wishlist_ids %}
+                <li>Item #{{ wid }}
+                  <a href="{% url 'wishlist_remove' wid %}">Remove</a>
+                </li>
+              {% endfor %}
+            </ul>
+            <p>Complete checkout to save your wishlist to your account.</p>
+          {% else %}
+            <p>No wishlist items.</p>
+          {% endif %}
+        {% endif %}
+      </div>
+      <div class="card">
+        <h3>Offers</h3>
+        {% for off in offers %}
+          <p><strong>{{ off.title }}</strong><br/>{{ off.description }}</p>
+        {% empty %}
+          <p>No offers currently.</p>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+{% endblock %}

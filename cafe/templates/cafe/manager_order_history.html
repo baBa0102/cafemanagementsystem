@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% block title %}Order History{% endblock %}
+{% block content %}
+<h1 style="margin-bottom:1.5rem;">📜 Order History</h1>
+
+<!-- Filter -->
+<div class="card" style="margin-bottom:1.5rem;">
+  <form method="get" style="display:flex;gap:1rem;align-items:center;">
+    <label style="font-weight:600;">Filter by Status:</label>
+    <select name="status" style="padding:8px 12px;border:1px solid #ddd;border-radius:6px;">
+      <option value="all" {% if status_filter == 'all' %}selected{% endif %}>All Orders</option>
+      <option value="PENDING_PAYMENT" {% if status_filter == 'PENDING_PAYMENT' %}selected{% endif %}>Pending Payment</option>
+      <option value="PAID" {% if status_filter == 'PAID' %}selected{% endif %}>Paid</option>
+      <option value="PREPARING" {% if status_filter == 'PREPARING' %}selected{% endif %}>Preparing</option>
+      <option value="READY_FOR_DELIVERY" {% if status_filter == 'READY_FOR_DELIVERY' %}selected{% endif %}>Ready</option>
+      <option value="OUT_FOR_DELIVERY" {% if status_filter == 'OUT_FOR_DELIVERY' %}selected{% endif %}>Out for Delivery</option>
+      <option value="COMPLETED" {% if status_filter == 'COMPLETED' %}selected{% endif %}>Completed</option>
+      <option value="CANCELED" {% if status_filter == 'CANCELED' %}selected{% endif %}>Canceled</option>
+      <option value="REJECTED" {% if status_filter == 'REJECTED' %}selected{% endif %}>Rejected</option>
+    </select>
+    <button type="submit" class="btn">Filter</button>
+  </form>
+</div>
+
+<!-- Orders Table -->
+<div class="card">
+  <table style="width:100%;border-collapse:collapse;">
+    <thead>
+      <tr style="background:#f5f5f5;">
+        <th style="padding:12px;text-align:left;border:1px solid #ddd;">Order ID</th>
+        <th style="padding:12px;text-align:left;border:1px solid #ddd;">Customer</th>
+        <th style="padding:12px;text-align:left;border:1px solid #ddd;">Type</th>
+        <th style="padding:12px;text-align:right;border:1px solid #ddd;">Amount</th>
+        <th style="padding:12px;text-align:center;border:1px solid #ddd;">Status</th>
+        <th style="padding:12px;text-align:center;border:1px solid #ddd;">Payment</th>
+        <th style="padding:12px;text-align:center;border:1px solid #ddd;">Date</th>
+        <th style="padding:12px;text-align:center;border:1px solid #ddd;">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for order in orders %}
+      <tr {% if order.status == 'CANCELED' %}style="background:#ffebee;"{% elif order.status == 'COMPLETED' %}style="background:#e8f5e9;"{% endif %}>
+        <td style="padding:12px;border:1px solid #ddd;font-weight:600;">#{{ order.id }}</td>
+        <td style="padding:12px;border:1px solid #ddd;">
+          {{ order.customer.name }}<br>
+          <small style="color:#666;">{{ order.customer.phone }}</small>
+        </td>
+        <td style="padding:12px;border:1px solid #ddd;">
+          {{ order.order_type }}
+          {% if order.order_type == 'DINING' %}
+            <br><small>Table {{ order.table_no }}</small>
+          {% endif %}
+        </td>
+        <td style="padding:12px;text-align:right;border:1px solid #ddd;font-weight:600;">₹{{ order.total_amount }}</td>
+        <td style="padding:12px;text-align:center;border:1px solid #ddd;">
+          <span style="padding:4px 8px;border-radius:4px;font-size:0.85rem;font-weight:600;
+            {% if order.status == 'COMPLETED' %}background:#4caf50;color:white;
+            {% elif order.status == 'CANCELED' or order.status == 'REJECTED' %}background:#f44336;color:white;
+            {% elif order.status == 'PREPARING' %}background:#ff9800;color:white;
+            {% elif order.status == 'PAID' %}background:#2196f3;color:white;
+            {% else %}background:#9e9e9e;color:white;{% endif %}">
+            {{ order.get_status_display }}
+          </span>
+        </td>
+        <td style="padding:12px;text-align:center;border:1px solid #ddd;">
+          {% if order.payment %}
+            <span style="padding:4px 8px;border-radius:4px;font-size:0.85rem;
+              {% if order.payment.status == 'VERIFIED' %}background:#4caf50;color:white;
+              {% elif order.payment.status == 'FAILED' %}background:#f44336;color:white;
+              {% else %}background:#ffc107;color:#333;{% endif %}">
+              {{ order.payment.get_status_display }}
+            </span>
+          {% else %}
+            -
+          {% endif %}
+        </td>
+        <td style="padding:12px;text-align:center;border:1px solid #ddd;font-size:0.85rem;">
+          {{ order.created_at|date:"M d, Y" }}<br>
+          <small style="color:#666;">{{ order.created_at|time:"g:i A" }}</small>
+        </td>
+        <td style="padding:12px;text-align:center;border:1px solid #ddd;">
+          {% if order.status == 'CANCELED' %}
+            <form method="post" action="{% url 'manager_restore_order' order.id %}" style="margin:0;">
+              {% csrf_token %}
+              <button type="submit" class="btn" style="padding:6px 12px;font-size:0.85rem;background:#4caf50;">
+                ↩️ Restore
+              </button>
+            </form>
+          {% else %}
+            <a href="{% url 'track_order_detail' order.id %}" style="color:#2196f3;text-decoration:none;">View</a>
+          {% endif %}
+        </td>
+      </tr>
+      {% empty %}
+      <tr>
+        <td colspan="8" style="padding:2rem;text-align:center;color:#999;border:1px solid #ddd;">
+          <em>No orders found</em>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<div style="margin-top:1rem;">
+  <a href="{% url 'manager_dashboard' %}" class="btn" style="display:inline-block;text-decoration:none;">← Back to Dashboard</a>
+</div>
+{% endblock %}

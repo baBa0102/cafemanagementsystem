@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% block title %}Chef Dashboard{% endblock %}
+{% block content %}
+<div style="margin-bottom:2rem;">
+  <h1 style="display:inline-block;margin-right:1rem;">👨‍🍳 Chef Dashboard</h1>
+  <span style="background:#e3f2fd;padding:6px 12px;border-radius:6px;font-size:0.9rem;">FIFO Order Queue</span>
+</div>
+
+<!-- Pending Orders (Not Yet Started) -->
+<div class="card" style="margin-bottom:2rem;">
+  <h2 style="background:linear-gradient(135deg, #ff7043 0%, #ff5722 100%);color:white;padding:1rem;border-radius:8px;margin:-16px -16px 1rem -16px;">
+    📋 Pending Orders ({{ pending_orders.count }})
+  </h2>
+  
+  {% if pending_orders %}
+    {% for order in pending_orders %}
+    <div style="border:2px solid #ff7043;border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;background:#fff8f3;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+        <div>
+          <h3 style="margin:0;color:#d84315;">Order #{{ order.id }}</h3>
+          <p style="margin:0.5rem 0 0 0;color:#666;">
+            <strong>{{ order.order_type }}</strong>
+            {% if order.order_type == 'DINING' %}
+              | Table: <span style="background:#ffeb3b;padding:2px 8px;border-radius:4px;font-weight:600;">{{ order.table_no }}</span>
+            {% endif %}
+          </p>
+          <p style="margin:0.3rem 0 0 0;font-size:0.85rem;color:#888;">
+            Customer: {{ order.customer.name }} | {{ order.customer.phone }}
+          </p>
+        </div>
+        <div style="text-align:right;">
+          <p style="margin:0;font-size:1.2rem;font-weight:700;color:#d84315;">₹{{ order.total_amount }}</p>
+          <p style="margin:0.3rem 0 0 0;font-size:0.8rem;color:#666;">
+            {{ order.created_at|timesince }} ago
+          </p>
+        </div>
+      </div>
+      
+      <!-- Order Items -->
+      <div style="background:white;border-radius:8px;padding:1rem;margin-bottom:1rem;">
+        <strong style="color:#333;">Items:</strong>
+        <ul style="margin:0.5rem 0 0 0;padding-left:1.5rem;">
+          {% for item in order.items.all %}
+            <li style="margin:0.3rem 0;">
+              <strong>{{ item.item.name }}</strong> × {{ item.quantity }}
+              {% if item.item.description %}
+                <span style="color:#888;font-size:0.85rem;">({{ item.item.description|truncatewords:10 }})</span>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      
+      <!-- Action Button -->
+      <form method="post" action="{% url 'chef_start_preparing' order.id %}" style="margin:0;">
+        {% csrf_token %}
+        <button type="submit" class="btn" style="width:100%;background:#4caf50;font-size:1rem;padding:14px;">
+          🚀 Start Preparing
+        </button>
+      </form>
+    </div>
+    {% endfor %}
+  {% else %}
+    <p style="text-align:center;color:#999;padding:2rem;"><em>No pending orders</em></p>
+  {% endif %}
+</div>
+
+<!-- Currently Preparing Orders -->
+<div class="card">
+  <h2 style="background:linear-gradient(135deg, #2196f3 0%, #1976d2 100%);color:white;padding:1rem;border-radius:8px;margin:-16px -16px 1rem -16px;">
+    🍳 Preparing ({{ preparing_orders.count }})
+  </h2>
+  
+  {% if preparing_orders %}
+    {% for order in preparing_orders %}
+    <div style="border:2px solid #2196f3;border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;background:#f3f9ff;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+        <div>
+          <h3 style="margin:0;color:#1565c0;">Order #{{ order.id }}</h3>
+          <p style="margin:0.5rem 0 0 0;color:#666;">
+            <strong>{{ order.order_type }}</strong>
+            {% if order.order_type == 'DINING' %}
+              | Table: <span style="background:#ffeb3b;padding:2px 8px;border-radius:4px;font-weight:600;">{{ order.table_no }}</span>
+            {% endif %}
+          </p>
+          <p style="margin:0.3rem 0 0 0;font-size:0.85rem;color:#888;">
+            Started: {{ order.preparing_started_at|timesince }} ago
+          </p>
+        </div>
+        <div style="text-align:right;">
+          <p style="margin:0;font-size:1.2rem;font-weight:700;color:#1565c0;">₹{{ order.total_amount }}</p>
+        </div>
+      </div>
+      
+      <!-- Order Items -->
+      <div style="background:white;border-radius:8px;padding:1rem;margin-bottom:1rem;">
+        <strong style="color:#333;">Items:</strong>
+        <ul style="margin:0.5rem 0 0 0;padding-left:1.5rem;">
+          {% for item in order.items.all %}
+            <li style="margin:0.3rem 0;">
+              <strong>{{ item.item.name }}</strong> × {{ item.quantity }}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      
+      <!-- Ready Button -->
+      <form method="post" action="{% url 'chef_mark_ready' order.id %}" style="margin:0;">
+        {% csrf_token %}
+        <button type="submit" class="btn" style="width:100%;background:#ff9800;font-size:1rem;padding:14px;">
+          ✅ Mark as Ready
+        </button>
+      </form>
+    </div>
+    {% endfor %}
+  {% else %}
+    <p style="text-align:center;color:#999;padding:2rem;"><em>No orders being prepared</em></p>
+  {% endif %}
+</div>
+
+<script>
+  // Auto-refresh every 30 seconds to get new orders
+  setTimeout(() => location.reload(), 30000);
+</script>
+{% endblock %}
